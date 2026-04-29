@@ -76,6 +76,18 @@ $$C_{\min}^{\mathrm{ctrl},exec} \leq C_{\min}^{\mathrm{ctrl},proto} \leq C_{\min
 
 > "Sealed" = version-locked; "Closed" = version-locked after final audit pass.
 > Neither implies peer-reviewed publication.
+> See [`STATUS_GLOSSARY.md`](STATUS_GLOSSARY.md) for full definitions.
+
+---
+
+## Diagnostic artifacts
+
+| Document | Version | Status | Location |
+|---|---|---|---|
+| CRT Language Adapters Summary | v0.2 | Accepted diagnostic artifact | `papers/adapters/` |
+| CRT Vertical Stress Test Summary | v0.1 | Accepted diagnostic artifact | `papers/adapters/` |
+
+These are stress-test reports, not theorem files. See [`papers/adapters/README.md`](papers/adapters/README.md).
 
 ---
 
