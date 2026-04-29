@@ -2,79 +2,65 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19871473.svg)](https://doi.org/10.5281/zenodo.19871473)
 
-**A Structural Theory of Correctness, Robustness, and Stability**
+Canonical Reality Theory studies when a system is justified in treating
+a world as canonical.
+A world is canonical in CRT only when three axes align:
 
-Author: Hai Hai Fu &nbsp;|&nbsp; **Zenodo**: [10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473) &nbsp;|&nbsp; **SSRN**: [6582699](https://ssrn.com/abstract=6582699)
+- **Correctness**: it is structurally admissible.
+- **Robustness**: it has valid support and nontrivial resistance to source-layer attack.
+- **Stability**: it is selected or maintained by the system over time.
 
----
+The central bridge theorem:
 
-## What is CRT?
+$$\mathrm{TracedSCSet}_T(\Pi)
+  \subseteq_{\mathrm{C1+C2}}
+  \mathrm{UnbreakSet}_T(\Pi)
+  \subseteq_{\mathrm{C5_R}}
+  \mathrm{SCSet}_T(\Pi)$$
 
-Canonical Reality Theory studies a fundamental question:
+Full equivalence requires trace-completeness:
 
-> *What does it take for a system to commit to a single canonical world — one that is structurally correct, adversarially robust, and dynamically stable?*
+$$\mathrm{SCSet}_T(\Pi) \subseteq \mathrm{CertReach}_T(\Pi)$$
 
-**Main result** (Synthesis Theorem):
+When all degrees of freedom vanish, the three notions collapse into one:
 
 $$\mathrm{DoF}(P) = (0,0,0)
   \iff \mathrm{SC}_T(P) = 1
   \iff C_{\min}(P) = +\infty
   \iff \mathrm{Stable}_{\mathcal{A}}(P) = 1$$
 
-The equivalence is not assumed. It is a structural collapse: when all degrees of freedom vanish, there is only one thing the system can be.
-
 ---
 
-## Theory architecture
+## Architecture
 
-CRT is the unified theory. MST, IET, and the open-system companions are its constituent layers — each retains its own name.
+CRT is organized into five layers. MST and IET retain their own names as
+independent theories; CRT is the unified framework that connects them.
+
+| Layer | Question | Module | Core object |
+|---|---|---|---|
+| Structure | Which worlds are admissible? | MST | $\mathcal{P}_T(\Pi)$, $D_{\mathrm{comp}}$, SCSet |
+| Justification | Why is a world admissible? | CRT Stack Layer 2 | $\mathcal{J}_{\mathrm{valid}}$ |
+| Robustness | What breaks a justification? | Attack/Escape, Defense, Institution | $C_{\min}$, $\Delta C_{\min}$ |
+| Bridge | When do SC, Unbreak, TracedSC align? | CRT Bridge Theorem | SCSet = UnbreakSet = TracedSCSet |
+| Dynamics | Will agents adopt the canonical world? | IET | Stochastic stability, $P^{\mathrm{canon}}$ |
+| Open systems | What happens under external input? | IET-open, Open-IET, Escape Geometry | $C_{\min}^{\mathrm{mix}}$, escape energy |
+| Execution | Where is the real control cut? | Execution Layer Min-Cut | $C_{\min}^{\mathrm{ctrl}}$ |
 
 ```
 Canonical Reality Theory (CRT)
 │
-├── Part I. Structure
-│   └── MST (Market Structure Theory)
-│       Which worlds are admissible? — Θ, P_T(Π), D_comp, SCSet
-│
-├── Part II. Justification and Robustness
-│   ├── MST Layer 2 / CRT Layer 2
-│   │   J_declared → J_valid → J* validity pipeline
-│   ├── Attack / Escape
-│   │   C_min, Break/min-HS
-│   ├── Defense
-│   │   Raise escape cost, lower source concentration
-│   ├── Institution
-│   │   Cross-horizon validity + threshold maintenance
-│   └── CRT Bridge Theorem
-│       SCSet = UnbreakSet = TracedSCSet under C1+C2+C5_R+C6
-│
-├── Part III. Dynamics and Adoption
-│   └── IET (Inferential Equilibrium Theory)
-│       If a canonical world exists, will agents adopt it?
-│       P_canon is the unique stochastically stable state.
-│
-├── Part IV. Open Systems
-│   ├── IET-open
-│   │   Abstract structural evolution: T_t → T_{t+1}
-│   ├── Open-IET (Linear)
-│   │   Finite-horizon deformation under external input
-│   └── Escape Geometry
-│       Inverse escape-energy companion
-│
-└── Part V. Applications
-    ├── ICT CRT
-    ├── DeFi CRT
-    └── Execution Layer Min-Cut
+├── Part I.   Structure          — MST
+├── Part II.  Justification      — CRT Stack (Layer 2)
+├── Part III. Robustness         — Attack/Escape, Defense, Institution
+├── Part IV.  Bridge             — CRT Bridge Theorem
+├── Part V.   Dynamics           — IET
+├── Part VI.  Open systems       — IET-open, Open-IET, Escape Geometry
+└── Part VII. Applications       — ICT CRT, DeFi CRT, Execution Layer
 ```
-
-**One-line summary**:
-> MST tells you what is structurally canonical. CRT Bridge tells you when it is justified and robust. IET tells you when it is selected in the long run. Open-CRT studies deformation, escape, and execution under external input.
 
 ---
 
-## This repository
-
-This repo contains the **synthesis paper** that connects Parts I–III:
+## Synthesis paper
 
 **When Correctness, Robustness, and Stability Coincide**
 *A Unified Framework via Degrees of Freedom and Structural Collapse*
@@ -86,13 +72,15 @@ Hai Hai Fu, 2026
 
 ---
 
-## Related repositories
+## Related work
 
-| Repo | Layer | Status |
-|---|---|---|
-| `minustwo/market-structure-theory` | MST + CRT Bridge source | Public |
-| `minustwo/inferential-equilibrium-theory` | IET | Private (forthcoming) |
-| `minustwo/canonical-reality-theory` | Synthesis paper | **Public (this repo)** |
+The underlying theories (MST, IET) are developed in separate working papers
+currently under preparation. Key theorems are reproduced in the companion
+document available at Zenodo (see DOI above).
+
+- **MST** (Market Structure Theory): structure layer. SSRN 6582699.
+- **IET** (Inferential Equilibrium Theory): adoption/stability layer. Manuscript in preparation.
+- **CRT Bridge proofs**: companion document, [Zenodo 10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473).
 
 ---
 
