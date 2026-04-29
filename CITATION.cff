@@ -1,13 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
+type: report
 authors:
   - family-names: Fu
     given-names: Hai Hai
 title: "When Correctness, Robustness, and Stability Coincide: A Unified Framework via Degrees of Freedom and Structural Collapse"
-version: "0.2"
+version: "0.1.0"
 doi: 10.5281/zenodo.19871473
 date-released: "2026-04-29"
 url: "https://github.com/minustwo/canonical-reality-theory"
+repository-code: "https://github.com/minustwo/canonical-reality-theory"
 license: CC-BY-4.0
 abstract: >
   Canonical Reality Theory (CRT) is a structural theory of when correctness,
@@ -16,6 +18,8 @@ abstract: >
   notions coincide precisely when all degrees of freedom vanish: DoF(P)=(0,0,0).
   The synthesis theorem characterizes this as a structural collapse. For open
   systems, the execution layer determines the minimum control-plane vulnerability.
+  This repository is a preprint-stage / technical-report archive.
+  Peer-reviewed publications: none yet.
 keywords:
   - canonical reality
   - degrees of freedom
@@ -26,3 +30,5 @@ keywords:
   - DeFi
   - min-cut
   - stochastic stability
+  - technical report
+  - preprint
