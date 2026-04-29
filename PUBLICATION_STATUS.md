@@ -13,14 +13,6 @@ None yet.
 
 ---
 
-## Manuscripts under review
-
-| Title | Venue | Status |
-|---|---|---|
-| (title withheld) | CCS 2026 | Under review (double-blind; title and author details withheld per venue policy) |
-
----
-
 ## Manuscripts in preparation / on hold
 
 | Title | Target | Status |
