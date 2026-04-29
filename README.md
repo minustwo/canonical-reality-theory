@@ -32,7 +32,7 @@ $$\mathrm{TracedSCSet}_T(\Pi)
   \mathrm{SCSet}_T(\Pi)$$
 
 Full equivalence requires trace-completeness
-($\mathrm{SCSet} \subseteq \mathrm{CertReach}$).
+(`SCSet ⊆ CertReach`).
 When all degrees of freedom vanish simultaneously:
 
 $$\mathrm{DoF}(P) = (0,0,0)
@@ -51,9 +51,9 @@ CRT is the unified framework that places them.
 
 | Part | Theory / module | Role |
 |---|---|---|
-| Structure | MST | Admissible worlds, $\mathcal{P}_T(\Pi)$, $D_{\mathrm{comp}}$, SCSet |
-| Justification | CRT Layer 2 | $\mathcal{J}_{\mathrm{declared}} \to \mathcal{J}_{\mathrm{valid}}$ pipeline |
-| Attack / Escape | CRT Layers 3–4 | Break, min-HS, $C_{\min}$ |
+| Structure | MST | Admissible worlds, `P_T(Π)`, `D_comp`, SCSet |
+| Justification | CRT Layer 2 | `J_declared → J_valid` pipeline |
+| Attack / Escape | CRT Layers 3–4 | Break, min-HS, `C_min` |
 | Defense | CRT Layer 5 | Cost hardening, redundancy |
 | Institution | CRT Layer 6 | Maintaining finite threshold over horizons |
 | Bridge | CRT Bridge Theorem | TracedSCSet / UnbreakSet / SCSet |
@@ -77,11 +77,11 @@ Canonical Reality Theory (CRT)
 
 CRT-SEI (Structural Evolution Interface) is the abstract interface
 specifying what must be recomputed when the structure theory itself
-changes: $T_t \to T_{t+1}$. Former internal name: IET-open.
+changes: `T_t → T_{t+1}`. Former internal name: IET-open.
 
 Open-IET (Linear) is a concrete linear-systems instantiation of CRT-SEI,
 studying finite-horizon deformation under external input:
-$x_{t+1} = Ax_t + B_S u_t$.
+`x_{t+1} = Ax_t + B_S u_t`.
 
 Escape Geometry is the inverse companion to Open-IET (Linear),
 computing the minimum energy required to cross the canonical boundary.
@@ -94,15 +94,15 @@ computing the minimum energy required to cross the canonical boundary.
 canonical-reality-theory/
 ├── THEORY_INDEX.md          Architecture and layer map
 ├── PUBLICATION_STATUS.md    Submission and review status
+├── STATUS_GLOSSARY.md       Status label definitions
 ├── CITATION.cff
-├── paper/                   LaTeX source of synthesis paper
-│   ├── main.tex
-│   └── latex/
-└── proofs/                  Version-locked technical reports
-    ├── INDEX.md
-    ├── core/                Bridge theorems
-    ├── robustness/          Mixed L2 and execution layer
-    └── applications/        DeFi verification
+├── papers/
+│   ├── adapters/            Language adapter diagnostic summaries
+│   ├── bridge/              Bridge theorem technical reports
+│   ├── robustness/          Robustness theorem technical reports
+│   ├── foundations/         MST and IET status pages
+│   └── open-systems/        CRT-SEI, Open-IET, EG, Markov-Aligned status pages
+└── proofs/                  Version-locked proof supplements
 ```
 
 ---
@@ -114,8 +114,6 @@ canonical-reality-theory/
 Hai Hai Fu, 2026
 
 - Zenodo v2: https://doi.org/10.5281/zenodo.19871473
-- LaTeX source: [`paper/`](paper/)
-- Proof index: [`proofs/INDEX.md`](proofs/INDEX.md)
 
 ---
 
