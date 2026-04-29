@@ -13,14 +13,20 @@ None yet.
 
 ---
 
-## Submitted manuscripts
+## Manuscripts under review
 
 | Title | Venue | Status |
 |---|---|---|
-| Iterative Drift in DeFi Protocols | CCS 2026 | Submitted; under review |
-| MST Probe Design for LLM Systems | arXiv | Submitted |
-| Multi-Step Safety in DeFi | arXiv | Submitted |
-| Determinization in Structure Theories | arXiv | Submitted |
+| Iterative Drift in DeFi Protocols | CCS 2026 | Under review (double-blind; author details withheld per venue policy) |
+
+---
+
+## Manuscripts in preparation / on hold
+
+| Title | Target | Status |
+|---|---|---|
+| MST Probe Design for LLM Systems | arXiv | On hold (awaiting prerequisite arXiv IDs) |
+| Determinization in Structure Theories | arXiv | On hold (awaiting prerequisite arXiv IDs) |
 
 ---
 
