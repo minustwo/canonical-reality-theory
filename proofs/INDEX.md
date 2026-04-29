@@ -1,8 +1,12 @@
-# CRT Bridge Hardening Index v1.0
+# CRT Bridge Hardening Index v1.1
 
 **Date**: 2026-04-29
 **Status**: CURRENT
 **Purpose**: Single source of truth for all closed/sealed CRT proof documents.
+
+> **Erratum (2026-04-29)**: Block 3 EL-1B entry below has been corrected.
+> The single-layer ctrl chain was falsified by counterexample X1.
+> See `CRT_EXECUTION_LAYER_MINCUT_v0_3.md` for the corrected theorem split.
 
 ---
 
@@ -37,15 +41,24 @@ For Class III systems: $C_{\min}^{mix} \geq \theta$ (not $+\infty$).
 
 | Document | Version | Status | Commit |
 |---|---|---|---|
-| `CRT_EXECUTION_LAYER_v0_1.md` | v0.2 | **CLOSED** | `ecf4fa27` |
+| `CRT_EXECUTION_LAYER_v0_1.md` | v0.2+erratum | **CLOSED** | `ecf4fa27` |
+| `CRT_EXECUTION_LAYER_MINCUT_v0_3.md` | v0.3 | **CLOSED** | `2db6282c` |
 | `DEFI_CRT_VERIFICATION_v0_1.md` | v0.4 | **CLOSED** | `cfc77b47` |
 
-**Key result (EL-1B)**:
-$$C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$$
+**EL-1B corrected theorem split (v0.3)**:
 
-Proof: $\mathcal{J}^{exec} \subseteq \mathcal{J}^{proto} \subseteq \mathcal{J}^{gov}$ + min-HS monotonicity. Four lines.
+| Label | Statement | Status |
+|---|---|---|
+| EL-1B-break | $C_{\min}^{break,exec} \leq C_{\min}^{break,proto} \leq C_{\min}^{break,gov}$ | **Theorem** |
+| EL-1B-ctrl-single | $C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$ | **False — X1 counterexample** |
+| EL-1B-ctrl-cumulative | $C_{\min}^{ctrl,\leq gov} \leq C_{\min}^{ctrl,\leq proto} \leq C_{\min}^{ctrl,\leq exec}$ | **Theorem (direction reversed)** |
 
-**Canonical CAPO attribution**: zero-attacker realization of $C_{\min}^{ctrl,exec}=1$ at AgentHub (execution layer), not $C_{\min}^{ctrl,proto}=2$ at Risk Steward (protocol layer).
+**Why the directions differ**: Break uses $\forall$+min-HS (anti-monotone in $\mathcal{J}^\ell$);
+ctrl uses $\exists$+min-covering (co-monotone in $\mathrm{Comp}^{\leq\ell}$).
+The v0.2/v1 error was applying the break-chain monotonicity argument to the ctrl chain.
+
+**Canonical CAPO attribution**: zero-attacker realization of $C_{\min}^{ctrl,exec}=1$
+at AgentHub (execution layer), not $C_{\min}^{ctrl,proto}=2$ at Risk Steward (protocol layer).
 
 ---
 
@@ -54,8 +67,12 @@ Proof: $\mathcal{J}^{exec} \subseteq \mathcal{J}^{proto} \subseteq \mathcal{J}^{
 ```
 Bridge Final (SEALED) → Bridge Hierarchy (CLOSED) → Condition Independence (CLOSED)
   → Mixed L2 Robustness (CLOSED)
-  → Execution Layer Min-Cut (CLOSED)
+  → Execution Layer Min-Cut v0.3 (CLOSED) [supersedes v0.2]
   → DeFi CRT Verification (CLOSED)
 ```
 
 Full source: `minustwo/market-structure-theory/papers/crt/`
+
+---
+
+*Index v1.1. Updated 2026-04-29: EL-1B ctrl-chain corrected.*

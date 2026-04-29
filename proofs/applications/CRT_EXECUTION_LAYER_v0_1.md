@@ -1,7 +1,17 @@
+> **Erratum (2026-04-29)**: The "Refined layer ordering" in §3 is **incorrect**.
+> The single-layer ctrl chain
+> $C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$
+> has been constructively falsified by counterexample X1 (validation report v4).
+> The correct theorem split is in
+> [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md`](../../papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md):
+> - **EL-1B-break**: $C_{\min}^{break,exec} \leq C_{\min}^{break,proto} \leq C_{\min}^{break,gov}$ (holds)
+> - **EL-1B-ctrl single-layer**: falsified by X1
+> - **EL-1B-ctrl cumulative**: $C_{\min}^{ctrl,\leq gov} \leq C_{\min}^{ctrl,\leq proto} \leq C_{\min}^{ctrl,\leq exec}$ (holds, direction reversed)
+
 # CRT Execution Layer — Min-Cut Extension v0.2
 
 **Date**: 2026-04-28
-**Status**: **CLOSED**
+**Status**: **CLOSED** (with erratum above)
 
 **Changes from v0.1**:
 1. Replaced source-count formulas with Break/min-HS layer-restricted machinery
@@ -50,9 +60,10 @@ $$C_{\min}^{break}(a) = \min_{\ell \in \{gov, proto, exec\}} C_{\min}^{break,\el
 **EL-1B** (Control/capture three-layer min):
 $$C_{\min}^{ctrl}(a) = \min_{\ell \in \{gov, proto, exec\}} C_{\min}^{ctrl,\ell}(a)$$
 
-**Refined layer ordering**:
-$$C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$$
-(strict when execution layer has automated pipelines without human-in-the-loop)
+**Refined layer ordering** *(RETRACTED — see Erratum at top)*:
+~~$C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$~~
+
+See v0.3 for the corrected theorem split.
 
 ---
 
@@ -66,7 +77,7 @@ $$C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$$
 $$\boxed{\text{CAPO: zero-attacker realization of a one-component execution-layer control cut.}}$$
 $$C_{\min}^{ctrl,exec} = 1, \quad C_{\min}^{ctrl,proto} = 2$$
 
-**Audit correction**: $C_{\min}(\text{Aave a1}) = 1$ is numerically correct but was misattributed to Risk Steward (protocol layer). Correct attribution: AgentHub execution layer. Redesign implication is different: fix the execution pipeline, not the multisig threshold.
+**Audit correction**: $C_{\min}(\text{Aave a1}) = 1$ is numerically correct but was misattributed to Risk Steward (protocol layer). Correct attribution: AgentHub execution layer. Redesign implication: fix the execution pipeline, not the multisig threshold.
 
 ---
 
@@ -80,6 +91,5 @@ For any safety property $a$:
 
 ---
 
-*End of CRT Execution Layer Min-Cut Extension v0.2 — CLOSED.*
-*$C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$.*
-*Two cut semantics cleanly separated: break/invalidation vs control/capture.*
+*CRT Execution Layer Min-Cut Extension v0.2 — CLOSED (with erratum).*
+*Refined layer ordering retracted. See v0.3 for corrected theorems.*
