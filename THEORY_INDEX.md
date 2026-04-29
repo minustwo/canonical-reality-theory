@@ -63,16 +63,23 @@ $$C_{\min}^{\mathrm{ctrl},exec} \leq C_{\min}^{\mathrm{ctrl},proto} \leq C_{\min
 
 ---
 
-## Sealed / closed documents
+## Technical reports (public)
 
-| Document | Version | Status | Location |
+### Bridge core
+
+| Document | Version | Status | Link |
 |---|---|---|---|
-| CRT Bridge Theorem — Final Form | v1.0.1 | **SEALED** | `proofs/core/` |
-| CRT Bridge Hierarchy | v0.3 | **CLOSED** | `proofs/core/` |
-| CRT Condition Independence | v0.2 | **CLOSED** | `proofs/core/` |
-| CRT Mixed Layer-2 Robustness | v0.2 | **CLOSED** | `proofs/robustness/` |
-| CRT Execution Layer Min-Cut | v0.2 | **CLOSED** | `proofs/robustness/` |
-| DeFi CRT Verification | v0.4 | **CLOSED** | `proofs/applications/` |
+| CRT Bridge Theorem — Final Form | v1.0.1 | **SEALED** | [`papers/bridge/CRT_BRIDGE_THEOREM_FINAL_v1_0_1.md`](papers/bridge/CRT_BRIDGE_THEOREM_FINAL_v1_0_1.md) |
+| CRT Bridge Hierarchy | v0.3 | **CLOSED** | [`papers/bridge/CRT_BRIDGE_HIERARCHY_v0_3.md`](papers/bridge/CRT_BRIDGE_HIERARCHY_v0_3.md) |
+| CRT Trace-Completeness Characterization | v0.2 | **CLOSED** | [`papers/bridge/CRT_TRACE_COMPLETENESS_CHARACTERIZATION_v0_2.md`](papers/bridge/CRT_TRACE_COMPLETENESS_CHARACTERIZATION_v0_2.md) |
+
+### Robustness core
+
+| Document | Version | Status | Link |
+|---|---|---|---|
+| CRT Mixed Layer-2 Robustness | v0.2 | **CLOSED** | [`papers/robustness/CRT_MIXED_L2_ROBUSTNESS_v0_2.md`](papers/robustness/CRT_MIXED_L2_ROBUSTNESS_v0_2.md) |
+| CRT Execution Layer Min-Cut | v0.2 | **CLOSED** | [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_2.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_2.md) |
+| CRT NAA Reformulation Theorem | v0.2 | **CLOSED** | [`papers/robustness/CRT_NAA_REFORMULATION_THEOREM_v0_2.md`](papers/robustness/CRT_NAA_REFORMULATION_THEOREM_v0_2.md) |
 
 > "Sealed" = version-locked; "Closed" = version-locked after final audit pass.
 > Neither implies peer-reviewed publication.
@@ -82,18 +89,28 @@ $$C_{\min}^{\mathrm{ctrl},exec} \leq C_{\min}^{\mathrm{ctrl},proto} \leq C_{\min
 
 ## Diagnostic artifacts
 
-| Document | Version | Status | Location |
+| Document | Version | Status | Link |
 |---|---|---|---|
-| CRT Language Adapters Summary | v0.2 | Accepted diagnostic artifact | `papers/adapters/` |
-| CRT Vertical Stress Test Summary | v0.1 | Accepted diagnostic artifact | `papers/adapters/` |
+| CRT Language Adapters Summary | v0.2 | Accepted diagnostic artifact | [`papers/adapters/CRT_LANGUAGE_ADAPTERS_SUMMARY_v0_2.md`](papers/adapters/CRT_LANGUAGE_ADAPTERS_SUMMARY_v0_2.md) |
+| CRT Vertical Stress Test Summary | v0.1 | Accepted diagnostic artifact | [`papers/adapters/CRT_VERTICAL_STRESS_TEST_SUMMARY_v0_1.md`](papers/adapters/CRT_VERTICAL_STRESS_TEST_SUMMARY_v0_1.md) |
 
 These are stress-test reports, not theorem files. See [`papers/adapters/README.md`](papers/adapters/README.md).
 
 ---
 
+## Foundations status pages
+
+| Theory | Role | Status page |
+|---|---|---|
+| MST | Structure layer | [`papers/foundations/MST_STATUS.md`](papers/foundations/MST_STATUS.md) |
+| IET | Dynamics layer | [`papers/foundations/IET_STATUS.md`](papers/foundations/IET_STATUS.md) |
+| Open systems (CRT-SEI, Open-IET, EG) | Open systems layer | [`papers/foundations/OPEN_SYSTEMS_STATUS.md`](papers/foundations/OPEN_SYSTEMS_STATUS.md) |
+
+---
+
 ## Companion document
 
-*CRT and Bridge Theorem Proofs* — proof supplement containing:
+*CRT and Bridge Theorem Proofs* — proof supplement:
 - Appendix A: Bridge Hierarchy full proof
 - Appendix B: EL-1A / EL-1B (Execution Layer)
 - Appendix C: IET Endogenous Canonical Selection
