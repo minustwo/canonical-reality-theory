@@ -59,7 +59,7 @@ CRT is the unified framework that places them.
 | Bridge | CRT Bridge Theorem | TracedSCSet / UnbreakSet / SCSet |
 | Dynamics | IET | Long-run adoption, stochastic stability |
 | Open systems | IET-open, Open-IET, Escape Geometry | Deformation and escape |
-| Applications | ICT CRT, DeFi CRT, Execution Layer | Real system instances |
+| Applications | ICT trading (MST instance), DeFi CRT, Execution Layer | Real system instances |
 
 ```
 Canonical Reality Theory (CRT)
@@ -70,7 +70,7 @@ Canonical Reality Theory (CRT)
 ├── Part IV.   Bridge        — CRT Bridge Theorem
 ├── Part V.    Dynamics      — IET
 ├── Part VI.   Open systems  — IET-open, Open-IET, Escape Geometry
-└── Part VII.  Applications  — ICT CRT, DeFi CRT, Execution Layer
+└── Part VII.  Applications  — ICT trading (MST instance), DeFi CRT, Execution Layer
 ```
 
 ---
@@ -111,7 +111,8 @@ Hai Hai Fu, 2026
 - **MST** (Market Structure Theory) — structure layer. SSRN 6582699.
   Source repo: [`minustwo/market-structure-theory`](https://github.com/minustwo/market-structure-theory)
 - **IET** (Inferential Equilibrium Theory) — adoption/stability layer.
-  Manuscript in preparation. Key theorem in companion document, Appendix C.
+  Manuscript in preparation. Key theorem in Appendix C of the synthesis paper
+  ([Zenodo 10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473)).
 
 ---
 
