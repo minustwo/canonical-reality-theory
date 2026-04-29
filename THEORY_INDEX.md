@@ -37,7 +37,7 @@ A world `P` is canonical in CRT only when all three axes align:
 - **CRT-SEI** (Structural Evolution Interface) — abstract interface for `T_t → T_{t+1}` evolution.
 - **Open-IET (Linear)** — linear-systems instantiation of CRT-SEI.
 - **Escape Geometry** — inverse minimum-energy crossing companion to Open-IET (Linear).
-- **Markov-Aligned** — reversible Markov dynamics channel-vulnerability companion.
+- **Markov-Aligned** — reversible Markov dynamics companion.
 
 ---
 
@@ -129,10 +129,14 @@ Status pages only. Full manuscripts not included.
 
 ## Publications
 
-| Document | DOI | Notes |
-|---|---|---|
-| Main paper: *When Correctness, Robustness, and Stability Coincide* | [10.5281/zenodo.19870518](https://doi.org/10.5281/zenodo.19870518) | Current canonical version |
-| Proof supplement v3: *CRT and Bridge Theorem Proofs* | [10.5281/zenodo.19884063](https://doi.org/10.5281/zenodo.19884063) | v3, includes EL-1B correction |
+**Current canonical version**: [10.5281/zenodo.19884063](https://doi.org/10.5281/zenodo.19884063)
+
+This record contains:
+- Main paper: *When Correctness, Robustness, and Stability Coincide* (`when_correctness_robustness_stability_HaiHaiFu_final_2026-04-29.pdf`)
+- Proof supplement v3: *CRT and Bridge Theorem Proofs* (`proofs_CRT_Bridge_HaiHaiFu_v3_2026-04-29.pdf`) — includes EL-1B correction
+
+Previous versions:
+- v3 (proof supplement only): [10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473)
 
 ---
 
@@ -144,5 +148,3 @@ Status pages only. Full manuscripts not included.
 - Appendix C: IET Endogenous Canonical Selection
 
 Zenodo: https://doi.org/10.5281/zenodo.19884063
-
-> **Previous version** (proof supplement v2): https://doi.org/10.5281/zenodo.19871473
