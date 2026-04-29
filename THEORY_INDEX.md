@@ -30,13 +30,14 @@ A world $P$ is canonical in CRT only when all three axes align:
 | Institution | CRT Layer 6 | How is validity maintained over time? | $\iota$, threshold floor |
 | Bridge | CRT Bridge Theorem | When do SC, Unbreak, TracedSC align? | SCSet = UnbreakSet = TracedSCSet |
 | Dynamics | IET | Will agents adopt the canonical world? | Stochastic stability, $P^{\mathrm{canon}}$ |
-| Open systems | CRT-SEI, Open-IET (Linear), Escape Geometry | What happens under structural evolution and external input? | $C_{\min}^{\mathrm{mix}}$, escape energy |
+| Open systems | CRT-SEI, Open-IET (Linear), Escape Geometry, Markov-Aligned | What happens under structural evolution and external input? | $C_{\min}^{\mathrm{mix}}$, escape energy |
 | Applications | ICT CRT, DeFi CRT, Execution Layer | Where is the real minimum cut? | $C_{\min}^{\mathrm{ctrl}}$ |
 
 **Open systems layer**:
 - **CRT-SEI** (Structural Evolution Interface) — abstract interface for $T_t \to T_{t+1}$ evolution. Former internal name: IET-open.
 - **Open-IET (Linear)** — linear-systems instantiation of CRT-SEI.
 - **Escape Geometry** — inverse minimum-energy crossing companion to Open-IET (Linear).
+- **Markov-Aligned** — reversible Markov dynamics channel-vulnerability companion.
 
 ---
 
@@ -98,13 +99,18 @@ These are stress-test reports, not theorem files. See [`papers/adapters/README.m
 
 ---
 
-## Foundations status pages
+## Foundations and open systems (status pages)
 
 | Theory | Role | Status page |
 |---|---|---|
 | MST | Structure layer | [`papers/foundations/MST_STATUS.md`](papers/foundations/MST_STATUS.md) |
-| IET | Dynamics layer | [`papers/foundations/IET_STATUS.md`](papers/foundations/IET_STATUS.md) |
-| Open systems (CRT-SEI, Open-IET, EG) | Open systems layer | [`papers/foundations/OPEN_SYSTEMS_STATUS.md`](papers/foundations/OPEN_SYSTEMS_STATUS.md) |
+| IET | Dynamics / adoption layer | [`papers/foundations/IET_STATUS.md`](papers/foundations/IET_STATUS.md) |
+| CRT-SEI | Structural evolution interface | [`papers/open-systems/CRT_SEI_STATUS.md`](papers/open-systems/CRT_SEI_STATUS.md) |
+| Open-IET (Linear) | Linear open-system instantiation | [`papers/open-systems/OPEN_IET_LINEAR_STATUS.md`](papers/open-systems/OPEN_IET_LINEAR_STATUS.md) |
+| Escape Geometry | Inverse minimum-energy companion | [`papers/open-systems/ESCAPE_GEOMETRY_STATUS.md`](papers/open-systems/ESCAPE_GEOMETRY_STATUS.md) |
+| Markov-Aligned | Reversible Markov dynamics companion | [`papers/open-systems/MARKOV_ALIGNED_STATUS.md`](papers/open-systems/MARKOV_ALIGNED_STATUS.md) |
+
+Status pages only. Full manuscripts not included.
 
 ---
 
