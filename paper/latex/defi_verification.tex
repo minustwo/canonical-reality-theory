@@ -1,0 +1,51 @@
+\section{DeFi Empirical Verification}
+\label{sec:defi-empirical}
+
+\subsection{Overview}
+
+Three independently verified DeFi events, all instances of
+$\mathrm{DoF}_{\mathrm{src}}(P)>0$ materializing without an explicit adversary.
+
+\begin{center}
+\begin{tabular}{lp{5cm}ll}\hline
+Protocol & Event & Layer & Type\\\hline
+Aave v3 & CAPO 2.85\% undervaluation; \$27M, 34 accounts &
+  Exec ($C_{\min}^{ctrl,exec}=1$) & Zero-attacker\\
+Compound v3 & P289; 682k vs 633k COMP; 57 addresses &
+  Protocol ($C_{\min}=1$) & Governance\\
+Sky & GSM 24h; six types share one path &
+  Exec (shared root) & Structural\\\hline
+\end{tabular}
+\end{center}
+
+\subsection{Aave v3: CAPO}
+
+CAPO produced 2.85\% wstETH undervaluation, \$27M liquidations, 34 accounts.
+Root cause: BGD AgentHub pipeline asynchronous parameter update.
+$C_{\min}^{ctrl,exec}=1 < C_{\min}^{ctrl,proto}=2$. Zero-attacker failure.
+
+\subsection{Compound v3: P289}
+
+P289 (2024-07-28): 682,191 vs 633,636 COMP, 57 addresses, $\approx$\$24M.
+No Proposal Guardian at time of P289 (introduced in P303).
+$C_{\min}^{ctrl,proto}=1$ at time of event.
+
+\subsection{Sky: Chief hat path}
+
+All six action types route through:
+$\text{Spell}\to\text{Chief V3}\to\text{MCD\_PAUSE}\to\text{MCD\_PAUSE\_PROXY}$.
+SP-BEAM fast track: $C_{\min}^{ctrl,exec}=1$.
+
+\subsection{Corrections to audit report}
+
+\begin{enumerate}[label=(E\arabic*)]
+  \item Risk Steward was always 2/2 multisig, not 1-of-1. (High severity.)
+  \item Post-departure: 2/2 (LlamaRisk + Aave Labs), not 1-of-1. (High severity.)
+  \item AIP 284 Phase 3 = parameter-range expansion only. (High severity.)
+  \item Aave a1 $C_{\min}=1$ from AgentHub (exec layer), not Risk Steward. (High severity.)
+\end{enumerate}
+
+\subsection{Cross-protocol summary}
+
+All three: (1) $\mathrm{UES}(P)\neq\emptyset$; (2) $C_{\min}\leq 2$; (3) no adversary.
+Confirms: $C_{\min}^{ctrl,exec}=1$ makes zero-attacker failures structurally inevitable.

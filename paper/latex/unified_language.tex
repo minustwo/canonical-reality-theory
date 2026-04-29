@@ -1,0 +1,47 @@
+% Unified Formal Language v5
+\section{Unified Formal Language}
+\label{sec:language}
+
+\subsection{State space}
+Worlds $P\subseteq\mathrm{At}$. System $\mathcal{S}=(T,B_T,\mathcal{F},\Pi,\mathcal{A})$.
+
+\subsection{Three semantic projections}
+
+\textbf{Structural}: $\mathrm{SC}_T(P)=1\iff D_{\mathrm{comp}}(P)=P$ (canonical fixed point).
+
+\textbf{Source}: $C_{\min}(P)=\min\text{-HS-cost}(\{\mathrm{Break}(J):J\in\mathcal{J}_{\mathrm{valid}}\})$.
+
+\begin{definition}[Unavoidable External Seed]\label{def:ues}
+$o\in\mathrm{UES}(P)$ if $o\notin\mathrm{int\_base}$ and no full internal certificate exists.
+$\mathrm{UES}(P)=\emptyset\iff C_{\min}(P)=+\infty$.
+\end{definition}
+
+\textbf{Dynamic}: $\mathrm{Stable}_{\mathcal{A}}(P)=1\iff\lim_{\epsilon\to 0}\mu^\epsilon(\{P\})=1$.
+
+\subsection{Degrees of freedom}
+
+$\mathrm{DoF}_{\mathrm{rep}}(P)=0\iff\mathrm{SCSet}=\{P\}$.
+$\mathrm{DoF}_{\mathrm{src}}(P):=1/C_{\min}(P)$.
+$\mathrm{DoF}_{\mathrm{dyn}}(P)=0\iff P$ unique stable attractor.
+
+\begin{definition}[Zero-DoF]\label{def:zero-dof-lang}
+$\mathrm{DoF}(P):=(\mathrm{DoF}_{\mathrm{rep}},\mathrm{DoF}_{\mathrm{src}},\mathrm{DoF}_{\mathrm{dyn}})=(0,0,0)$.
+\end{definition}
+
+\subsection{DoF Classification Completeness}
+
+\begin{theorem}[DoF Classification Completeness]\label{thm:dof-completeness}
+Every departure expressible in $\mathcal{S}$ falls into at least one of:
+(1) Representational (via $F$); (2) Source (via $\mathcal{B}$); (3) Dynamic (via $\mathcal{A}$).
+No fourth category exists.
+\end{theorem}
+
+\begin{proof}
+If $F$, $\mathcal{B}$, $\mathcal{A}$ behave identically on $P$ and $P'$,
+they are indistinguishable in $\mathcal{S}$, contradicting expressibility.
+Exhaustion over the three structural objects closes the argument.\qed
+\end{proof}
+\begin{remark}
+This is a structural theorem, not an empirical observation:
+the DoF classification is complete by the architecture of the language.
+\end{remark}

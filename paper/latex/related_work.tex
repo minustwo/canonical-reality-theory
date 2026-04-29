@@ -1,0 +1,28 @@
+\section{Related Work}
+\label{sec:related}
+
+Existing work establishes correctness, robustness, or stability in isolation.
+None simultaneously provides: (i) a unified representation; (ii) a structural equivalence condition;
+(iii) a characterization of when equivalence fails.
+
+\paragraph{Logic and formal knowledge systems.}
+Datalog~\cite{ceri1989} and TMS~\cite{doyle1979,dekleer1987} characterize canonical worlds as fixed points.
+None incorporates adversarial robustness or dynamic selection.
+
+\paragraph{Security and adversarial robustness.}
+Minimum cut~\cite{ford1962}, information-flow security~\cite{goguen1982,sabelfeld2003},
+DeFi oracle attacks~\cite{lo2023,daian2020}, and governance analysis~\cite{fritsch2022}.
+These characterize the source dimension but not structural validity or dynamic selection.
+
+\paragraph{Game theory and dynamic stability.}
+Stochastic stability~\cite{foster1990,young1993} and learning in games~\cite{fudenberg1998}.
+Stability does not imply structural correctness or adversarial robustness.
+
+\paragraph{Cross-domain attempts.}
+Argumentation~\cite{dung1995} connects logic with attack but lacks dynamics.
+Blockchain analysis~\cite{garay2015,pass2017} combines correctness with adversarial bounds
+but lacks canonical-world semantics.
+
+\paragraph{The gap this paper fills.}
+$\mathrm{SC}_T$ aligns CRT and IET; Zero-DoF forces the three quantities to coincide.
+This result is not achievable within any single domain.
