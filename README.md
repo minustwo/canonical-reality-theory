@@ -14,14 +14,6 @@ Canonical Reality Theory studies a fundamental question:
 
 > *What does it take for a system to commit to a single canonical world — one that is structurally correct, adversarially robust, and dynamically stable?*
 
-The answer is a unified structural theory spanning three traditionally separate disciplines:
-
-| Discipline | Question | Core quantity |
-|---|---|---|
-| Logic / formal systems | Is this world structurally admissible? | $\mathrm{SC}_T(P) = 1$ |
-| Security / adversarial | Can this world be invalidated at finite cost? | $C_{\min}(P) = +\infty$ |
-| Game theory / dynamics | Will agents converge to this world? | $\mathrm{Stable}_{\mathcal{A}}(P) = 1$ |
-
 **Main result** (Synthesis Theorem):
 
 $$\mathrm{DoF}(P) = (0,0,0)
@@ -33,26 +25,56 @@ The equivalence is not assumed. It is a structural collapse: when all degrees of
 
 ---
 
-## Three pillars
+## Theory architecture
+
+CRT is the unified theory. MST, IET, and the open-system companions are its constituent layers — each retains its own name.
 
 ```
-MST  (Market/Meaning Structure Theory)
-  └─ the structure layer: admissible worlds, closure, canonicality
-
-CRT Bridge
-  └─ the justification/robustness layer: min-cut, unbreakability, execution
-
-IET  (Inferential Equilibrium Theory)
-  └─ the adoption/stability layer: stochastic stability, endogenous selection
+Canonical Reality Theory (CRT)
+│
+├── Part I. Structure
+│   └── MST (Market Structure Theory)
+│       Which worlds are admissible? — Θ, P_T(Π), D_comp, SCSet
+│
+├── Part II. Justification and Robustness
+│   ├── MST Layer 2 / CRT Layer 2
+│   │   J_declared → J_valid → J* validity pipeline
+│   ├── Attack / Escape
+│   │   C_min, Break/min-HS
+│   ├── Defense
+│   │   Raise escape cost, lower source concentration
+│   ├── Institution
+│   │   Cross-horizon validity + threshold maintenance
+│   └── CRT Bridge Theorem
+│       SCSet = UnbreakSet = TracedSCSet under C1+C2+C5_R+C6
+│
+├── Part III. Dynamics and Adoption
+│   └── IET (Inferential Equilibrium Theory)
+│       If a canonical world exists, will agents adopt it?
+│       P_canon is the unique stochastically stable state.
+│
+├── Part IV. Open Systems
+│   ├── IET-open
+│   │   Abstract structural evolution: T_t → T_{t+1}
+│   ├── Open-IET (Linear)
+│   │   Finite-horizon deformation under external input
+│   └── Escape Geometry
+│       Inverse escape-energy companion
+│
+└── Part V. Applications
+    ├── ICT CRT
+    ├── DeFi CRT
+    └── Execution Layer Min-Cut
 ```
 
-For open systems (DeFi, ICT, ML) where $+\infty$ unbreakability is unachievable:
-- **Mixed L2 Robustness**: $C_{\min}^{mix} \geq \theta$
-- **Execution Layer**: $C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$
+**One-line summary**:
+> MST tells you what is structurally canonical. CRT Bridge tells you when it is justified and robust. IET tells you when it is selected in the long run. Open-CRT studies deformation, escape, and execution under external input.
 
 ---
 
-## Synthesis paper
+## This repository
+
+This repo contains the **synthesis paper** that connects Parts I–III:
 
 **When Correctness, Robustness, and Stability Coincide**
 *A Unified Framework via Degrees of Freedom and Structural Collapse*
@@ -60,7 +82,17 @@ Hai Hai Fu, 2026
 
 - **Zenodo v2** (current): https://doi.org/10.5281/zenodo.19871473
 - **LaTeX source**: [`paper/`](paper/)
-- **Proof documents**: [`proofs/`](proofs/)
+- **Proof index**: [`proofs/INDEX.md`](proofs/INDEX.md)
+
+---
+
+## Related repositories
+
+| Repo | Layer | Status |
+|---|---|---|
+| `minustwo/market-structure-theory` | MST + CRT Bridge source | Public |
+| `minustwo/inferential-equilibrium-theory` | IET | Private (forthcoming) |
+| `minustwo/canonical-reality-theory` | Synthesis paper | **Public (this repo)** |
 
 ---
 
@@ -69,7 +101,8 @@ Hai Hai Fu, 2026
 ```bibtex
 @misc{fu2026crt,
   author = {Fu, Hai Hai},
-  title  = {When Correctness, Robustness, and Stability Coincide},
+  title  = {When Correctness, Robustness, and Stability Coincide:
+            A Unified Framework via Degrees of Freedom and Structural Collapse},
   year   = {2026},
   doi    = {10.5281/zenodo.19871473},
   url    = {https://doi.org/10.5281/zenodo.19871473}
