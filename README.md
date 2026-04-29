@@ -58,7 +58,7 @@ CRT is the unified framework that places them.
 | Institution | CRT Layer 6 | Maintaining finite threshold over horizons |
 | Bridge | CRT Bridge Theorem | TracedSCSet / UnbreakSet / SCSet |
 | Dynamics | IET | Long-run adoption, stochastic stability |
-| Open systems | IET-open, Open-IET, Escape Geometry | Deformation and escape |
+| Open systems | CRT-SEI, Open-IET (Linear), Escape Geometry | Structural evolution and external input |
 | Applications | ICT trading (MST instance), DeFi CRT, Execution Layer | Real system instances |
 
 ```
@@ -69,9 +69,22 @@ Canonical Reality Theory (CRT)
 ├── Part III.  Robustness    — Attack / Escape / Defense / Institution
 ├── Part IV.   Bridge        — CRT Bridge Theorem
 ├── Part V.    Dynamics      — IET
-├── Part VI.   Open systems  — IET-open, Open-IET, Escape Geometry
+├── Part VI.   Open systems  — CRT-SEI, Open-IET (Linear), Escape Geometry
 └── Part VII.  Applications  — ICT trading (MST instance), DeFi CRT, Execution Layer
 ```
+
+### Open systems layer
+
+CRT-SEI (Structural Evolution Interface) is the abstract interface
+specifying what must be recomputed when the structure theory itself
+changes: $T_t \to T_{t+1}$. Former internal name: IET-open.
+
+Open-IET (Linear) is a concrete linear-systems instantiation of CRT-SEI,
+studying finite-horizon deformation under external input:
+$x_{t+1} = Ax_t + B_S u_t$.
+
+Escape Geometry is the inverse companion to Open-IET (Linear),
+computing the minimum energy required to cross the canonical boundary.
 
 ---
 

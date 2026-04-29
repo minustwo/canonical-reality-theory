@@ -30,8 +30,13 @@ A world $P$ is canonical in CRT only when all three axes align:
 | Institution | CRT Layer 6 | How is validity maintained over time? | $\iota$, threshold floor |
 | Bridge | CRT Bridge Theorem | When do SC, Unbreak, TracedSC align? | SCSet = UnbreakSet = TracedSCSet |
 | Dynamics | IET | Will agents adopt the canonical world? | Stochastic stability, $P^{\mathrm{canon}}$ |
-| Open systems | IET-open, Open-IET, Escape Geometry | What happens under external input? | $C_{\min}^{\mathrm{mix}}$, escape energy |
+| Open systems | CRT-SEI, Open-IET (Linear), Escape Geometry | What happens under structural evolution and external input? | $C_{\min}^{\mathrm{mix}}$, escape energy |
 | Applications | ICT CRT, DeFi CRT, Execution Layer | Where is the real minimum cut? | $C_{\min}^{\mathrm{ctrl}}$ |
+
+**Open systems layer**:
+- **CRT-SEI** (Structural Evolution Interface) — abstract interface for $T_t \to T_{t+1}$ evolution. Former internal name: IET-open.
+- **Open-IET (Linear)** — linear-systems instantiation of CRT-SEI.
+- **Escape Geometry** — inverse minimum-energy crossing companion to Open-IET (Linear).
 
 ---
 
