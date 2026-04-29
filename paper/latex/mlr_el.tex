@@ -14,19 +14,50 @@ $C_{\min}^{mix}(P)=\min_{a\in P^{\mathrm{Tier3}}}C_{\min}(a)$.
 
 \begin{definition}[Three-layer control plane]
 $\mathcal{J}_{\mathrm{valid}}(P)=\mathcal{J}^{gov}(P)\cup\mathcal{J}^{proto}(P)\cup\mathcal{J}^{exec}(P)$.
-Two cut costs: $C_{\min}^{break}$ (structural) and $C_{\min}^{ctrl}$ (operational).
+Two cut costs: $C_{\min}^{break}$ (structural, defender-side $\forall$-hitting)
+and $C_{\min}^{ctrl}$ (operational, attacker-side $\exists$-path capture).
+These two semantics point in \emph{opposite directions} under layer ordering.
 \end{definition}
 
-\begin{theorem}[EL: Control-plane ordering]\label{thm:el}
-$C_{\min}^{ctrl,exec}\leq C_{\min}^{ctrl,proto}\leq C_{\min}^{ctrl,gov}$.
-The minimum control-plane cut is attained at the execution layer.
+% ERRATUM (2026-04-29): The original Theorem~\ref{thm:el} stated
+% $C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$
+% and used a min-HS monotonicity argument. This was a semantic error:
+% min-HS anti-monotonicity applies to the break chain, not the ctrl chain.
+% The single-layer ctrl chain has been constructively falsified by
+% counterexample X1 (validation report v4, 2026-04-29). See corrected
+% theorems below.
+
+\begin{theorem}[EL-1B-break: Break-chain ordering]\label{thm:el-break}
+$C_{\min}^{break,exec}(a) \leq C_{\min}^{break,proto}(a) \leq C_{\min}^{break,gov}(a)$.
 \end{theorem}
 
 \begin{proof}[Proof sketch]
-$\mathcal{J}^{exec}\subseteq\mathcal{J}^{proto}\subseteq\mathcal{J}^{gov}$
-(execution requires protocol authorization; protocol requires governance decision).
-Min-HS cost is monotone non-increasing in the justification set.
-Full proof in companion document~\cite{proofs-companion}.\qed
+$\mathcal{J}^{exec}\subseteq\mathcal{J}^{proto}\subseteq\mathcal{J}^{gov}$ (Layer-$\leq$-$\ell$
+cumulative inclusion, L0). The break family satisfies
+$\mathcal{B}^{exec}\subseteq\mathcal{B}^{proto}\subseteq\mathcal{B}^{gov}$.
+By min-HS anti-monotonicity (L1): $A\subseteq B \Rightarrow \mathrm{minHS}(A)\leq\mathrm{minHS}(B)$.
+Applying twice gives the chain.\qed
+\end{proof}
+
+\begin{remark}[EL-1B-ctrl single-layer chain is false]
+The chain $C_{\min}^{ctrl,exec}\leq C_{\min}^{ctrl,proto}\leq C_{\min}^{ctrl,gov}$
+does \emph{not} hold in general. Counterexample X1:
+$\mathrm{Comp}(exec)=\{e_1,e_2,e_3\}$, $\mathrm{Comp}(proto)=\{p_1,p_2\}$,
+$J_{\mathrm{valid}}=\{\{e_1,e_2,e_3\},\{p_1,p_2\},\{p_1\},\{g_1\}\}$
+gives $C_{\min}^{ctrl,exec}=3 > C_{\min}^{ctrl,proto}=1$.
+The ctrl chain uses $\exists$+min-covering semantics (attacker finds cheapest path),
+which is co-monotone---opposite to min-HS anti-monotonicity.
+Full corrected theorem split in companion document~\cite{proofs-companion}.
+\end{remark}
+
+\begin{theorem}[EL-1B-ctrl-cumulative: Reverse ctrl ordering]\label{thm:el-ctrl-cumul}
+$C_{\min}^{ctrl,\leq gov}(a) \leq C_{\min}^{ctrl,\leq proto}(a) \leq C_{\min}^{ctrl,\leq exec}(a)$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+By min-covering co-monotonicity (L2): $A\subseteq B \Rightarrow \mathrm{minCov}(B)\leq\mathrm{minCov}(A)$.
+Cumulative justification sets expand: $\mathcal{J}^{\leq exec}\subseteq\mathcal{J}^{\leq proto}\subseteq\mathcal{J}^{\leq gov}$.
+More attacker options at higher layers means lower or equal cumulative ctrl cost---direction reversed.\qed
 \end{proof}
 
 \begin{definition}[Zero-attacker failure]\label{def:zero-attacker}
