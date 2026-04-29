@@ -1,0 +1,68 @@
+\appendix
+
+\section{Bridge Hierarchy: Key Results}
+\label{app:bridge}
+
+\noindent\textit{Full proofs: companion document~\cite{proofs-companion}, Appendix~A.
+Source: CRT\_BRIDGE\_HIERARCHY\_v0\_1.md v0.3 (CLOSED, commit \texttt{31a977e5}).}
+
+\begin{definition}[Bridge conditions]
+(C1)~LocalExplain; (C2)~DeclCompat;
+(C5$_R$)~$\mathrm{UnbreakSet} \subseteq \mathrm{SCSet}$;
+(C6)~TraceComplete: $\mathrm{SCSet} \subseteq \mathrm{CertReach}$.
+\end{definition}
+
+\begin{theorem}[Weak Bridge, SEALED v1.0.1]\label{thm:weak-bridge}
+Under C1, C2, C5$_R$:
+$\mathrm{TracedSCSet} \subseteq \mathrm{UnbreakSet} \subseteq \mathrm{SCSet}$.
+\end{theorem}
+
+\begin{theorem}[Full Bridge]\label{thm:full-bridge}
+Under C1, C2, C5$_R$, C6:
+$\mathrm{SCSet} = \mathrm{UnbreakSet} = \mathrm{TracedSCSet}$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+C6 gives $\mathrm{SCSet} = \mathrm{TracedSCSet}$.
+Weak Bridge gives $\mathrm{TracedSCSet} \subseteq \mathrm{UnbreakSet} \subseteq \mathrm{SCSet}$.
+All inclusions collapse to equalities.\qed
+\end{proof}
+
+\begin{proposition}[Minimality]
+C1, C5$_R$, C6 are each independently necessary. See~\cite{proofs-companion}.
+\end{proposition}
+
+\section{Execution Layer: EL-1B}
+\label{app:el}
+
+\noindent\textit{Full proof: companion document~\cite{proofs-companion}, Appendix~B.}
+
+\begin{quote}\itshape
+If the claim that the execution layer is always the weakest point
+seems counter-intuitive, the proof in~\cite{proofs-companion}
+provides the direct answer: a four-line set-containment argument.
+\end{quote}
+
+\begin{theorem}[EL-1B]\label{thm:el-1b-app}
+$C_{\min}^{ctrl,exec} \leq C_{\min}^{ctrl,proto} \leq C_{\min}^{ctrl,gov}$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+$\mathcal{J}^{exec} \subseteq \mathcal{J}^{proto} \subseteq \mathcal{J}^{gov}$
++ monotonicity of min-HS cost. Full proof in~\cite{proofs-companion}.\qed
+\end{proof}
+
+\begin{example}[Aave CAPO]
+$C_{\min}^{ctrl,proto}=2$ (Risk Steward); $C_{\min}^{ctrl,exec}=1$ (AgentHub).
+By EL-1B: $C_{\min}^{ctrl}=1$. Zero-attacker failure at execution layer.
+\end{example}
+
+\section{IET: Endogenous Canonical Selection}
+\label{app:iet}
+
+\noindent\textit{Source: IET Paper~1 v2.2~\cite{iet-paper1}.}
+
+\begin{theorem}[Endogenous Canonical Selection]\label{thm:iet-ecs-app}
+Under refutability asymmetry, endogenous credibility, and revision cost:
+$\mathrm{SC}_T(P)=1\iff\mathrm{Stable}_{\mathcal{A}}(P)=1$.
+\end{theorem}

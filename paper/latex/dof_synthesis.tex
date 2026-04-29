@@ -1,0 +1,88 @@
+% Section 4: DoF and Synthesis Theorem v3
+\section{Degrees of Freedom and the Synthesis Theorem}
+\label{sec:synthesis-main}
+
+\subsection{Motivation}
+
+The unified language provides a common representation for structure,
+adversarial behavior, and dynamics. Equivalence does not hold universally.
+The DoF invariant characterizes precisely when it emerges.
+
+\subsection{Degrees of freedom}
+\label{subsec:dof-main}
+
+\paragraph{Representation DoF.}
+$\mathrm{DoF}_{\mathrm{rep}}(P)=0 \iff \nexists\,P'\neq P:F(P')\subseteq P'.$
+
+\paragraph{Source DoF.}
+$\mathrm{DoF}_{\mathrm{src}}(P):=1/C_{\min}(P).$ Zero iff $C_{\min}=+\infty$.
+
+\paragraph{Dynamic DoF.}
+$\mathrm{DoF}_{\mathrm{dyn}}(P)=0 \iff P$ is the unique stable attractor of $\mathcal{A}$.
+
+\begin{definition}[DoF vector and Zero-DoF Condition]\label{def:dof-main}
+$\mathrm{DoF}(P):=(\mathrm{DoF}_{\mathrm{rep}},\mathrm{DoF}_{\mathrm{src}},\mathrm{DoF}_{\mathrm{dyn}})$.
+Zero-DoF: $\mathrm{DoF}(P)=(0,0,0)$.
+\end{definition}
+
+\subsection{The Synthesis Theorem}
+\label{subsec:synthesis}
+
+The three notions --- correctness, unbreakability, stability --- are projections
+of the same structure onto three axes of $(F,\mathcal{B},\mathcal{A})$.
+The shared semantic object is $\mathrm{SC}_T$: what all three disciplines
+call canonicality, in different terms.
+
+\begin{theorem}[CRT--IET Synthesis]\label{thm:synthesis-main}
+Assume C1--C6 ($\mathrm{UES}(P)=\emptyset$); IET Paper~1~v2.2 conditions;
+and shared $\mathrm{SC}_T$. Then:
+$$\boxed{\mathrm{DoF}(P)=(0,0,0)
+  \;\Longleftrightarrow\;
+  \mathrm{SC}_T(P)=1
+  \;\Longleftrightarrow\;
+  C_{\min}(P)=+\infty
+  \;\Longleftrightarrow\;
+  \mathrm{Stable}_{\mathcal{A}}(P)=1.}$$
+\end{theorem}
+
+\begin{proof}
+\textbf{DoF translation (primary).}
+$\mathrm{DoF}_{\mathrm{rep}}=0\iff\mathrm{SC}_T=1$;
+$\mathrm{DoF}_{\mathrm{src}}=0\iff C_{\min}=+\infty$;
+$\mathrm{DoF}_{\mathrm{dyn}}=0\iff\mathrm{Stable}=1$.
+
+\textbf{CRT bridge} (\cite{bridge-hierarchy}, C1--C6):
+$\mathrm{SC}_T=1\iff C_{\min}=+\infty$.
+
+\textbf{IET bridge} (\cite{iet-paper1}):
+$\mathrm{SC}_T=1\iff\mathrm{Stable}=1$.
+
+Combining: all four quantities are equivalent to $\mathrm{DoF}(P)=(0,0,0)$.\qed
+\end{proof}
+
+\begin{remark}[DoF collapse, not coincidence]
+The equivalence is a structural collapse: when no degree of freedom remains,
+there is only one thing the system can be --- and all three disciplines
+arrive at the same answer.
+\end{remark}
+
+\begin{remark}[SC as alignment point, not chain]
+$\mathrm{SC}_T$ is the shared semantic object. The proof is not a chain
+$C_{\min}\to\mathrm{SC}_T\to\mathrm{Stable}$; both bridges meet at $\mathrm{SC}_T$.
+\end{remark}
+
+\subsection{Failure and boundary}\label{subsec:boundary}
+
+$\mathrm{UES}(P)=\emptyset\iff C_{\min}(P)=+\infty\iff\mathrm{DoF}_{\mathrm{src}}(P)=0$.
+
+\begin{center}\begin{tabular}{llp{4cm}}\hline
+$\mathrm{DoF}(P)$ & System & Result\\\hline
+$(0,0,0)$ & Class I/II & Full equivalence\\
+$(0,{>}0,0)$ & Class III (DeFi) & $C_{\min}\geq\theta$ only\\
+$(0,{>}0,{>}0)$ & Open multi-eq & Both fractured\\\hline
+\end{tabular}\end{center}
+
+\begin{quote}\itshape
+The synthesis theorem is not an accidental equivalence.
+It is a collapse induced by the elimination of all degrees of freedom.
+\end{quote}
