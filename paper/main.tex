@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\At}{\mathrm{At}}
+\newcommand{\SC}{\mathrm{SC}_T}
+\newcommand{\Cmin}{C_{\min}}
+\newcommand{\Stable}{\mathrm{Stable}_{\mathcal{A}}}
+\newcommand{\DoF}{\mathrm{DoF}}
+\newcommand{\UES}{\mathrm{UES}}
+\newcommand{\SCSet}{\mathrm{SCSet}}
+\newcommand{\Break}{\mathrm{Break}}
+\newcommand{\Cert}{\mathrm{Cert}}
+\newcommand{\Enc}{\mathrm{Enc}}
+\newcommand{\Dcomp}{D_{\mathrm{comp}}}
+\newcommand{\CertReach}{\mathrm{CertReach}}
+\newcommand{\UnbreakSet}{\mathrm{UnbreakSet}}
+
+\title{When Correctness, Robustness, and Stability Coincide\\
+  {\large A Unified Framework via Degrees of Freedom and Structural Collapse}}
+\author{Hai Hai Fu}
+\date{2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a unified framework connecting logical correctness,
+adversarial robustness, and dynamic stability.
+Using a minimal language based on states, rule closure, break structures,
+and system dynamics, we show that these notions coincide under precise
+structural conditions.
+
+We prove that a state is canonical if and only if it is unbreakable
+and dynamically stable, provided the system admits full certificate
+coverage and contains no unavoidable external inputs.
+This equivalence is characterized by the vanishing of all
+degrees of freedom---representation, source, and dynamic---and is
+not assumed but arises as a structural consequence.
+
+We identify the exact boundary at which this collapse fails and develop
+a quantitative robustness theory for open systems.
+In such settings, robustness is governed by finite break costs and is
+often dominated by execution-layer vulnerabilities rather than
+governance or protocol design.
+
+The framework yields a unified interpretation across logic, security,
+and dynamical systems, and provides practical tools for analyzing
+real-world protocols.
+Empirical verification against three DeFi protocols (Aave, Compound, Sky)
+confirms that all observed instability events are instances of
+$\DoF_{\mathrm{src}} > 0$ materialized without an explicit adversary.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\label{sec:intro}
+\input{latex/introduction}
+
+\input{latex/minimal_core}
+\input{latex/unified_language}
+\input{latex/expressivity}
+\input{latex/dof_synthesis}
+\input{latex/boundary_cot}
+\input{latex/mlr_el}
+\input{latex/defi_verification}
+\input{latex/related_work}
+\input{latex/conclusion}
+\input{latex/appendix_bridge}
+
+\bibliographystyle{plain}
+\bibliography{latex/refs}
+
+\end{document}
