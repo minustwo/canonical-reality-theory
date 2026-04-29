@@ -1,0 +1,36 @@
+\section{Real-World Systems: Mixed Robustness and Execution Layers}
+\label{sec:mlr}
+
+\subsection{Mixed Layer-2 Robustness}
+
+For Class III systems, the correct target is not $C_{\min}=+\infty$ but:
+
+\begin{definition}[ML-R: $\theta$-robust]
+$P$ is $\theta$-robust if $C_{\min}^{mix}(P)\geq\theta$ where
+$C_{\min}^{mix}(P)=\min_{a\in P^{\mathrm{Tier3}}}C_{\min}(a)$.
+\end{definition}
+
+\subsection{Execution Layer Decomposition}
+
+\begin{definition}[Three-layer control plane]
+$\mathcal{J}_{\mathrm{valid}}(P)=\mathcal{J}^{gov}(P)\cup\mathcal{J}^{proto}(P)\cup\mathcal{J}^{exec}(P)$.
+Two cut costs: $C_{\min}^{break}$ (structural) and $C_{\min}^{ctrl}$ (operational).
+\end{definition}
+
+\begin{theorem}[EL: Control-plane ordering]\label{thm:el}
+$C_{\min}^{ctrl,exec}\leq C_{\min}^{ctrl,proto}\leq C_{\min}^{ctrl,gov}$.
+The minimum control-plane cut is attained at the execution layer.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+$\mathcal{J}^{exec}\subseteq\mathcal{J}^{proto}\subseteq\mathcal{J}^{gov}$
+(execution requires protocol authorization; protocol requires governance decision).
+Min-HS cost is monotone non-increasing in the justification set.
+Full proof in companion document~\cite{proofs-companion}.\qed
+\end{proof}
+
+\begin{definition}[Zero-attacker failure]\label{def:zero-attacker}
+A zero-attacker failure occurs when $C_{\min}^{ctrl}(P)=k$ is realized
+without any adversarial agent: a routine operation or misconfiguration
+constitutes the $k$-component control cut.
+\end{definition}

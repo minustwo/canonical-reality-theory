@@ -1,0 +1,24 @@
+\section{Boundary Structure and Classification}
+\label{sec:cot}
+
+\subsection{Unavoidable external seeds}
+\label{subsec:ues}
+
+\begin{theorem}[Boundary Condition]\label{thm:boundary}
+$\mathrm{UES}(P)=\emptyset \iff C_{\min}(P)=+\infty \iff \mathrm{DoF}_{\mathrm{src}}(P)=0$.
+\end{theorem}
+
+\subsection{Classification}
+
+\begin{definition}[Class I---Fully internal]
+$\mathrm{UES}(P)=\emptyset$; $C_{\min}=+\infty$; Full Bridge. Examples: Datalog, static analysis.
+\end{definition}
+
+\begin{definition}[Class II---Certifiable external]
+Certified extractor gives $\mathrm{UES}(P)=\emptyset$. Examples: Blockchain consensus.
+\end{definition}
+
+\begin{definition}[Class III---Open systems]
+$\mathrm{UES}(P)\neq\emptyset$; $C_{\min}<+\infty$; $\mathrm{DoF}_{\mathrm{src}}>0$.
+Full Bridge fails; use ML-R. Examples: DeFi, ICT.
+\end{definition}

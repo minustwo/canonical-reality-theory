@@ -1,0 +1,38 @@
+Understanding when a system is correct, secure, and stable has
+traditionally been addressed by three largely independent lines of work:
+logical and formal systems study correctness via fixed points;
+security and adversarial models analyze robustness via attack surfaces;
+game-theoretic and dynamical systems investigate stability via equilibria.
+
+\subsection{Main result: a conditional collapse}
+
+We show that correctness, unbreakability, and stability collapse under:
+(i) certificate coverage (C6); (ii) no unavoidable external inputs; (iii) unique attractor.
+
+This equivalence is not assumed---it arises from the elimination of all degrees of freedom.
+
+\subsection{Degrees of freedom as a unifying invariant}
+
+Three types: representational $\DoF$ (alternative admissible states);
+source $\DoF = 1/\Cmin$ (finite-cost break paths);
+dynamic $\DoF$ (alternative stable behaviors).
+
+$\DoF(P)=(0,0,0)$ is the exact condition for three-way equivalence.
+
+\subsection{Contributions}
+
+\begin{enumerate}[label=(\arabic*)]
+  \item Minimal unified language $(\At,F,\mathcal{B},\mathcal{A})$.
+  \item DoF Classification Completeness: no fourth DoF exists (Theorem~\ref{thm:dof-completeness}).
+  \item Synthesis Theorem: $\DoF=(0,0,0) \iff$ three-way equivalence.
+  \item Boundary: $\UES(P)\neq\emptyset$ is the precise cause of failure in Class III.
+  \item Execution Layer: $C_{\min}^{ctrl}$ attained at execution layer (Theorem~\ref{thm:el}).
+  \item Empirical: all three DeFi events are $\DoF_{\mathrm{src}}>0$ without adversary.
+\end{enumerate}
+
+\subsection{Organization}
+
+\S\ref{sec:core}: minimal core. \S\ref{sec:expressivity}: expressivity.
+\S\ref{sec:synthesis-main}: DoF and Synthesis Theorem.
+\S\ref{sec:cot}: boundary. \S\ref{sec:mlr}: open systems.
+\S\ref{sec:defi-empirical}: DeFi verification.

@@ -1,0 +1,37 @@
+\section{Minimal Core Language}
+\label{sec:core}
+
+\subsection{Primitive objects}
+
+The language has four primitive objects:
+
+\begin{definition}[Core language]
+$(\mathrm{At}, F, \mathcal{B}, \mathcal{A})$ where:
+\begin{itemize}
+  \item $\mathrm{At}$: atomic propositions (world-states).
+  \item $F$: rule-based generation operator (closure / semantics).
+  \item $\mathcal{B}$: break family (attack surface; source of invalidation).
+  \item $\mathcal{A}$: adoption dynamics (how agents select interpretations).
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Canonical world]
+$P\subseteq\mathrm{At}$ is canonical ($\mathrm{SC}_T(P)=1$) if $F(P)\subseteq P$
+and $P$ has no alternative admissible fixed point.
+\end{definition}
+
+\begin{definition}[Break cost]
+$C_{\min}(P) = \min\text{-HS-cost}(\mathcal{B}(P))$.
+If $\mathcal{B}(P)=\emptyset$: $C_{\min}(P)=+\infty$.
+\end{definition}
+
+\subsection{Justification structure}
+
+A justification $J\in\mathcal{J}_{\mathrm{valid}}(P)$ is a certificate that
+atom $a\in P$ is derivable. The Break set $\mathrm{Break}(J)$ is the
+minimal set of source nodes whose disabling invalidates $J$.
+
+\begin{definition}[Unavoidable external seed]\label{def:ues}
+$a\in\mathrm{UES}(P)$ if every justification $J$ for $a$ has
+$\mathrm{Break}(J)\neq\emptyset$ (cannot be fully internally certified).
+\end{definition}
