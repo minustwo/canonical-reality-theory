@@ -12,10 +12,10 @@ Canonical Reality Theory (CRT)
 
 > When do correctness, robustness, and stability describe the same state?
 
-A world $P$ is canonical in CRT only when all three axes align:
-- **Correctness** — structurally admissible ($\mathrm{SC}_T(P) = 1$)
-- **Robustness** — source-layer unbreakable ($C_{\min}(P) = +\infty$)
-- **Stability** — dynamically selected ($\mathrm{Stable}_{\mathcal{A}}(P) = 1$)
+A world `P` is canonical in CRT only when all three axes align:
+- **Correctness** — structurally admissible (`SC_T(P) = 1`)
+- **Robustness** — source-layer unbreakable (`C_min(P) = +∞`)
+- **Stability** — dynamically selected (`Stable_A(P) = 1`)
 
 ---
 
@@ -23,18 +23,18 @@ A world $P$ is canonical in CRT only when all three axes align:
 
 | Part | Theory / module | Core question | Core object |
 |---|---|---|---|
-| Structure | MST | Which worlds are admissible? | $\mathcal{P}_T(\Pi)$, $D_{\mathrm{comp}}$, SCSet |
-| Justification | CRT Layer 2 | Why is a world admissible? | $\mathcal{J}_{\mathrm{declared}} \to \mathcal{J}_{\mathrm{valid}}$ |
-| Attack / Escape | CRT Layers 3–4 | What breaks a justification? | $\mathrm{Break}$, min-HS, $C_{\min}$ |
-| Defense | CRT Layer 5 | How can robustness be raised? | $\delta$, $\Delta C_{\min}$ |
-| Institution | CRT Layer 6 | How is validity maintained over time? | $\iota$, threshold floor |
+| Structure | MST | Which worlds are admissible? | `P_T(Π)`, `D_comp`, SCSet |
+| Justification | CRT Layer 2 | Why is a world admissible? | `J_declared → J_valid` |
+| Attack / Escape | CRT Layers 3–4 | What breaks a justification? | Break, min-HS, `C_min` |
+| Defense | CRT Layer 5 | How can robustness be raised? | `δ`, `ΔC_min` |
+| Institution | CRT Layer 6 | How is validity maintained over time? | `ι`, threshold floor |
 | Bridge | CRT Bridge Theorem | When do SC, Unbreak, TracedSC align? | SCSet = UnbreakSet = TracedSCSet |
-| Dynamics | IET | Will agents adopt the canonical world? | Stochastic stability, $P^{\mathrm{canon}}$ |
-| Open systems | CRT-SEI, Open-IET (Linear), Escape Geometry, Markov-Aligned | What happens under structural evolution and external input? | $C_{\min}^{\mathrm{mix}}$, escape energy |
-| Applications | ICT CRT, DeFi CRT, Execution Layer | Where is the real minimum cut? | $C_{\min}^{\mathrm{ctrl}}$ |
+| Dynamics | IET | Will agents adopt the canonical world? | Stochastic stability, `P_canon` |
+| Open systems | CRT-SEI, Open-IET (Linear), Escape Geometry, Markov-Aligned | What happens under structural evolution and external input? | `C_min_mix`, escape energy |
+| Applications | ICT CRT, DeFi CRT, Execution Layer | Where is the real minimum cut? | `C_min_ctrl` |
 
 **Open systems layer**:
-- **CRT-SEI** (Structural Evolution Interface) — abstract interface for $T_t \to T_{t+1}$ evolution. Former internal name: IET-open.
+- **CRT-SEI** (Structural Evolution Interface) — abstract interface for `T_t → T_{t+1}` evolution. Former internal name: IET-open.
 - **Open-IET (Linear)** — linear-systems instantiation of CRT-SEI.
 - **Escape Geometry** — inverse minimum-energy crossing companion to Open-IET (Linear).
 - **Markov-Aligned** — reversible Markov dynamics channel-vulnerability companion.
@@ -44,6 +44,7 @@ A world $P$ is canonical in CRT only when all three axes align:
 ## Central results
 
 **Bridge Sandwich** (Weak Bridge, SEALED v1.0.1):
+
 $$\mathrm{TracedSCSet}_T(\Pi)
   \subseteq_{\mathrm{C1+C2}}
   \mathrm{UnbreakSet}_T(\Pi)
@@ -51,15 +52,18 @@ $$\mathrm{TracedSCSet}_T(\Pi)
   \mathrm{SCSet}_T(\Pi)$$
 
 **Full Bridge** (under C1+C2+C5_R+C6):
+
 $$\mathrm{SCSet}_T(\Pi) = \mathrm{UnbreakSet}_T(\Pi) = \mathrm{TracedSCSet}_T(\Pi)$$
 
 **Synthesis Theorem** (DoF collapse):
+
 $$\mathrm{DoF}(P)=(0,0,0)
   \iff \mathrm{SC}_T(P)=1
   \iff C_{\min}(P)=+\infty
   \iff \mathrm{Stable}_{\mathcal{A}}(P)=1$$
 
 **Execution Layer** (EL-1B):
+
 $$C_{\min}^{\mathrm{ctrl},exec} \leq C_{\min}^{\mathrm{ctrl},proto} \leq C_{\min}^{\mathrm{ctrl},gov}$$
 
 ---
