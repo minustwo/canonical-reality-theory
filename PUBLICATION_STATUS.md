@@ -19,6 +19,7 @@ None yet.
 |---|---|---|
 | MST Probe Design for LLM Systems | arXiv | On hold (awaiting prerequisite arXiv IDs) |
 | Determinization in Structure Theories | arXiv | On hold (awaiting prerequisite arXiv IDs) |
+| IET Paper 1: Endogenous Canonical Selection | — | Manuscript in preparation |
 
 ---
 
@@ -27,6 +28,18 @@ None yet.
 | Title | DOI | Date |
 |---|---|---|
 | When Correctness, Robustness, and Stability Coincide | [10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473) | 2026-04-29 |
+
+---
+
+## Foundational components (status pages only)
+
+Full manuscripts withheld pending preprint release.
+See [`proofs/foundations/`](proofs/foundations/) for role descriptions.
+
+| Component | Role in CRT | Public link |
+|---|---|---|
+| MST (Market Structure Theory) | Structure layer | SSRN 6582699 |
+| IET (Inferential Equilibrium Theory) | Adoption / stability layer | Key theorem in companion document, Appendix C |
 
 ---
 
