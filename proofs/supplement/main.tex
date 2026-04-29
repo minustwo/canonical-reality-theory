@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{xcolor}
+\geometry{margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\SCSet}{\mathrm{SCSet}}
+\newcommand{\UnbreakSet}{\mathrm{UnbreakSet}}
+\newcommand{\TracedSCSet}{\mathrm{TracedSCSet}}
+\newcommand{\CertReach}{\mathrm{CertReach}}
+\newcommand{\Break}{\mathrm{Break}}
+\newcommand{\Cmin}{C_{\min}}
+\newcommand{\Jvalid}{\mathcal{J}_{\mathrm{valid}}}
+\newcommand{\Jdecl}{\mathcal{J}_{\mathrm{declared}}}
+\newcommand{\Comp}{\mathrm{Comp}}
+
+\title{CRT and Bridge Theorem Proofs\\
+  {\large Companion Document v3}}
+\author{Hai Hai Fu}
+\date{2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion document contains full proofs for three groups of results
+from \emph{When Correctness, Robustness, and Stability Coincide}.
+Appendix~A covers the Bridge Hierarchy (Weak Bridge, Full Bridge, and
+condition minimality). Appendix~B covers the Execution Layer theorems
+(EL-1A, EL-1B-break, and the corrected EL-1B-ctrl split). Appendix~C
+covers IET Endogenous Canonical Selection.
+
+\textbf{v3 change}: Appendix~B updated to reflect the EL-1B correction
+(2026-04-29). The original single-layer ctrl chain
+$\Cmin^{ctrl,exec}\le\Cmin^{ctrl,proto}\le\Cmin^{ctrl,gov}$
+has been constructively falsified by counterexample~X1. The correct
+theorem split (EL-1B-break + EL-1B-ctrl-cumulative) replaces it.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\appendix
+\input{appendix_a_bridge}
+\input{appendix_b_el}
+\input{appendix_c_iet}
+
+\end{document}

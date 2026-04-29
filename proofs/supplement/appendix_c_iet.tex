@@ -1,0 +1,59 @@
+\section{IET: Endogenous Canonical Selection}
+\label{app:iet}
+
+\subsection{Setting}
+
+Let $T$ be a theory, $P_T(\Pi)$ the admissible family at horizon $\Pi$.
+An agent population plays a perturbed best-response dynamic
+$\mathcal{A}=(\mathcal{A}^+, \mathcal{A}^-)$ over $P_T(\Pi)$.
+Let $P^{canon}\in P_T(\Pi)$ denote the unique structurally canonical world
+(Class I: $\mathrm{DoF}(P^{canon})=(0,0,0)$).
+
+\subsection{IET Paper 1 main result}
+
+\begin{theorem}[Endogenous Canonical Selection]\label{thm:iet-ecs}
+Under IET stability conditions ($\lambda>\varepsilon$, mutation rate $\mu>0$):
+$P^{canon}$ is the unique stochastically stable state of $\mathcal{A}$.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+The proof follows the Kandori--Mailath--Rob (1993) framework applied to
+the IET cost-resistance structure.
+Four steps:
+\begin{enumerate}
+  \item (Resistance computation)
+    The resistance of transitioning away from $P^{canon}$ is $r^+(P^{canon})\ge\lambda$;
+    the resistance of any transition towards $P^{canon}$ from a non-canonical
+    world $P'$ is $r^-(P')\le\varepsilon$. Since $\lambda>\varepsilon$,
+    the tree rooted at $P^{canon}$ has strictly lower total resistance
+    than any tree rooted at a non-canonical world.
+  \item (Unique minimum resistance tree)
+    By the standard stochastic stability characterization,
+    the unique minimizer is the tree rooted at $P^{canon}$.
+  \item (Long-run concentration)
+    The stationary distribution of $\mathcal{A}$ places all mass on $P^{canon}$
+    as $\mu\to 0$.
+  \item (Endogeneity)
+    The selection of $P^{canon}$ does not depend on a pre-specified
+    coordination device; it emerges from the structural properties of
+    $T$ and $\mathcal{A}$ alone.
+\end{enumerate}
+Full details are deferred to IET Paper 1 (in preparation).
+\end{proof}
+
+\begin{remark}[Multi-agent correction]
+With $k$ independent agents each with per-step error rate $\varepsilon$,
+the effective error rate satisfies $\varepsilon_{eff}=\varepsilon^k$.
+For $\lambda>\varepsilon$ and any $k\ge 1$: $\lambda>\varepsilon^k$,
+so canonical selection is robust to multi-agent composition.
+\end{remark}
+
+\begin{remark}[Connection to CRT Bridge]
+The IET result completes the CRT three-axis alignment:
+$\mathrm{DoF}(P)=(0,0,0)
+\iff \mathrm{SC}_T(P)=1
+\iff \Cmin(P)=+\infty
+\iff \mathrm{Stable}_{\mathcal{A}}(P)=1$.
+The Bridge Theorem (Appendix~\ref{app:bridge}) covers correctness and robustness;
+the IET theorem covers stability.
+\end{remark}

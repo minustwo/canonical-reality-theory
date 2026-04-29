@@ -1,0 +1,143 @@
+\section{Execution Layer: EL-1A and Corrected EL-1B}
+\label{app:el}
+
+% ERRATUM NOTE
+\noindent\colorbox{yellow!30}{\parbox{\linewidth}{
+  \textbf{Erratum (v3, 2026-04-29).}
+  The original Appendix~B (v2) stated a single-layer ctrl chain
+  $\Cmin^{ctrl,exec}\le\Cmin^{ctrl,proto}\le\Cmin^{ctrl,gov}$.
+  This has been constructively falsified by counterexample~X1
+  (validation report v4, 2026-04-29). The corrected theorem split
+  replaces it in \S\ref{sec:el1b-correct} below.
+}}
+
+\subsection{Setup and three cut semantics}
+
+Partition components by layer:
+$$\Comp = \Comp(gov) \sqcup \Comp(proto) \sqcup \Comp(exec)$$
+Layer attribution: $\mathrm{Layer}(J):=\max\{\ell : J\cap\Comp(\ell)\ne\emptyset\}$,
+with $exec < proto < gov$.
+Layer-$\le\ell$ cumulative justification set:
+$$\mathcal{J}^\ell(a):=\{J\in\Jvalid(a):\mathrm{Layer}(J)\le\ell\}$$
+Inclusion chain (L0): $\mathcal{J}^{exec}\subseteq\mathcal{J}^{proto}\subseteq\mathcal{J}^{gov}$.
+
+\begin{definition}[Break cut]
+$\Cmin^{break,\ell}(a) := \min\text{-HS-cost}(\mathcal{B}^\ell(a))$
+where $\mathcal{B}^\ell(a)=\{\Break(J):J\in\mathcal{J}^\ell(a)\}$.
+Semantics: defender must hit \emph{all} valid proofs ($\forall$-hitting).
+Empty layer: $\Cmin^{break,\ell}=+\infty$.
+\end{definition}
+
+\begin{definition}[Single-layer ctrl cut]
+$\Cmin^{ctrl,\ell}(a):=\min\{|S|:S\subseteq\Comp(\ell),\exists J\in\mathcal{J}^\ell(a), J\subseteq S\}$.
+Semantics: attacker compromises layer-$\ell$ components only ($\exists$-path).
+\end{definition}
+
+\begin{definition}[Cumulative ctrl cut]
+$\Cmin^{ctrl,\le\ell}(a):=\min\{|S|:S\subseteq\Comp(\le\ell),\exists J\in\mathcal{J}^{\le\ell}(a), J\subseteq S\}$
+where $\Comp(\le\ell):=\bigcup_{\ell'\le\ell}\Comp(\ell')$.
+Semantics: attacker may compromise components across all layers up to $\ell$.
+\end{definition}
+
+\begin{lemma}[L1: min-HS anti-monotone]
+$A\subseteq B\subseteq 2^U\Rightarrow\min\text{-HS-cost}(A)\le\min\text{-HS-cost}(B)$.
+\end{lemma}
+\begin{proof}
+Let $S^*$ be the minimum hitting set of $B$.
+For any $X\in A\subseteq B$: $S^*\cap X\ne\emptyset$,
+so $S^*$ hits $A$. Hence $\min\text{-HS-cost}(A)\le|S^*|$.
+\end{proof}
+
+\begin{lemma}[L2: min-covering co-monotone]
+$A\subseteq B\Rightarrow\min\mathrm{Cov}(B)\le\min\mathrm{Cov}(A)$,
+where $\min\mathrm{Cov}(\mathcal{X}):=\min_{X\in\mathcal{X}}|X|$.
+\end{lemma}
+\begin{proof}
+Larger family has at least as many short elements; minimum does not increase.
+\end{proof}
+
+\subsection{EL-1A: Break three-layer minimum}
+
+\begin{theorem}[EL-1A]\label{thm:el1a}
+$\Cmin^{break}(a)=\min_{\ell\in\{gov,proto,exec\}}\Cmin^{break,\ell}(a)$.
+\end{theorem}
+\begin{proof}
+Immediate from $\Jvalid(a)=\mathcal{J}^{gov}\cup\mathcal{J}^{proto}\cup\mathcal{J}^{exec}$
+and the min-HS identity over a union of independent break families.
+\end{proof}
+
+\subsection{Corrected EL-1B}\label{sec:el1b-correct}
+
+\subsubsection*{EL-1B-break: break chain (holds)}
+
+\begin{theorem}[EL-1B-break]\label{thm:el1b-break}
+Under L0:
+$$\Cmin^{break,exec}(a)\le\Cmin^{break,proto}(a)\le\Cmin^{break,gov}(a)$$
+\end{theorem}
+\begin{proof}
+Direct from L0 and L1 applied twice.
+\end{proof}
+
+\subsubsection*{EL-1B-ctrl single-layer chain: false}
+
+\begin{proposition}[X1 counterexample]\label{prop:x1}
+The chain
+$\Cmin^{ctrl,exec}\le\Cmin^{ctrl,proto}\le\Cmin^{ctrl,gov}$
+does not hold in general.
+\end{proposition}
+\begin{proof}
+Construct:
+$\Comp(exec)=\{e_1,e_2,e_3\}$,
+$\Comp(proto)=\{p_1,p_2\}$,
+$\Comp(gov)=\{g_1\}$,
+$\Jvalid(a)=\{J_1{=}\{e_1,e_2,e_3\},J_2{=}\{p_1,p_2\},J_3{=}\{p_1\},J_4{=}\{g_1\}\}$.
+
+Single-layer ctrl cut computation:
+\begin{itemize}
+  \item exec: only $J_1\subseteq\Comp(exec)$, $|J_1|=3$,
+    so $\Cmin^{ctrl,exec}=3$.
+  \item proto: $J_3=\{p_1\}\subseteq\Comp(proto)$, $|J_3|=1$,
+    so $\Cmin^{ctrl,proto}=1$.
+  \item gov: $J_4=\{g_1\}\subseteq\Comp(gov)$, $|J_4|=1$,
+    so $\Cmin^{ctrl,gov}=1$.
+\end{itemize}
+Result: $3=\Cmin^{ctrl,exec}>\Cmin^{ctrl,proto}=1$. Chain violated. \qed
+\end{proof}
+
+\begin{remark}
+X1 corresponds to a real DeFi configuration: $J_1$ is a 3-of-3 keeper committee;
+$J_3=\{p_1\}$ is a single Pause Guardian.
+Execution-layer trust threshold exceeding protocol-layer threshold is not pathological.
+The error in v1--v2 was applying min-HS anti-monotonicity (correct for break)
+to the ctrl chain, which uses $\exists$+min-covering semantics --- opposite direction.
+\end{remark}
+
+\subsubsection*{EL-1B-ctrl-cumulative: reverse chain (holds)}
+
+\begin{theorem}[EL-1B-ctrl-cumulative]\label{thm:el1b-ctrl-cumul}
+Under L0 and cumulative layer definitions:
+$$\Cmin^{ctrl,\le gov}(a)\le\Cmin^{ctrl,\le proto}(a)\le\Cmin^{ctrl,\le exec}(a)$$
+\end{theorem}
+\begin{proof}
+L0 gives $\mathcal{J}^{\le exec}\subseteq\mathcal{J}^{\le proto}\subseteq\mathcal{J}^{\le gov}$
+and $\Comp(\le exec)\subseteq\Comp(\le proto)\subseteq\Comp(\le gov)$.
+Both the justification family and the component set expand as $\ell$ increases.
+By L2 applied to the min-covering objective, cumulative ctrl cost is non-increasing
+as $\ell$ increases. Applying this twice gives the chain. \qed
+\end{proof}
+
+\begin{remark}[Direction duality]
+Break and cumulative ctrl point in opposite directions:
+break is anti-monotone in $\mathcal{J}^\ell$ (defender-side $\forall$-hitting);
+cumulative ctrl is co-monotone in $\mathcal{J}^{\le\ell}$ (attacker-side $\exists$-path).
+\end{remark}
+
+\subsection{Execution dominance (conditional regime)}
+
+\begin{proposition}[Execution dominance]
+When the exec layer contains the lowest-cost cumulative ctrl path:
+$\Cmin^{ctrl}(a)=\Cmin^{ctrl,exec}(a)$.
+This is a conditional regime, not a universal theorem.
+Canonical instance: Aave AgentHub with $\Cmin^{ctrl,exec}=1$,
+$\Cmin^{ctrl,proto}=2$ (Risk Steward 2/2).
+\end{proposition}

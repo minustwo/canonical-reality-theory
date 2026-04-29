@@ -1,0 +1,92 @@
+\section{Bridge Hierarchy: Full Proofs}
+\label{app:bridge}
+
+\subsection{Setting and conditions}
+
+Fix a theory $T = (\Sigma, A, \mathcal{I})$ with evidence horizon $\Pi$.
+Let $\mathcal{F} = \{F_i\}$ be an operator family with
+$F_i : 2^{\mathrm{At}_T} \to 2^{\mathrm{At}_T}$ monotone.
+Define:
+\begin{align*}
+  D_{comp}(P) &:= F^\omega(P), \quad F(P) := \bigcup_i F_i(P) \\
+  \SCSet_T(\Pi) &:= \mathrm{Fix}(D_{comp}|_{\mathcal{P}_T^+(\Pi)}) \\
+  \UnbreakSet_T(\Pi) &:= \{P \in \mathcal{P}_T^+(\Pi) : \Cmin^{\mathrm{weak}}(P,\Pi) = +\infty\} \\
+  \TracedSCSet_T(\Pi) &:= \SCSet_T(\Pi) \cap \CertReach_T(\Pi)
+\end{align*}
+
+The five bridge conditions:
+\begin{description}
+  \item[C1 (LocalExplain)] Each $F_i$ has a certificate relation $\mathrm{Cert}_i$
+    satisfying axioms R0a--R0e.
+  \item[C2 (DeclCompat)] For every $\mathrm{Cert}_i(\Gamma,a)$ and fixed point
+    $P^*\in\SCSet$: $J^{int}_{\Gamma\to a}\in\Jdecl(P^*,a,\Pi)$.
+  \item[C3 (NDLift)] Source-free valid justifications lift to
+    $\mathcal{D}_T^{int}$-certified ones.
+  \item[C4 (DeclComplete)] $P\in\mathcal{P}_T(\Pi)\Rightarrow\mathrm{CertClosed}_{\mathcal{F}}(P)$.
+  \item[C5$_R$ (RightBridge)] $\UnbreakSet_T(\Pi)\subseteq\SCSet_T(\Pi)$.
+    Sufficient route: $\mathrm{C1}\wedge\mathrm{C3}\wedge\mathrm{C4}\Rightarrow\mathrm{ULift}^{sat}\Rightarrow\mathrm{C5}_R$.
+  \item[C6 (TraceComplete)] $\SCSet\subseteq\CertReach$ (GlobalCoverage).
+\end{description}
+
+\subsection{Weak Bridge (SEALED v1.0.1)}
+
+\begin{theorem}[Weak Bridge]\label{thm:weak-bridge}
+Under C1, C2, C5$_R$:
+$$\TracedSCSet_T(\Pi)\;\subseteq_{C1+C2}\;\UnbreakSet_T(\Pi)\;\subseteq_{C5_R}\;\SCSet_T(\Pi)$$
+\end{theorem}
+
+\begin{proof}
+\textbf{Left inclusion} (Bridge A, C1+C2).
+Let $P\in\TracedSCSet_T(\Pi)$; so $P\in\SCSet$ and $P\in\CertReach$.
+Since $P\in\SCSet$, $D_{comp}(P)=P$, so $F_i(P)\subseteq P$ for all $i$.
+By C1, each $F_i$ has a certificate: for every $a\in P$ there exists
+$\mathrm{Cert}_i(\Gamma,a)$ with $\Gamma\subseteq P$.
+Compile $J^{int}_{\Gamma\to a}$ via C1 (R0a--R0e).
+By C2, $J^{int}\in\Jdecl(P,a,\Pi)$, which is source-free
+(internal certificate uses no $B_T$-sources).
+Hence $\Cmin^{\mathrm{weak}}(P,\Pi)=+\infty$, so $P\in\UnbreakSet$.
+
+\textbf{Right inclusion} (C5$_R$).
+Immediate from the definition of C5$_R$.
+\end{proof}
+
+\subsection{Full Bridge}
+
+\begin{theorem}[Full Bridge]\label{thm:full-bridge}
+Under C1, C2, C5$_R$, C6:
+$$\SCSet_T(\Pi) = \UnbreakSet_T(\Pi) = \TracedSCSet_T(\Pi)$$
+\end{theorem}
+
+\begin{proof}
+By C6: $\SCSet\subseteq\CertReach$, so $\SCSet=\SCSet\cap\CertReach=\TracedSCSet$.
+By the Weak Bridge: $\TracedSCSet\subseteq\UnbreakSet\subseteq\SCSet=\TracedSCSet$.
+Hence all three sets coincide.
+\end{proof}
+
+\begin{corollary}[CertReach characterization]
+Under C1+C2+C5$_R$+C6:
+$$\UnbreakSet_T(\Pi) = \SCSet_T(\Pi) \cap \CertReach_T(\Pi)$$
+\end{corollary}
+
+\subsection{Condition minimality}
+
+\begin{proposition}[C1 necessary]
+Without C1 (black-box operator witness): Bridge A fails; TracedSCSet
+may not embed in UnbreakSet.
+\end{proposition}
+
+\begin{proposition}[C5$_R$ necessary]
+Without C5$_R$ (phantom justification witness CE-Bridge-2):
+Phantom $J^{ph}$ with $\mathrm{Src}(J^{ph})=\emptyset$ inflates UnbreakSet past SCSet.
+\end{proposition}
+
+\begin{proposition}[C6 necessary]
+Without C6 (CE-Bridge-1, $T_{ICT}^{v2.1}$ Fork B):
+Tier-3 atom \texttt{imbalance} is $B_T$-source-only
+$\Rightarrow$ not in CertReach $\Rightarrow$ TracedSCSet $\subsetneq$ SCSet.
+\end{proposition}
+
+\begin{remark}
+C2 necessity is sketched (B-OQ-1); a complete counterexample is deferred to
+future work.
+\end{remark}
