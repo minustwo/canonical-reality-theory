@@ -1,11 +1,17 @@
 > **Publication status**: Technical-report / research-archive material. Not peer-reviewed.
-> **Internal status**: CLOSED. See [STATUS_GLOSSARY.md](../../STATUS_GLOSSARY.md).
+> **Internal status**: SUPERSEDED by v0.3 (2026-04-29).
+> **Reason**: Summary line retained old single-layer ctrl inequality which was
+> constructively falsified by counterexample X1. See v0.3 for correction.
 
 # CRT Execution Layer — Min-Cut Extension v0.2
 
-**Date**: 2026-04-28 | **Status**: CLOSED
+**Date**: 2026-04-28 | **Status**: SUPERSEDED — see [`CRT_EXECUTION_LAYER_MINCUT_v0_3.md`](CRT_EXECUTION_LAYER_MINCUT_v0_3.md)
 
-**Key change from v0.1**: Separated two cut semantics; corrected CAPO attribution.
+> **Erratum**: The summary line `EL-1B: exec ≤ proto ≤ gov (control-plane cost)`
+> is incorrect. The single-layer ctrl chain
+> $C_{\min}^{\mathrm{ctrl,exec}} \leq C_{\min}^{\mathrm{ctrl,proto}} \leq C_{\min}^{\mathrm{ctrl,gov}}$
+> does not hold in general and has been constructively falsified by counterexample X1
+> (validation report v4, 2026-04-29). The correct replacement theorems are in v0.3.
 
 ---
 
@@ -37,8 +43,8 @@ $$C_{\min}^{\mathrm{break}}(a) = \min_{\ell} C_{\min}^{\mathrm{break},\ell}(a)$$
 **Theorem EL-1B** (Control three-layer min):
 $$C_{\min}^{\mathrm{ctrl}}(a) = \min_{\ell} C_{\min}^{\mathrm{ctrl},\ell}(a)$$
 
-**Refined Prop 2**:
-$$C_{\min}^{\mathrm{ctrl},\mathrm{exec}} \leq C_{\min}^{\mathrm{ctrl},\mathrm{proto}} \leq C_{\min}^{\mathrm{ctrl},\mathrm{gov}}$$
+**Refined Prop 2** *(RETRACTED — see Erratum above)*:
+~~$C_{\min}^{\mathrm{ctrl},\mathrm{exec}} \leq C_{\min}^{\mathrm{ctrl},\mathrm{proto}} \leq C_{\min}^{\mathrm{ctrl},\mathrm{gov}}$~~
 
 ---
 
@@ -56,24 +62,4 @@ Design implication: fix execution pipeline, not multisig threshold.
 
 ---
 
-## Layer-identification protocol
-
-For any safety property $a$:
-1. Enumerate $\mathcal{J}^{gov}$, $\mathcal{J}^{proto}$, $\mathcal{J}^{exec}$
-2. Compute $C_{\min}^{\mathrm{break},\ell}$ and $C_{\min}^{\mathrm{ctrl},\ell}$ per layer
-3. Identify dominant layer
-4. Report $C_{\min}$ **with layer attribution**
-
-Without step 3–4: correct number, wrong redesign target.
-
----
-
-## Defense and institution
-
-Defense $\delta$ restricts $\mathcal{J}^{exec}$: $C_{\min}^{\mathrm{ctrl},\mathrm{exec},\delta} \geq \theta$.
-Institution $\iota$ (unconditional floor): $C_{\min}^{\mathrm{ctrl},\mathrm{exec},\iota} \geq k$.
-
-Fork B/Class III: target $C_{\min}^{\mathrm{ctrl}} \geq \theta$ via defense/institution, not $+\infty$.
-
-*End of CRT Execution Layer Min-Cut Extension v0.2 — CLOSED.*
-*EL-1B: exec ≤ proto ≤ gov (control-plane cost). CAPO: execution-layer one-component control cut.*
+*SUPERSEDED. Do not cite as canonical. See v0.3.*
