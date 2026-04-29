@@ -1,7 +1,7 @@
 # Market Structure Theory (MST)
 
 **Status**: Foundational component of CRT.
-**Publication status**: Preprint / submitted. Not peer-reviewed. SSRN 6582699.
+**Publication status**: Submitted; pending public availability. Not peer-reviewed.
 **Full manuscript**: Not included in this repository.
 
 ---

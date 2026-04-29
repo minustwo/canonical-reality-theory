@@ -119,7 +119,8 @@ Hai Hai Fu, 2026
 
 ## Related work
 
-- **MST** (Market Structure Theory) — structure layer. SSRN 6582699.
+- **MST** (Market Structure Theory) — structure layer.
+  Manuscript submitted; pending public availability.
   Source repo: [`minustwo/market-structure-theory`](https://github.com/minustwo/market-structure-theory)
 - **IET** (Inferential Equilibrium Theory) — adoption/stability layer.
   Manuscript in preparation. Key theorem in Appendix C of the synthesis paper
