@@ -34,7 +34,7 @@ A world `P` is canonical in CRT only when all three axes align:
 | Applications | ICT CRT, DeFi CRT, Execution Layer | Where is the real minimum cut? | `C_min_ctrl` |
 
 **Open systems layer**:
-- **CRT-SEI** (Structural Evolution Interface) — abstract interface for `T_t → T_{t+1}` evolution. Former internal name: IET-open.
+- **CRT-SEI** (Structural Evolution Interface) — abstract interface for `T_t → T_{t+1}` evolution.
 - **Open-IET (Linear)** — linear-systems instantiation of CRT-SEI.
 - **Escape Geometry** — inverse minimum-energy crossing companion to Open-IET (Linear).
 - **Markov-Aligned** — reversible Markov dynamics channel-vulnerability companion.
@@ -72,9 +72,7 @@ $$\mathrm{DoF}(P)=(0,0,0)
 | **EL-1B-ctrl-single** | $C_{\min}^{\mathrm{ctrl,exec}} \leq C_{\min}^{\mathrm{ctrl,proto}} \leq C_{\min}^{\mathrm{ctrl,gov}}$ | **False — X1 counterexample** |
 | **EL-1B-ctrl-cumulative** | $C_{\min}^{\mathrm{ctrl,\leq gov}} \leq C_{\min}^{\mathrm{ctrl,\leq proto}} \leq C_{\min}^{\mathrm{ctrl,\leq exec}}$ | **Theorem (direction reversed)** |
 
-Break and ctrl point in **opposite directions** because break uses ∀+min-HS (anti-monotone) while ctrl uses ∃+min-covering (co-monotone). Execution dominance is a **conditional regime**, not a universal theorem.
-
-See [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md) for the canonical v0.3 file.
+See [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md) for canonical v0.3 file.
 
 ---
 
@@ -129,11 +127,22 @@ Status pages only. Full manuscripts not included.
 
 ---
 
+## Publications
+
+| Document | DOI | Notes |
+|---|---|---|
+| Main paper: *When Correctness, Robustness, and Stability Coincide* | [10.5281/zenodo.19870518](https://doi.org/10.5281/zenodo.19870518) | Current canonical version |
+| Proof supplement v3: *CRT and Bridge Theorem Proofs* | [10.5281/zenodo.19884063](https://doi.org/10.5281/zenodo.19884063) | v3, includes EL-1B correction |
+
+---
+
 ## Companion document
 
-*CRT and Bridge Theorem Proofs* — proof supplement:
+*CRT and Bridge Theorem Proofs* — proof supplement v3:
 - Appendix A: Bridge Hierarchy full proof
-- Appendix B: EL-1A / EL-1B (Execution Layer) — **Erratum**: Appendix B's EL-1B statement reflects the pre-v0.3 single-layer ctrl chain, which has been constructively falsified (counterexample X1, 2026-04-29). The corrected theorem split is in v0.3 above. A revised Appendix B will be issued in a future Zenodo version.
+- Appendix B: EL-1A / EL-1B corrected theorem split (v3)
 - Appendix C: IET Endogenous Canonical Selection
 
-Zenodo: https://doi.org/10.5281/zenodo.19871473
+Zenodo: https://doi.org/10.5281/zenodo.19884063
+
+> **Previous version** (proof supplement v2): https://doi.org/10.5281/zenodo.19871473
