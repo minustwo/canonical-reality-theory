@@ -62,9 +62,19 @@ $$\mathrm{DoF}(P)=(0,0,0)
   \iff C_{\min}(P)=+\infty
   \iff \mathrm{Stable}_{\mathcal{A}}(P)=1$$
 
-**Execution Layer** (EL-1B):
+**Execution Layer — corrected theorem split** (EL-1B v0.3, 2026-04-29):
 
-$$C_{\min}^{\mathrm{ctrl},exec} \leq C_{\min}^{\mathrm{ctrl},proto} \leq C_{\min}^{\mathrm{ctrl},gov}$$
+> **Erratum**: The prior entry $C_{\min}^{\mathrm{ctrl,exec}} \leq C_{\min}^{\mathrm{ctrl,proto}} \leq C_{\min}^{\mathrm{ctrl,gov}}$ has been **constructively falsified** by counterexample X1. It is replaced by the three-theorem split below.
+
+| Label | Statement | Status |
+|---|---|---|
+| **EL-1B-break** | $C_{\min}^{\mathrm{break,exec}} \leq C_{\min}^{\mathrm{break,proto}} \leq C_{\min}^{\mathrm{break,gov}}$ | **Theorem** |
+| **EL-1B-ctrl-single** | $C_{\min}^{\mathrm{ctrl,exec}} \leq C_{\min}^{\mathrm{ctrl,proto}} \leq C_{\min}^{\mathrm{ctrl,gov}}$ | **False — X1 counterexample** |
+| **EL-1B-ctrl-cumulative** | $C_{\min}^{\mathrm{ctrl,\leq gov}} \leq C_{\min}^{\mathrm{ctrl,\leq proto}} \leq C_{\min}^{\mathrm{ctrl,\leq exec}}$ | **Theorem (direction reversed)** |
+
+Break and ctrl point in **opposite directions** because break uses ∀+min-HS (anti-monotone) while ctrl uses ∃+min-covering (co-monotone). Execution dominance is a **conditional regime**, not a universal theorem.
+
+See [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md) for the canonical v0.3 file.
 
 ---
 
@@ -83,7 +93,8 @@ $$C_{\min}^{\mathrm{ctrl},exec} \leq C_{\min}^{\mathrm{ctrl},proto} \leq C_{\min
 | Document | Version | Status | Link |
 |---|---|---|---|
 | CRT Mixed Layer-2 Robustness | v0.2 | **CLOSED** | [`papers/robustness/CRT_MIXED_L2_ROBUSTNESS_v0_2.md`](papers/robustness/CRT_MIXED_L2_ROBUSTNESS_v0_2.md) |
-| CRT Execution Layer Min-Cut | v0.2 | **CLOSED** | [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_2.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_2.md) |
+| CRT Execution Layer Min-Cut | **v0.3** | **CLOSED** | [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_3.md) |
+| ~~CRT Execution Layer Min-Cut v0.2~~ | ~~v0.2~~ | **SUPERSEDED** | [`papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_2.md`](papers/robustness/CRT_EXECUTION_LAYER_MINCUT_v0_2.md) |
 | CRT NAA Reformulation Theorem | v0.2 | **CLOSED** | [`papers/robustness/CRT_NAA_REFORMULATION_THEOREM_v0_2.md`](papers/robustness/CRT_NAA_REFORMULATION_THEOREM_v0_2.md) |
 
 > "Sealed" = version-locked; "Closed" = version-locked after final audit pass.
@@ -122,7 +133,7 @@ Status pages only. Full manuscripts not included.
 
 *CRT and Bridge Theorem Proofs* — proof supplement:
 - Appendix A: Bridge Hierarchy full proof
-- Appendix B: EL-1A / EL-1B (Execution Layer)
+- Appendix B: EL-1A / EL-1B (Execution Layer) — **Erratum**: Appendix B's EL-1B statement reflects the pre-v0.3 single-layer ctrl chain, which has been constructively falsified (counterexample X1, 2026-04-29). The corrected theorem split is in v0.3 above. A revised Appendix B will be issued in a future Zenodo version.
 - Appendix C: IET Endogenous Canonical Selection
 
 Zenodo: https://doi.org/10.5281/zenodo.19871473
