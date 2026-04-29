@@ -1,68 +1,44 @@
-# IET — Inferential Equilibrium Theory: Status Page
+# Inferential Equilibrium Theory (IET)
 
-**Role in CRT**: Dynamics layer (CRT Part V)
-
+**Status**: Dynamic adoption layer of CRT.
 **Publication status**: Manuscript in preparation. Not peer-reviewed.
+**Full manuscript**: Not included in this repository.
 
 ---
 
-## What IET provides
+## Role in CRT
 
-IET addresses the **dynamic adoption** question: given multiple admissible worlds,
-will agents converge to the canonical one over time?
+IET is the **adoption and stochastic stability layer** of CRT. It studies:
 
-Key contributions:
+- Long-run adoption of canonical worlds by a population of agents
+- Stochastic stability of $P^{\mathrm{canon}}$ under noisy best-response dynamics
+- Conditions under which the canonical world is the unique stochastically stable state
 
-- **Endogenous canonical selection**: under what conditions does the learning
-  / inference process select the structurally canonical world $P^{\mathrm{canon}}$?
-- **Stochastic stability**: formal conditions under which $P^{\mathrm{canon}}$
-  is the unique stochastically stable state of the adoption dynamics
-- **Multi-agent error reduction**: $\varepsilon_{\mathrm{eff}} = \varepsilon^k$
-  (IET IE-4 conjecture) — $k$ independent agents multiplicatively reduce
-  effective boundary-access failure rate
-- **Synthesis theorem** (DoF collapse): the equivalence
-  $\mathrm{DoF}(P) = (0,0,0) \iff \mathrm{SC}_T(P) = 1 \iff C_{\min}(P) = +\infty
-  \iff \mathrm{Stable}_{\mathcal{A}}(P) = 1$
+## CRT dependency
 
----
+The CRT proof supplement (Zenodo [10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473))
+includes IET Endogenous Canonical Selection as Appendix C, alongside
+Bridge Hierarchy (Appendix A) and Execution Layer (Appendix B).
 
-## IET and the Bridge theorem
+The synthesis theorem (DoF collapse) connects IET to the Bridge:
 
-The Bridge theorem (Part IV) establishes the structural alignment of
-SCSet, UnbreakSet, TracedSCSet. IET (Part V) adds the **dynamic dimension**:
-even when multiple SC worlds exist structurally, the adoption process
-selects among them, and under stochastic stability conditions the
-canonical world is selected uniquely.
+$$\mathrm{DoF}(P) = (0,0,0)
+\iff \mathrm{SC}_T(P) = 1
+\iff C_{\min}(P) = +\infty
+\iff \mathrm{Stable}_{\mathcal{A}}(P) = 1$$
 
----
+## IET hallucination / iterative-error framing
 
-## Key theorem (in Synthesis Paper Appendix C)
+A separate IET research direction studies iterative processes with non-eliminable
+per-step error $\varepsilon$. Core framing: $\lambda > \varepsilon$ implies convergence;
+multi-agent error reduction gives $\varepsilon_{\mathrm{eff}} = \varepsilon^k$.
+This is IET future work, related to but distinct from the Bridge program.
 
-The IET stochastic stability result is stated in Appendix C of:
+## Related
 
-*When Correctness, Robustness, and Stability Coincide*
-Zenodo DOI: [10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473)
+- CRT THEORY_INDEX: [`THEORY_INDEX.md`](../../THEORY_INDEX.md)
+- Proof supplement: Zenodo [10.5281/zenodo.19871473](https://doi.org/10.5281/zenodo.19871473)
 
 ---
 
-## Open questions
-
-- **IE-4 (multi-agent conjecture)**: $\varepsilon_{\mathrm{eff}} = \varepsilon^k$
-  for $k$ independent agents — conjectural, not yet proved
-- **Connection to P4**: P4's empirical $\varepsilon^k$ result provides
-  structural support for IE-4 but does not constitute a proof
-
----
-
-## Publication status
-
-| Item | Status |
-|---|---|
-| IET Paper 1 | Manuscript in preparation |
-| Stochastic stability result | In Synthesis Paper Appendix C (Zenodo 10.5281/zenodo.19871473) |
-| Peer-reviewed | None yet |
-
----
-
-*IET Status Page. 2026-04-29.*
-*Key theorem in Synthesis Paper Appendix C.*
+*IET_STATUS.md. Status page only. Full manuscript not included.*

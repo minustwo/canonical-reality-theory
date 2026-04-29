@@ -1,41 +1,20 @@
-# CRT Foundations — Status Pages
+# CRT Foundations
 
-This directory contains status pages for the foundational theories underlying CRT.
+This directory contains status pages for the foundational components of CRT.
 
-**Publication status**: Technical-report / research-archive material.
-These are status descriptions, not full manuscripts.
-Not peer-reviewed publications.
+**Publication status**: Status / positioning pages only.
+Full manuscripts are not included here.
+These files are not peer-reviewed publications.
 
-> See [`STATUS_GLOSSARY.md`](../../STATUS_GLOSSARY.md) for definitions of
-> status labels (Sealed, Closed, Submitted, Preprint, etc.).
-
----
-
-## Structure
-
-CRT is the unified framework. The foundational theories occupy specific layers:
-
-```
-Canonical Reality Theory (CRT)
-│
-├── Structure layer    — MST (Market Structure Theory)
-├── Dynamics layer     — IET (Inferential Equilibrium Theory)
-└── Open systems       — CRT-SEI, Open-IET (Linear), Escape Geometry
-```
+> See [`STATUS_GLOSSARY.md`](../../STATUS_GLOSSARY.md) for label definitions.
 
 ---
 
 ## Files
 
-- **[`MST_STATUS.md`](MST_STATUS.md)** — MST as CRT structure layer.
-  Admissible worlds, $D_{\mathrm{comp}}$, SCSet, Bridge conditions.
-
-- **[`IET_STATUS.md`](IET_STATUS.md)** — IET as CRT dynamics layer.
-  Stochastic stability, endogenous canonical selection.
-
-- **[`OPEN_SYSTEMS_STATUS.md`](OPEN_SYSTEMS_STATUS.md)** — CRT-SEI, Open-IET (Linear),
-  Escape Geometry. Structural evolution and external input.
+- **[`MST_STATUS.md`](MST_STATUS.md)** — Market Structure Theory: CRT structure layer.
+- **[`IET_STATUS.md`](IET_STATUS.md)** — Inferential Equilibrium Theory: CRT adoption/stability layer.
 
 ---
 
-*Full manuscripts available where indicated. See individual status pages.*
+*See [`papers/open-systems/`](../open-systems/) for CRT-SEI, Open-IET (Linear), Escape Geometry, and Markov-Aligned status pages.*
