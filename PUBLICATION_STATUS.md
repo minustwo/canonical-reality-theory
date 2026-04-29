@@ -17,7 +17,7 @@ None yet.
 
 | Title | Venue | Status |
 |---|---|---|
-| Iterative Drift in DeFi Protocols | CCS 2026 | Under review (double-blind; author details withheld per venue policy) |
+| (title withheld) | CCS 2026 | Under review (double-blind; title and author details withheld per venue policy) |
 
 ---
 
