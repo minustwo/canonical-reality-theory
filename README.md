@@ -113,7 +113,7 @@ canonical-reality-theory/
 *A Unified Framework via Degrees of Freedom and Structural Collapse*
 Hai Hai Fu, 2026
 
-- Zenodo v2: https://doi.org/10.5281/zenodo.19871473
+- Zenodo v3: https://doi.org/10.5281/zenodo.19871473
 
 ---
 
