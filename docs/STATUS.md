@@ -2,61 +2,85 @@ Status
 
 Repository status
 
-This repository is in public initialization status.
+This repository is an active AI-assisted research repository.
 
-It is not a peer-reviewed release. It is not a final monograph. It is not a claim that the MST–CRT–IET stack is complete.
+It is not a finalized monograph.
 
-Peer-review and disclosure boundary
+It is not a software package.
 
-Unless explicitly stated otherwise, repository artifacts have not undergone formal external peer review.
+It is not externally peer-reviewed unless explicitly stated.
 
-Internal audit, AI-assisted review, adversarial checking, repository maintenance review, Zenodo archival upload, and DOI assignment do not constitute peer review.
+Peer-review boundary
 
-Artifacts should therefore be interpreted through their explicit maturity labels rather than inferred publication status.
+Unless explicitly stated otherwise, materials in this repository have not undergone formal external peer review.
 
-Research status labels
+The following do not constitute formal peer review:
 
-All future documents should use explicit status labels.
+* internal audit
+* AI-assisted review
+* adversarial review by language models
+* repository maintenance review
+* Zenodo archival upload
+* DOI assignment
+* GitHub publication
+* arXiv preprint availability
+* SSRN preprint availability
 
-Recommended labels:
+Only acceptance by a recognized peer-reviewed journal, conference, or equivalent external review process should be described as peer review.
 
-* DRAFT
-* WORKING
-* AUDIT-LOCAL
-* CONDITIONAL
-* PARTIAL
-* SKETCHED
-* PROVED
-* REVIEWED
-* DEPRECATED
-* PUBLIC-SAFE
-* PRIVATE-ONLY
+Canonical status labels
+
+Status	Meaning
+ARCHIVAL	Publicly archived or version-tagged research artifact
+SEALED	Interface, theorem statement, or artifact frozen within this research program
+CLOSED	Internally audited and version-locked within stated scope
+CONDITIONAL	Holds only under explicit assumptions
+SKETCH	Coherent outline, not a complete proof
+AUDIT-ONLY	Audit, counterexample, or dependency record; not a theorem
+OPEN	Open research problem
+SUPERSEDED	Historical artifact; should not be cited as current
+WORKING	Active draft or unstable research material
+
+Artifact status schema
+
+Major artifacts should include, where applicable:
+
+Status:
+Peer review:
+Review status:
+AI assistance:
+Citation status:
+Scope:
+Dependencies:
+Known limitations:
+
+Interpretation rule
+
+A public artifact is not automatically a final result.
+
+A theorem file, proof sketch, audit note, or archived report must be interpreted together with:
+
+* maturity status
+* assumptions
+* scope
+* dependency chain
+* peer-review status
+* citation guidance
 
 Claim discipline
 
-A result marked as conditional, partial, sketched, or audit-local must not be described as proved.
+A conditional claim must remain conditional.
 
-A bridge statement must not be treated as established unless its assumptions, direction, and scope are explicitly stated.
+A sketch must not be cited as a completed proof.
 
-A public-facing summary must not replace a theorem statement.
+An audit note must not be cited as a theorem.
 
-Current public status
+A superseded artifact must not be cited as current.
 
-At initialization:
+A public release does not imply global synthesis.
 
-* Repository structure exists.
-* Public documentation exists.
-* No theorem corpus is imported.
-* No private raw notes are imported.
-* No peer-review status is claimed.
+Global synthesis status
 
-Future release requirements
+The full MST–CRT–IET synthesis is not claimed as an unconditional theorem.
 
-Before adding technical content, each proposed file should be checked for:
-
-1. English-only public suitability
-2. Absence of private material
-3. Correct status labeling
-4. No theorem promotion
-5. No proof compression
-6. Human approval for public release
+Current public material records a conditional theorem landscape.

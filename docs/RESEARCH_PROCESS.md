@@ -1,0 +1,82 @@
+Research Process
+
+Purpose
+
+This repository uses software-style version control for theory development.
+
+The objects under version control are research artifacts, not primarily code.
+
+Versioned objects
+
+The repository may version:
+
+* definitions
+* theorem statements
+* proof drafts
+* proof supplements
+* audit records
+* counterexamples
+* status ledgers
+* release notes
+* open problems
+* dependency maps
+
+Release types
+
+Release type	Meaning
+metadata release	Updates DOI, README, citation, or status metadata
+architecture release	Updates repository architecture or dependency map
+theorem release	Adds or changes theorem/proof status
+erratum release	Corrects a published or archived claim
+audit release	Publishes audit artifacts without promoting theorem status
+archival release	Freezes a version for citation or public record
+
+Issue model
+
+Research issues may track:
+
+* definitions
+* theorem dependencies
+* open problems
+* errata
+* audit findings
+* status changes
+* metadata updates
+
+Recommended issue labels:
+
+type:definition
+type:theorem
+type:audit
+type:open-question
+type:erratum
+type:metadata
+status:open
+status:conditional
+status:blocked
+status:sealed
+status:superseded
+layer:mst
+layer:crt
+layer:iet
+layer:bridge
+layer:escape
+layer:dynamics
+severity:blocking
+severity:medium
+severity:minor
+
+Research issue template
+
+A research issue should record:
+
+Claim / Definition affected:
+Current status:
+Source artifact:
+Problem:
+Proposed resolution:
+Does this change theorem status?
+
+Rule
+
+Repository maintenance must not silently promote theorem status.
