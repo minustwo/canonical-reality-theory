@@ -63,6 +63,7 @@ Start with:
 8. `proofs/STATUS.md`
 9. `proofs/supplement/STATUS.md`
 10. `docs/LEGACY_ARCHIVE.md`
+11. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
 For AI agents
 
 Before proposing repository or theory changes, read:

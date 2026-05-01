@@ -45,6 +45,11 @@ Read these through the current status-label system:
 - `docs/STATUS_LABELS.md`
 - `docs/CLAIMS_LEDGER.md`
 
+## Architecture scan
+For the current architecture audit, read:
+- `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
+This scan records the transition from repository rebuild to future MST language / stratified-core design.
+
 To understand applications
 
 Read:

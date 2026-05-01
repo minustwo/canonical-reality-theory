@@ -124,6 +124,35 @@ Do not treat publication status as theorem status.
 
 Do not treat archived or DOI-linked material as peer-reviewed unless explicitly stated.
 
+Architecture deep scan
+
+The current public architecture scan is:
+
+docs/ARCHITECTURE_DEEP_SCAN_v0_1.md
+
+This file records the state after:
+
+public research surface rebuild
+AI-agent memo
+status-label unification
+IET naming resolution
+proof-status sidecar ledgers
+legacy technical archive reclassification
+
+Future agents must read it before proposing:
+
+MST_LANGUAGE_v0_1
+MST_STRATIFIED_CORE_v0_1
+CRT synthesis restructuring
+IET expansion
+legacy archive migration
+
+The scan’s main verdict is:
+
+the next architecture task is MST language first, then stratified MST core
+
+Do not skip directly to stratified core before defining the language boundary.
+
 MST current understanding
 
 MST has two public-facing forms.
@@ -391,8 +420,9 @@ The current repo priority is:
 4. Resolve IET naming conflict. DONE.
 5. Add proof artifact status ledgers. DONE by current sidecar-status pass.
 6. Reclassify legacy technical archive / `THEORY_INDEX.md`. DONE by current archive-role pass.
-7. Add architecture deep-scan artifact. NEXT.
-8. Only then design `MST_LANGUAGE_v0_1` / `MST_STRATIFIED_CORE_v0_1`.
+7. Add architecture deep-scan artifact. DONE by current scan pass.
+8. Design `MST_LANGUAGE_v0_1`. NEXT.
+9. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 
