@@ -6,6 +6,7 @@ authors:
   - family-names: "Fu"
     given-names: "Hai Hai"
 repository-code: "https://github.com/minustwo/canonical-reality-theory"
+doi: "10.5281/zenodo.19884063"
 abstract: >
   Canonical Reality Theory (CRT) and its associated MST–CRT–IET architecture
   form a structured research program on determinization, canonicalization,
