@@ -85,6 +85,7 @@ Start with:
 18. `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
 19. `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
 20. `docs/DEVELOPMENT_TIMELINE_v0_1.md`
+21. `docs/REBUILD_AUDIT_v0_1.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -106,6 +107,7 @@ This repository may publish proof artifacts at multiple maturity levels. A proof
 Context-reset audit, adversarial audit, and AI-assisted review are internal methods for status discipline. They do not constitute formal peer review.
 The methodology retrospective is a process artifact. It does not validate theorem correctness and does not substitute for peer review.
 Methodology and timeline documents are process artifacts. They do not validate theorem correctness and do not substitute for peer review.
+The rebuild audit is an internal repository audit artifact. It does not validate theorem correctness and does not substitute for peer review.
 ---
 ## What this release does not claim
 This release does not claim:

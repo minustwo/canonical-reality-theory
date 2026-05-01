@@ -24,6 +24,7 @@ Before making changes, read:
 20. `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
 21. `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
 22. `docs/DEVELOPMENT_TIMELINE_v0_1.md`
+23. `docs/REBUILD_AUDIT_v0_1.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -53,6 +54,7 @@ If working with legacy CRT technical material, also read:
 - Every non-trivial Codex prompt should include an AI-agent memo update unless explicitly waived.
 - Treat methodology retrospectives as process artifacts, not theorem validation.
 - Treat methodology and timeline reports as process artifacts, not theorem validation.
+- Treat rebuild audits as repository-architecture audits, not theorem validation.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

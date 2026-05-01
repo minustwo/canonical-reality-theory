@@ -60,6 +60,7 @@ Read:
 * `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
 * `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
 * `docs/DEVELOPMENT_TIMELINE_v0_1.md`
+* `docs/REBUILD_AUDIT_v0_1.md`
 
 To understand applications
 
