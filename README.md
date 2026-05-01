@@ -1,33 +1,44 @@
 # Canonical Reality Theory (CRT)
+
 This repository hosts a structured research program on:
+
 - Structure theories (MST)
 - Canonical structure and preservation (CRT)
 - Institutional interpretation (IET)
+
 ---
-## MST Paper (Primary Entry)
-Title:
-Determinization in Structure Theories
-Location:
+
+## Primary Entry
+
+👉 Start here:
+
 papers/mst/paper.tex
-DOI:
-10.5281/zenodo.19884063
+
 ---
-## Reading Guide
-Start with:
-1. papers/mst/paper.tex  
-2. papers/mst/appendix.tex  
-Then explore:
-- papers/crt/
-- papers/iet/
+
+## Citation
+
+DOI: 10.5281/zenodo.19884063
+
 ---
-## Status
-- This is a research-stage project
+
+## What this repository is
+
+- A structured research program
 - Not peer-reviewed
 - No completeness claims
-See:
-docs/STATUS.md  
-docs/CLAIM_LABELS.md  
+
 ---
-## Citation
-Please cite via DOI:
-10.5281/zenodo.19884063
+
+## Reading Path
+
+1. MST paper (papers/mst/paper.tex)
+2. Appendix (papers/mst/appendix.tex)
+3. Then explore CRT / IET
+
+---
+
+## Notes
+
+- This repository is structure-first, not proof-heavy
+- See docs/STATUS.md for claim levels
