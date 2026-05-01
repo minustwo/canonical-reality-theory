@@ -60,6 +60,8 @@ Start with:
 5. `docs/CLAIMS_LEDGER.md`
 6. `docs/OPEN_PROBLEMS.md`
 7. `docs/READING_GUIDE.md`
+8. `proofs/STATUS.md`
+9. `proofs/supplement/STATUS.md`
 For AI agents
 
 Before proposing repository or theory changes, read:

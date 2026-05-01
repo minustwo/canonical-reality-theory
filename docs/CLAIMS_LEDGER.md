@@ -6,6 +6,11 @@ This ledger records the public claim-status landscape of the MST–CRT–IET res
 
 Status labels in this ledger follow `docs/STATUS_LABELS.md`.
 
+Proof-supplement status is recorded in:
+- `proofs/STATUS.md`
+- `proofs/supplement/STATUS.md`
+These ledgers are metadata/status files and do not modify theorem statements or proof content.
+
 It is not a proof file.
 
 It is not a theorem statement.

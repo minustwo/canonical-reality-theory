@@ -212,6 +212,32 @@ proofs/audits/
 proofs/superseded/
 proofs/supplement/
 
+Proof status sidecar ledgers
+
+The current public rebuild phase uses sidecar ledgers for proof artifact status.
+
+Canonical proof-status ledgers:
+
+proofs/STATUS.md
+proofs/supplement/STATUS.md
+
+These ledgers record status metadata without modifying theorem or proof content.
+
+Future agents must read these ledgers before interpreting proof supplement files.
+
+The current supplement status boundaries are:
+
+main.tex                 = ARCHIVAL / CONDITIONAL technical supplement
+appendix_a_bridge.tex    = CONDITIONAL / CLOSED within stated bridge scope
+appendix_b_el.tex        = CLOSED within stated execution-layer scope
+appendix_c_iet.tex       = SKETCH / CONDITIONAL
+
+Do not cite appendix_c_iet.tex as a final full IET proof.
+
+Do not treat the proof supplement as external peer review.
+
+Do not treat the proof supplement as unconditional full synthesis.
+
 Status labels
 
 Use the canonical label family:
@@ -327,8 +353,8 @@ The current repo priority is:
 1. Rebuild public research surface. DONE on branch `public-research-rebuild-v1`.
 2. Add AI-agent context memo. DONE.
 3. Unify status vocabulary. DONE.
-4. Resolve IET naming conflict. DONE by current terminology pass.
-5. Add status headers to proof artifacts. NEXT.
+4. Resolve IET naming conflict. DONE.
+5. Add proof artifact status ledgers. DONE by current sidecar-status pass.
 6. Reclassify legacy technical archive / `THEORY_INDEX.md`.
 7. Add architecture deep-scan artifact.
 8. Only then design `MST_LANGUAGE_v0_1` / `MST_STRATIFIED_CORE_v0_1`.
