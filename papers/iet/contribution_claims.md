@@ -1,3 +1,15 @@
+> **Legacy naming note**
+>
+> This scaffold used an older institutional / interpretive sense of "IET".
+> Under the current repository terminology, **IET means Inferential Equilibrium Theory**.
+> Institutional, governance, market, DeFi, AI-system, and organizational interpretations belong to the applications layer unless explicitly formalized as IET.
+>
+> This file is retained as legacy scaffold material and should not be cited as the canonical IET definition.
+>
+> See `docs/IET_NAMING.md`.
+>
+> ---
+
 # IET Contribution Claims (Controlled)
 ## Purpose
 This document defines how IET contributions may be stated without overclaim.

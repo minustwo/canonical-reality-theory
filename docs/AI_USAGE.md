@@ -48,6 +48,11 @@ All public releases are human-directed.
 
 The repository maintainer is responsible for deciding what is accepted, committed, published, withdrawn, or marked as superseded.
 
+## Responsibility
+AI systems were used as research assistants, drafting tools, adversarial auditors, coding agents, and organizational aids.
+AI systems do not confer authorship authority, institutional endorsement, peer-review status, or mathematical correctness.
+Final responsibility for accepted public artifacts, public release decisions, and public claim boundaries remains with the human maintainer.
+
 ## Review status
 
 AI review is internal methodological review.

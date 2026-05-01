@@ -1,5 +1,13 @@
 # Status Glossary
 
+> Canonical status labels are now defined in `docs/STATUS_LABELS.md`.
+>
+> This file preserves legacy CRT archive terminology and maps it to the canonical repository status system.
+>
+> If there is a conflict, use `docs/STATUS_LABELS.md` as the canonical reference.
+>
+> SEALED and CLOSED are internal archive workflow labels. They do not imply external peer review.
+
 This glossary defines the status labels used in the CRT research archive.
 
 ---
@@ -26,6 +34,9 @@ program and is not expected to receive further major revisions.
 
 **CLOSED does not mean peer-reviewed.** It reflects the internal review process,
 not external journal or conference peer review.
+
+SEALED and CLOSED are internal archive workflow labels.
+They do not imply external peer review.
 
 *Example*: CRT Bridge Hierarchy v0.3 is CLOSED. This means the hierarchy has
 passed internal scrutiny and the terminology is stable.

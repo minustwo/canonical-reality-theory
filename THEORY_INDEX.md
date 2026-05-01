@@ -1,3 +1,27 @@
+> **Legacy technical archive note**
+>
+> `THEORY_INDEX.md` is a deep technical index and legacy CRT archive map.
+>
+> It is not the current public entry page.
+>
+> Read it through:
+>
+> - `README.md`
+> - `docs/ARCHITECTURE.md`
+> - `docs/STATUS_LABELS.md`
+> - `docs/CLAIMS_LEDGER.md`
+> - `docs/LEGACY_ARCHIVE.md`
+> - `proofs/STATUS.md`
+> - `proofs/supplement/STATUS.md`
+>
+> Public technical artifacts listed here may be ARCHIVAL, SEALED, CLOSED, CONDITIONAL, SKETCH, AUDIT-ONLY, OPEN, SUPERSEDED, or WORKING.
+>
+> None of these labels imply external peer review.
+>
+> Do not read this index as a claim that the full MST–CRT–IET synthesis is proved unconditionally.
+>
+> ---
+
 # CRT Theory Index
 
 ## Name

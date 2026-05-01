@@ -1,58 +1,147 @@
-# Canonical Reality Theory (CRT)
-
-This repository hosts a structured research program on:
-
-- Structure theories (MST)
-- Canonical structure and preservation (CRT)
-- Institutional interpretation (IET)
-
+# Canonical Reality Theory (CRT) Research Repository
+This repository hosts the public research architecture for the **MST–CRT–IET** stack.
+It is an **AI-assisted research repository** for versioned theory development.
+It contains:
+- architecture maps
+- status ledgers
+- proof-status records
+- open problems
+- release notes
+- curated public technical artifacts
+It is not:
+- a finalized monograph
+- a software package
+- a peer-reviewed publication archive
+- a raw private research dump
 ---
-
+## Status
+Active research repository.
+Initial public architecture release.
+Not a final proof of the full MST–CRT–IET synthesis.
+Unless explicitly stated otherwise, materials in this repository have not undergone formal external peer review.
+AI assistance, internal audit, adversarial review, Zenodo archival upload, DOI assignment, GitHub publication, arXiv availability, or SSRN availability do not constitute formal peer review.
 ## Status and disclosure
-
-This is an active AI-assisted research repository.
-
-The materials here are public research artifacts, proof drafts, audit notes, and architecture documents for the MST–CRT–IET research program. Unless explicitly stated otherwise, they have not undergone formal external peer review.
-
-AI systems including ChatGPT, Claude, Codex, and Perplexity were used in drafting, auditing, organizing, and maintaining parts of this repository. AI-assisted internal audits are not substitutes for peer review.
-
-Zenodo archival records and DOI assignment provide public versioning and citation anchors, but they do not constitute peer review.
-
-Every artifact should be read together with its maturity label, such as ARCHIVAL, CLOSED, CONDITIONAL, SKETCH, AUDIT-ONLY, OPEN, or SUPERSEDED.
-
+Canonical Reality Theory (CRT) is an independent personal research project maintained under the GitHub account `minustwo`.
+This repository is an active AI-assisted research repository for the MST–CRT–IET architecture stack.
+Unless explicitly stated otherwise:
+- the materials are not externally peer reviewed;
+- the project is not institutionally endorsed;
+- the repository is not a software product;
+- the repository is not a finalized monograph;
+- AI systems were used in drafting, auditing, organizing, and maintaining parts of the project;
+- the human maintainer is responsible for final release decisions and public claim boundaries.
+Every artifact should be read together with its maturity label:
+`ARCHIVAL`, `SEALED`, `CLOSED`, `CONDITIONAL`, `SKETCH`, `AUDIT-ONLY`, `OPEN`, `SUPERSEDED`, or `WORKING`.
 ---
-
-## Primary Entry
-
-👉 Start here:
-
-papers/mst/paper.md
-
+## What this repo contains
+- **MST** — structural canonicalization and admissibility layer
+- **CRT** — bridge, escape-cost, robustness, and synthesis layer
+- **IET** — inferential equilibrium / dynamic adoption / stochastic-selection layer
+Institutional, governance, market, and AI-system applications are treated as application domains. They are not automatically proofs of MST, CRT, or IET claims.
 ---
+## Current global verdict
+| Layer | Artifact | Status | Boundary |
+|---|---|---|---|
+| MST | v2.16.4 | ARCHIVAL | Layer-1 core; establishes `(4')`, not automatic full `(4)` |
+| CRT Bridge | Bridge hierarchy | CONDITIONAL / CLOSED by scope | Full bridge requires explicit bridge conditions |
+| CRT Escape | `C_min` / Break interface | SEALED interface | Source-layer escape only unless extended |
+| IET | v2.3 | CONDITIONAL | Reduced sliding-window / process-specific adoption theory |
+| Synthesis | MST–CRT–IET stack | CONDITIONAL | Not claimed as an unconditional theorem |
+| Sig0 / FDT | Closure artifacts | AUDIT / CONDITIONAL | Sandbox-internal closure with external dependencies |
+---
+## Status labels
+Artifacts should be read with explicit maturity labels.
+| Status | Meaning |
+|---|---|
+| `ARCHIVAL` | Publicly archived or version-tagged research artifact |
+| `SEALED` | Interface, statement, or artifact frozen within this research program |
+| `CLOSED` | Internally audited and version-locked within stated scope |
+| `CONDITIONAL` | Holds only under explicit assumptions |
+| `SKETCH` | Coherent outline, not a complete proof |
+| `AUDIT-ONLY` | Audit, counterexample, or dependency record; not a theorem |
+| `OPEN` | Open research problem |
+| `SUPERSEDED` | Historical artifact; should not be cited as current |
+| `WORKING` | Active draft or unstable research material |
+---
+## How to read this repository
+Start with:
+1. `docs/ARCHITECTURE.md`
+2. `docs/STATUS.md`
+3. `docs/STATUS_LABELS.md`
+4. `docs/IET_NAMING.md`
+5. `docs/CLAIMS_LEDGER.md`
+6. `docs/OPEN_PROBLEMS.md`
+7. `docs/READING_GUIDE.md`
+8. `proofs/STATUS.md`
+9. `proofs/supplement/STATUS.md`
+10. `docs/LEGACY_ARCHIVE.md`
+11. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
+12. `docs/PROOF_PUBLICATION_POLICY.md`
+13. `docs/AUTHORSHIP_AND_PRIVACY.md`
+14. `CODEX_WORKFLOW.md`
+15. `docs/ROLE_MODEL.md`
+16. `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
+17. `docs/AUDIT_PROTOCOL.md`
+18. `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
+19. `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
+20. `docs/DEVELOPMENT_TIMELINE_v0_1.md`
+21. `docs/REBUILD_AUDIT_v0_1.md`
+For AI agents
 
+Before proposing repository or theory changes, read:
+
+* AGENTS.md
+* docs/AI_AGENT_CONTEXT.md
+* docs/STATUS_LABELS.md
+
+Then explore:
+- `mst/`
+- `crt/`
+- `iet/`
+- `proofs/`
+- `applications/`
+- `releases/`
+Legacy material may still exist under older paths during migration. Such material should be read through the status system, not as final theorem completion.
+Legacy technical material may still exist under older paths. Read it through `docs/LEGACY_ARCHIVE.md` and the current status-label system.
+This repository may publish proof artifacts at multiple maturity levels. A proof artifact being public does not mean the full MST–CRT–IET synthesis is proved.
+Context-reset audit, adversarial audit, and AI-assisted review are internal methods for status discipline. They do not constitute formal peer review.
+The methodology retrospective is a process artifact. It does not validate theorem correctness and does not substitute for peer review.
+Methodology and timeline documents are process artifacts. They do not validate theorem correctness and do not substitute for peer review.
+The rebuild audit is an internal repository audit artifact. It does not validate theorem correctness and does not substitute for peer review.
+---
+## What this release does not claim
+This release does not claim:
+- that MST property `(4)` is generally established
+- that ICT determinization reaches AC-6 without additional assumptions
+- that canonicality implies stochastic stability in full generality
+- that the full MST–CRT–IET synthesis is proved unconditionally
+- that AI-assisted audit is peer review
+- that Zenodo archival upload is peer review
+The current public architecture release records dependency structure and the conditional theorem landscape.
+---
+## Research process model
+This repository uses software-style version control for theory development:
+- theorem statements are versioned
+- proof-status changes are recorded
+- superseded drafts are preserved
+- open questions are tracked like issues
+- release notes distinguish mathematical changes from metadata changes
+- audit artifacts are preserved as first-class research records
+The objects under version control are not primarily code.
+They are:
+- definitions
+- theorem statements
+- proof artifacts
+- assumptions
+- counterexamples
+- dependencies
+- open problems
+- release states
+---
 ## Citation
-
-DOI: 10.5281/zenodo.19884063
-
----
-
-## What this repository is
-
-- A structured research program
-- Not peer-reviewed
-- No completeness claims
-
----
-
-## Reading Path
-
-1. MST paper (papers/mst/paper.md)
-2. Appendix (papers/mst/appendix.tex)
-3. Then explore CRT / IET
-
----
-
-## Notes
-
-- This repository is structure-first, not proof-heavy
-- See docs/STATUS.md for claim levels
+Use artifact-specific citation information where available.
+Zenodo DOI records provide public archival anchors, but they do not imply formal peer review.
+See:
+- `CITATION.cff`
+- `docs/CLAIMS_LEDGER.md`
+- `PUBLICATION_STATUS.md`
