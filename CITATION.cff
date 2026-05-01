@@ -1,34 +1,20 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
-type: report
+title: "Canonical Reality Theory (CRT)"
+message: "If you use this repository or its ideas, please cite as below."
+type: software
 authors:
-  - family-names: Fu
-    given-names: Hai Hai
-title: "When Correctness, Robustness, and Stability Coincide: A Unified Framework via Degrees of Freedom and Structural Collapse"
-version: "0.1.0"
-doi: 10.5281/zenodo.19870518
-date-released: "2026-04-29"
-url: "https://github.com/minustwo/canonical-reality-theory"
+  - family-names: "Fu"
+    given-names: "Hai Hai"
 repository-code: "https://github.com/minustwo/canonical-reality-theory"
-license: CC-BY-4.0
 abstract: >
-  Canonical Reality Theory (CRT) is a structural theory of when correctness,
-  robustness, and stability coincide. Using a minimal language based on states,
-  rule closure, break structures, and system dynamics, we show that these
-  notions coincide precisely when all degrees of freedom vanish: DoF(P)=(0,0,0).
-  The synthesis theorem characterizes this as a structural collapse. For open
-  systems, the execution layer determines the minimum control-plane vulnerability.
-  This repository is a preprint-stage / technical-report archive.
-  Peer-reviewed publications: none yet.
+  Canonical Reality Theory (CRT) and its associated MST–CRT–IET architecture
+  form a structured research program on determinization, canonicalization,
+  and escape-resistance in structured systems. This repository is a curated
+  public documentation layer and does not constitute a peer-reviewed publication.
 keywords:
+  - structure theory
+  - determinization
   - canonical reality
-  - degrees of freedom
-  - structural collapse
-  - correctness
-  - robustness
-  - stability
-  - DeFi
-  - min-cut
-  - stochastic stability
-  - technical report
-  - preprint
+  - escape cost
+  - institutional systems
+license: "NOASSERTION"
