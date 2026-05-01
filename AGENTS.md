@@ -33,6 +33,10 @@ Before making changes, read:
 29. `docs/FOUNDING_PRINCIPLES.md`
 30. `docs/EMERGENT_RESEARCH_PROCESS.md`
 31. `docs/PROJECT_PROVENANCE.md`
+32. `docs/PUBLIC_ARGUMENT_MAP_v0_1.md`
+33. `mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md`
+34. `crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md`
+35. `iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -76,6 +80,9 @@ If working with legacy CRT technical material, also read:
 - Treat emergent-process documents as retrospective methodology interpretation, not theorem validation.
 - Treat project provenance as process history, not proof of correctness.
 - Do not reproduce private raw provenance records in public docs.
+- Treat public argument modules as interpretation artifacts, not proof artifacts.
+- Do not promote public argument modules into theorem statements.
+- Do not import private source while editing public argument modules unless explicitly instructed.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

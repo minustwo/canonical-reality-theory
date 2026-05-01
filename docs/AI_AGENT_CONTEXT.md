@@ -383,6 +383,43 @@ Do not publish raw internal reports as public methodology documents.
 
 Do not reproduce private repository URLs or private raw text.
 
+## Public argument layer
+
+The current public argument layer is:
+
+```text
+docs/PUBLIC_ARGUMENT_MAP_v0_1.md
+mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md
+crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md
+iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md
+```
+
+These files provide a public-readable, status-labeled path through the MST–CRT–IET stack.
+
+They should be interpreted as:
+
+```text
+argument / interpretation artifacts
+```
+
+They should not be interpreted as:
+
+```text
+proof artifacts
+theorem statements
+peer-reviewed publications
+full synthesis claims
+private source mirrors
+```
+
+Future AI agents must preserve these boundaries.
+
+Do not import private source into public argument modules unless explicitly instructed.
+
+Do not promote argument modules into theorem files.
+
+Do not remove their non-claim boundaries.
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -818,8 +855,9 @@ The current repo priority is:
 14. Add repository navigation layer. DONE by current navigation pass.
 15. Add public release model and Zenodo artifact registry. DONE by current artifact-registry pass.
 16. Add founding principles, emergent process, and project provenance. DONE by current provenance pass.
-17. Design `MST_LANGUAGE_v0_1`. NEXT.
-18. Then design `MST_STRATIFIED_CORE_v0_1`.
+17. Add public argument layer v0.1. DONE by current argument-layer pass.
+18. Design `MST_LANGUAGE_v0_1`. NEXT.
+19. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

@@ -74,6 +74,19 @@ For staged public research summaries, read:
 - `artifacts/zenodo/19937666/STATUS.md`
 Zenodo records should be treated as public checkpoints and citation anchors, not peer-reviewed publications.
 
+## Public argument layer
+
+To read the current public argument path:
+
+1. `docs/PUBLIC_ARGUMENT_MAP_v0_1.md`
+2. `mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md`
+3. `crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md`
+4. `iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md`
+
+These files are public argument modules.
+
+They are not proof artifacts and do not claim full synthesis.
+
 To understand applications
 
 Read:

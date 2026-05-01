@@ -70,3 +70,14 @@ Any change to this ledger that modifies claim status must be treated as a resear
 See:
 - `artifacts/zenodo/19884063/STATUS.md`
 - `artifacts/zenodo/19937666/STATUS.md`
+
+## Public argument modules
+
+The public argument layer is registered as:
+
+| Module | File | Status | Boundary |
+|---|---|---|---|
+| Argument map | `docs/PUBLIC_ARGUMENT_MAP_v0_1.md` | CONDITIONAL / WORKING | Public-readable argument path, not proof |
+| MST argument | `mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md` | ARCHIVAL / CONDITIONAL | Not final stratified MST core |
+| CRT argument | `crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md` | ARCHIVAL / CONDITIONAL | Not unconditional full synthesis |
+| IET argument | `iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md` | CONDITIONAL / WORKING | Not full dynamic canonicality |

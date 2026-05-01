@@ -141,6 +141,20 @@ Methodology and timeline documents are process artifacts. They do not validate t
 The rebuild audit is an internal repository audit artifact. It does not validate theorem correctness and does not substitute for peer review.
 Founding-principles and emergent-process documents are methodology artifacts. They do not validate theorem correctness and do not substitute for peer review.
 Founding-principles, emergent-process, and provenance documents are methodology / provenance artifacts. They do not validate theorem correctness and do not substitute for peer review.
+## Public argument layer
+
+The public argument layer gives a readable, status-labeled path through the MST–CRT–IET stack.
+
+Start with:
+
+- [Public Argument Map v0.1](docs/PUBLIC_ARGUMENT_MAP_v0_1.md)
+- [MST Public Argument v0.1](mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md)
+- [CRT Public Argument v0.1](crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md)
+- [IET Public Argument v0.1](iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md)
+
+These are public argument modules.
+
+They are not proof artifacts, not peer-reviewed publications, and not a claim of full synthesis.
 ---
 ## What this release does not claim
 This release does not claim:

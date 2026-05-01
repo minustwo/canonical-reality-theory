@@ -24,3 +24,8 @@ Public status
 CRT bridge and escape artifacts must be read with explicit conditions.
 
 Full synthesis is not claimed unconditionally.
+
+## Argument modules
+
+- [CRT arguments](arguments/README.md)
+- [CRT Public Argument v0.1](arguments/CRT_PUBLIC_ARGUMENT_v0_1.md)

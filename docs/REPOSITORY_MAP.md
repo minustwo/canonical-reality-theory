@@ -50,6 +50,15 @@ It is a guide to repository structure, status systems, and reading paths.
 - [Zenodo 19884063](../artifacts/zenodo/19884063/README.md)
 - [Zenodo 19937666](../artifacts/zenodo/19937666/README.md)
 - [Public release model](PUBLIC_RELEASE_MODEL.md)
+## Public argument layer
+
+- [Public Argument Map v0.1](PUBLIC_ARGUMENT_MAP_v0_1.md)
+- [MST arguments](../mst/arguments/README.md)
+- [MST Public Argument v0.1](../mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md)
+- [CRT arguments](../crt/arguments/README.md)
+- [CRT Public Argument v0.1](../crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md)
+- [IET arguments](../iet/arguments/README.md)
+- [IET Public Argument v0.1](../iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md)
 ## Theory layer entry points
 - [MST](../mst/README.md)
 - [CRT](../crt/README.md)

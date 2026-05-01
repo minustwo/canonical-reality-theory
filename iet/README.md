@@ -28,3 +28,8 @@ It should not be read as a universal dynamic canonicality theorem.
 Institutional and governance interpretations belong to applications/ unless explicitly formalized as IET.
 
 See docs/IET_NAMING.md.
+
+## Argument modules
+
+- [IET arguments](arguments/README.md)
+- [IET Public Argument v0.1](arguments/IET_PUBLIC_ARGUMENT_v0_1.md)
