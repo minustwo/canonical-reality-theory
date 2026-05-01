@@ -62,6 +62,7 @@ Start with:
 7. `docs/READING_GUIDE.md`
 8. `proofs/STATUS.md`
 9. `proofs/supplement/STATUS.md`
+10. `docs/LEGACY_ARCHIVE.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -78,6 +79,7 @@ Then explore:
 - `applications/`
 - `releases/`
 Legacy material may still exist under older paths during migration. Such material should be read through the status system, not as final theorem completion.
+Legacy technical material may still exist under older paths. Read it through `docs/LEGACY_ARCHIVE.md` and the current status-label system.
 ---
 ## What this release does not claim
 This release does not claim:

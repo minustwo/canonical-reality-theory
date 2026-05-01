@@ -35,6 +35,16 @@ Read:
 * PUBLICATION_STATUS.md
 * releases/README.md
 
+## Legacy technical archive
+For legacy or deep technical archive material, read:
+- `docs/LEGACY_ARCHIVE.md`
+- `THEORY_INDEX.md`
+- `PUBLICATION_STATUS.md`
+- `STATUS_GLOSSARY.md`
+Read these through the current status-label system:
+- `docs/STATUS_LABELS.md`
+- `docs/CLAIMS_LEDGER.md`
+
 To understand applications
 
 Read:

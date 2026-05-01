@@ -12,10 +12,13 @@ Before making changes, read:
 8. `docs/OPEN_PROBLEMS.md`
 9. `proofs/STATUS.md`
 10. `proofs/supplement/STATUS.md`
+11. `docs/LEGACY_ARCHIVE.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
 - `STATUS_GLOSSARY.md`
+- `proofs/STATUS.md`
+- `proofs/supplement/STATUS.md`
 ## Hard rules
 - Do not modify theorem statements unless explicitly instructed.
 - Do not modify proof content unless explicitly instructed.
@@ -25,6 +28,7 @@ If working with legacy CRT technical material, also read:
 - Treat docs/STATUS_LABELS.md as the canonical status-label reference.
 - Treat IET as Inferential Equilibrium Theory unless explicitly discussing legacy scaffold language.
 - Read proof-status sidecar ledgers before interpreting public proof artifacts.
+- Treat THEORY_INDEX.md as a deep technical archive index, not the current public entry page.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

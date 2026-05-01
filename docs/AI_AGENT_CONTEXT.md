@@ -89,6 +89,41 @@ Do not ignore legacy technical files such as:
 * proofs/supplement/
 * papers/open-systems/
 
+Legacy technical archive reclassification
+
+Legacy CRT technical archive material is preserved for provenance and research traceability.
+
+Examples include:
+
+THEORY_INDEX.md
+PUBLICATION_STATUS.md
+STATUS_GLOSSARY.md
+papers/foundations/
+papers/open-systems/
+proofs/supplement/
+older scaffold files under papers/
+
+These files should not be treated as the current top-level public architecture.
+
+Current interpretation rule:
+
+README.md                    = public entry
+docs/ARCHITECTURE.md         = current architecture reference
+docs/STATUS_LABELS.md        = canonical status-label reference
+docs/CLAIMS_LEDGER.md        = current claim-status board
+docs/LEGACY_ARCHIVE.md       = how to read legacy technical material
+THEORY_INDEX.md              = deep technical archive index
+PUBLICATION_STATUS.md        = publication / preprint / archival status ledger
+STATUS_GLOSSARY.md           = legacy archive terminology
+
+Do not use THEORY_INDEX.md as the public entry page.
+
+Do not infer current theorem status directly from old archive language.
+
+Do not treat publication status as theorem status.
+
+Do not treat archived or DOI-linked material as peer-reviewed unless explicitly stated.
+
 MST current understanding
 
 MST has two public-facing forms.
@@ -355,8 +390,8 @@ The current repo priority is:
 3. Unify status vocabulary. DONE.
 4. Resolve IET naming conflict. DONE.
 5. Add proof artifact status ledgers. DONE by current sidecar-status pass.
-6. Reclassify legacy technical archive / `THEORY_INDEX.md`.
-7. Add architecture deep-scan artifact.
+6. Reclassify legacy technical archive / `THEORY_INDEX.md`. DONE by current archive-role pass.
+7. Add architecture deep-scan artifact. NEXT.
 8. Only then design `MST_LANGUAGE_v0_1` / `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions

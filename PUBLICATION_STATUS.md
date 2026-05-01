@@ -1,3 +1,21 @@
+> **Publication-status note**
+>
+> This file records publication, preprint, technical-report, and archival status.
+>
+> Publication status is not the same as theorem status.
+>
+> Zenodo archival upload, DOI assignment, GitHub publication, arXiv availability, or SSRN availability do not constitute formal peer review.
+>
+> Claim and proof status should be read through:
+>
+> - `docs/STATUS_LABELS.md`
+> - `docs/CLAIMS_LEDGER.md`
+> - `docs/LEGACY_ARCHIVE.md`
+> - `proofs/STATUS.md`
+> - `proofs/supplement/STATUS.md`
+>
+> ---
+
 # Publication Status
 
 This repository is currently a preprint / technical-report archive.

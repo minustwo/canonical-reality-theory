@@ -5,6 +5,8 @@
 > This file preserves legacy CRT archive terminology and maps it to the canonical repository status system.
 >
 > If there is a conflict, use `docs/STATUS_LABELS.md` as the canonical reference.
+>
+> SEALED and CLOSED are internal archive workflow labels. They do not imply external peer review.
 
 This glossary defines the status labels used in the CRT research archive.
 
