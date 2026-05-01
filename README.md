@@ -93,6 +93,7 @@ Start with:
 - [Status labels](docs/STATUS_LABELS.md)
 - [Claims ledger](docs/CLAIMS_LEDGER.md)
 - [Open problems](docs/OPEN_PROBLEMS.md)
+- [Public candidate gate](docs/PUBLIC_CANDIDATE_GATE.md)
 Layer entry points:
 - [MST](mst/README.md)
 - [CRT](crt/README.md)
@@ -141,6 +142,7 @@ Methodology and timeline documents are process artifacts. They do not validate t
 The rebuild audit is an internal repository audit artifact. It does not validate theorem correctness and does not substitute for peer review.
 Founding-principles and emergent-process documents are methodology artifacts. They do not validate theorem correctness and do not substitute for peer review.
 Founding-principles, emergent-process, and provenance documents are methodology / provenance artifacts. They do not validate theorem correctness and do not substitute for peer review.
+Theory content should pass through a private public-candidate gate before entering the public repository.
 ## Public argument layer
 
 The public argument layer gives a readable, status-labeled path through the MST–CRT–IET stack.

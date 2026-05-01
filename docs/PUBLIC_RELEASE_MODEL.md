@@ -63,6 +63,26 @@ Zenodo = staged public research summary / citation anchor.
 
 Every public release must state what it is, what layer it belongs to, what status it has, how to cite it, what it does not claim, and what remains private or unresolved.
 
+Private public-candidate gate
+
+Before theory content is released publicly, it should pass through a private public-candidate area.
+
+Required flow:
+
+private R&D workspace
+  -> private public-candidate area
+  -> audit / review / demotion
+  -> human approval
+  -> public release registry / public summary / public artifact
+
+The public-candidate area is still private.
+
+It exists to prepare public-safe artifacts before public release.
+
+See:
+
+* docs/PUBLIC_CANDIDATE_GATE.md
+
 Release artifact rule
 
 A public release artifact should include:

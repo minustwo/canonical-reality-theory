@@ -37,6 +37,7 @@ Before making changes, read:
 33. `mst/arguments/MST_PUBLIC_ARGUMENT_v0_1.md`
 34. `crt/arguments/CRT_PUBLIC_ARGUMENT_v0_1.md`
 35. `iet/arguments/IET_PUBLIC_ARGUMENT_v0_1.md`
+36. `docs/PUBLIC_CANDIDATE_GATE.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -83,6 +84,9 @@ If working with legacy CRT technical material, also read:
 - Treat public argument modules as interpretation artifacts, not proof artifacts.
 - Do not promote public argument modules into theorem statements.
 - Do not import private source while editing public argument modules unless explicitly instructed.
+- Do not move private theory content directly into the public repository.
+- Use the private public-candidate gate before public release.
+- Public candidates must be audited, status-labeled, and human-approved before public publication.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

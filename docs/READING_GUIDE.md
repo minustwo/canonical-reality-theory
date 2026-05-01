@@ -74,6 +74,12 @@ For staged public research summaries, read:
 - `artifacts/zenodo/19937666/STATUS.md`
 Zenodo records should be treated as public checkpoints and citation anchors, not peer-reviewed publications.
 
+## Public candidate gate
+Before private theory content enters this public repository, read:
+- `docs/PUBLIC_CANDIDATE_GATE.md`
+- `docs/PUBLIC_RELEASE_MODEL.md`
+The public repository receives approved public-facing artifacts, summaries, registry entries, or release notes. It does not receive raw private R&D material.
+
 ## Public argument layer
 
 To read the current public argument path:

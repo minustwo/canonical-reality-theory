@@ -277,6 +277,34 @@ Current record meanings:
 19884063 = CRT synthesis / Degrees of Freedom / structural-collapse package
 19937666 = MST determinization / closure / comparability / joint-admissibility package
 
+Private public-candidate gate
+
+The private-to-public release gate is defined in:
+
+docs/PUBLIC_CANDIDATE_GATE.md
+
+Future AI agents must use this flow:
+
+private R&D workspace
+  -> private public-candidate area
+  -> audit / review / demotion
+  -> human approval
+  -> public release registry / public summary / public artifact
+
+The public-candidate area remains private.
+
+The public repository should receive only approved public-facing artifacts, summaries, registry entries, or release notes.
+
+Do not move raw private theory content directly into the public repository.
+
+Do not copy private source, raw notes, raw audit conversations, or PDFs unless explicitly approved.
+
+For MST minimal-core work, the candidate should first be prepared in the private MST repository under:
+
+public-candidates/mst/minimal-core/
+
+Only after audit and human approval should a public-safe version be released to this public repository.
+
 ## Public release interpretation rule
 All future public releases follow this model:
 ```text
@@ -856,8 +884,10 @@ The current repo priority is:
 15. Add public release model and Zenodo artifact registry. DONE by current artifact-registry pass.
 16. Add founding principles, emergent process, and project provenance. DONE by current provenance pass.
 17. Add public argument layer v0.1. DONE by current argument-layer pass.
-18. Design `MST_LANGUAGE_v0_1`. NEXT.
-19. Then design `MST_STRATIFIED_CORE_v0_1`.
+18. Add private public-candidate gate. DONE by current gate pass.
+19. Prepare MST minimal-core candidate in private MST repo. NEXT.
+20. After candidate approval, release public MST minimal-core summary.
+21. Then design `MST_LANGUAGE_v0_1`.
 
 Current non-actions
 

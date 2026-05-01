@@ -35,6 +35,7 @@ It is a guide to repository structure, status systems, and reading paths.
 - [Audit protocol](AUDIT_PROTOCOL.md)
 - [Adversarial theory development protocol](ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md)
 - [Proof publication policy](PROOF_PUBLICATION_POLICY.md)
+- [Public candidate gate](PUBLIC_CANDIDATE_GATE.md)
 - [Methodology retrospective](METHODOLOGY_RETROSPECTIVE_v0_1.md)
 - [Methodology case study](METHODOLOGY_CASE_STUDY_v0_1.md)
 - [Development timeline](DEVELOPMENT_TIMELINE_v0_1.md)
