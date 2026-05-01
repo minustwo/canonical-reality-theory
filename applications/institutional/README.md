@@ -1,5 +1,12 @@
 Institutional Applications
 
+## Navigation
+- [Repository root](../../README.md)
+- [Repository map](../../docs/REPOSITORY_MAP.md)
+- [Reading guide](../../docs/READING_GUIDE.md)
+- [Status labels](../../docs/STATUS_LABELS.md)
+- [Claims ledger](../../docs/CLAIMS_LEDGER.md)
+
 This directory is for institutional, governance, organizational, market, DeFi, and AI-system interpretations of the CRT research stack.
 
 These materials are application-layer artifacts.

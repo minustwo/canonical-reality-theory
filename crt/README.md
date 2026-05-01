@@ -1,5 +1,12 @@
 CRT
 
+## Navigation
+- [Repository root](../README.md)
+- [Repository map](../docs/REPOSITORY_MAP.md)
+- [Reading guide](../docs/READING_GUIDE.md)
+- [Status labels](../docs/STATUS_LABELS.md)
+- [Claims ledger](../docs/CLAIMS_LEDGER.md)
+
 CRT is the bridge, escape-cost, robustness, and synthesis layer.
 
 It studies:

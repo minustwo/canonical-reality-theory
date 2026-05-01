@@ -1,5 +1,12 @@
 IET
 
+## Navigation
+- [Repository root](../README.md)
+- [Repository map](../docs/REPOSITORY_MAP.md)
+- [Reading guide](../docs/READING_GUIDE.md)
+- [Status labels](../docs/STATUS_LABELS.md)
+- [Claims ledger](../docs/CLAIMS_LEDGER.md)
+
 IET = Inferential Equilibrium Theory
 
 It is the dynamic adoption and stochastic-selection layer of the CRT research stack.

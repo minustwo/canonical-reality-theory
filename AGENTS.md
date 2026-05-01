@@ -25,6 +25,8 @@ Before making changes, read:
 21. `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
 22. `docs/DEVELOPMENT_TIMELINE_v0_1.md`
 23. `docs/REBUILD_AUDIT_v0_1.md`
+24. `docs/REPOSITORY_MAP.md`
+25. `docs/README.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -55,6 +57,7 @@ If working with legacy CRT technical material, also read:
 - Treat methodology retrospectives as process artifacts, not theorem validation.
 - Treat methodology and timeline reports as process artifacts, not theorem validation.
 - Treat rebuild audits as repository-architecture audits, not theorem validation.
+- Keep README and directory README navigation links synchronized with docs/REPOSITORY_MAP.md.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

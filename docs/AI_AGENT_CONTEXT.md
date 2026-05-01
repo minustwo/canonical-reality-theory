@@ -204,6 +204,46 @@ full synthesis claim
 
 Future AI agents should read it before proposing branch merge, public release, or MST language work.
 
+Repository navigation layer
+
+The repository navigation map is:
+
+docs/REPOSITORY_MAP.md
+
+The documentation index is:
+
+docs/README.md
+
+Future AI agents should use these files as navigation anchors.
+
+Navigation principle:
+
+README.md = public entry
+docs/REPOSITORY_MAP.md = full repository map
+docs/README.md = documentation index
+AGENTS.md = AI-agent entry rules
+docs/AI_AGENT_CONTEXT.md = AI-agent memory
+
+When adding or moving public-facing files, update:
+
+README.md
+docs/REPOSITORY_MAP.md
+docs/READING_GUIDE.md
+relevant directory README.md
+docs/AI_AGENT_CONTEXT.md when architecture meaning changes
+
+Directory README files should link back to:
+
+repository root
+repository map
+reading guide
+status labels
+claims ledger
+
+Do not add links that imply theorem-status promotion.
+
+Do not use legacy technical indexes as the public entry path.
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -636,8 +676,9 @@ The current repo priority is:
 11. Add methodology retrospective. DONE and merged into `main`.
 12. Add methodology case study and development timeline. DONE and merged into `main`.
 13. Add branch-level rebuild audit. DONE and merged into `main`.
-14. Design `MST_LANGUAGE_v0_1`. NEXT.
-15. Then design `MST_STRATIFIED_CORE_v0_1`.
+14. Add repository navigation layer. DONE by current navigation pass.
+15. Design `MST_LANGUAGE_v0_1`. NEXT.
+16. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

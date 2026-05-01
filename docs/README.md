@@ -1,0 +1,35 @@
+# Documentation
+## Navigation
+- [Repository root](../README.md)
+- [Repository map](REPOSITORY_MAP.md)
+- [Reading guide](READING_GUIDE.md)
+- [Status labels](STATUS_LABELS.md)
+- [Claims ledger](CLAIMS_LEDGER.md)
+- [Open problems](OPEN_PROBLEMS.md)
+## Core docs
+- [Architecture](ARCHITECTURE.md)
+- [Architecture deep scan](ARCHITECTURE_DEEP_SCAN_v0_1.md)
+- [Status](STATUS.md)
+- [Research process](RESEARCH_PROCESS.md)
+- [Terminology](TERMINOLOGY.md)
+- [Legacy archive](LEGACY_ARCHIVE.md)
+- [Rebuild audit](REBUILD_AUDIT_v0_1.md)
+## Governance and disclosure
+- [AI usage](AI_USAGE.md)
+- [Authorship and privacy](AUTHORSHIP_AND_PRIVACY.md)
+- [Review policy](REVIEW_POLICY.md)
+- [Release policy](RELEASE_POLICY.md)
+- [Publication boundary](PUBLICATION_BOUNDARY.md)
+- [Claim labels](CLAIM_LABELS.md)
+## Workflow and methodology
+- [Role model](ROLE_MODEL.md)
+- [Audit protocol](AUDIT_PROTOCOL.md)
+- [Adversarial theory development protocol](ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md)
+- [Proof publication policy](PROOF_PUBLICATION_POLICY.md)
+- [Methodology retrospective](METHODOLOGY_RETROSPECTIVE_v0_1.md)
+- [Methodology case study](METHODOLOGY_CASE_STUDY_v0_1.md)
+- [Development timeline](DEVELOPMENT_TIMELINE_v0_1.md)
+## AI-agent memory
+- [AI agent instructions](../AGENTS.md)
+- [AI agent context memo](AI_AGENT_CONTEXT.md)
+- [Codex workflow](../CODEX_WORKFLOW.md)

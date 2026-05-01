@@ -86,6 +86,21 @@ Start with:
 19. `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
 20. `docs/DEVELOPMENT_TIMELINE_v0_1.md`
 21. `docs/REBUILD_AUDIT_v0_1.md`
+## Repository navigation
+- [Repository map](docs/REPOSITORY_MAP.md)
+- [Documentation index](docs/README.md)
+- [Reading guide](docs/READING_GUIDE.md)
+- [Status labels](docs/STATUS_LABELS.md)
+- [Claims ledger](docs/CLAIMS_LEDGER.md)
+- [Open problems](docs/OPEN_PROBLEMS.md)
+Layer entry points:
+- [MST](mst/README.md)
+- [CRT](crt/README.md)
+- [IET](iet/README.md)
+Proof and archive entry points:
+- [Proof artifacts](proofs/README.md)
+- [Proof status](proofs/STATUS.md)
+- [Legacy archive guide](docs/LEGACY_ARCHIVE.md)
 For AI agents
 
 Before proposing repository or theory changes, read:

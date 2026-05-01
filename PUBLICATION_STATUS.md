@@ -16,6 +16,14 @@
 >
 > ---
 
+## Navigation
+- [Repository root](README.md)
+- [Repository map](docs/REPOSITORY_MAP.md)
+- [Reading guide](docs/READING_GUIDE.md)
+- [Status labels](docs/STATUS_LABELS.md)
+- [Claims ledger](docs/CLAIMS_LEDGER.md)
+- [Legacy archive guide](docs/LEGACY_ARCHIVE.md)
+
 # Publication Status
 
 This repository is currently a preprint / technical-report archive.

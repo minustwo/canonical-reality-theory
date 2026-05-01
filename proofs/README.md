@@ -1,5 +1,12 @@
 Proof Artifacts
 
+## Navigation
+- [Repository root](../README.md)
+- [Repository map](../docs/REPOSITORY_MAP.md)
+- [Reading guide](../docs/READING_GUIDE.md)
+- [Status labels](../docs/STATUS_LABELS.md)
+- [Claims ledger](../docs/CLAIMS_LEDGER.md)
+
 This directory contains or will contain public proof-related artifacts.
 
 A proof artifact being public does not mean the full MST–CRT–IET synthesis is proved.
