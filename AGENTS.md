@@ -17,6 +17,10 @@ Before making changes, read:
 13. `docs/PROOF_PUBLICATION_POLICY.md`
 14. `proofs/ARTIFACT_STATUS_TEMPLATE.md`
 15. `docs/AUTHORSHIP_AND_PRIVACY.md`
+16. `CODEX_WORKFLOW.md`
+17. `docs/ROLE_MODEL.md`
+18. `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
+19. `docs/AUDIT_PROTOCOL.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -39,6 +43,11 @@ If working with legacy CRT technical material, also read:
 - Do not imply institutional endorsement.
 - Do not add personal identifiers beyond the GitHub handle `minustwo` unless explicitly instructed.
 - Distinguish GitHub repository handle from formal scholarly citation metadata.
+- Treat Codex as a repository execution agent, not a theorem authority.
+- Use explicit role labels when switching between producer, auditor, and adversarial-producer modes.
+- Do not allow a producer role to self-certify its own output.
+- Treat context-reset audit as internal audit, not peer review.
+- Every non-trivial Codex prompt should include an AI-agent memo update unless explicitly waived.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

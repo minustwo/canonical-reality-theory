@@ -75,6 +75,53 @@ Read:
 
 docs/AUTHORSHIP_AND_PRIVACY.md
 
+Execution and adversarial audit protocols
+
+The repository now defines explicit execution and role protocols:
+
+CODEX_WORKFLOW.md
+docs/ROLE_MODEL.md
+docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md
+docs/AUDIT_PROTOCOL.md
+
+Future AI agents must read these before proposing execution, audit, role, or methodology changes.
+
+Role model summary:
+
+Human maintainer = final authority
+ChatGPT = architecture / control layer
+Claude = auditor by default; producer only under explicit mode switch
+Codex = repository execution agent
+Perplexity = independent-style generator / cross-checker
+
+Codex must be treated as:
+
+repository execution agent
+not theorem authority
+not proof certifier
+not peer reviewer
+
+The repository uses three audit modes:
+
+iterative adversarial audit
+adversarial generation
+context-reset audit
+
+Context-reset audit is important for reducing shared-context bias.
+
+However:
+
+context-reset audit ≠ peer review
+AI-assisted audit ≠ peer review
+internal audit ≠ peer review
+
+Every non-trivial Codex prompt should include:
+
+main repository change
+AGENTS.md / docs/AI_AGENT_CONTEXT.md update when relevant
+verification that no theorem/proof files were modified
+remote HEAD report after push
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -503,8 +550,10 @@ The current repo priority is:
 7. Add architecture deep-scan artifact. DONE by current scan pass.
 8. Add proof publication policy and taxonomy. DONE by current proof-policy pass.
 9. Add independent project and privacy boundary. DONE by current disclosure pass.
-10. Design `MST_LANGUAGE_v0_1`. NEXT.
-11. Then design `MST_STRATIFIED_CORE_v0_1`.
+10. Add execution, role, and adversarial audit protocols. DONE by current workflow-protocol pass.
+11. Branch-level rebuild audit. NEXT.
+12. Design `MST_LANGUAGE_v0_1`.
+13. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

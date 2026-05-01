@@ -50,6 +50,14 @@ For the current architecture audit, read:
 - `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
 This scan records the transition from repository rebuild to future MST language / stratified-core design.
 
+## Methodology and workflow
+Read:
+
+* `CODEX_WORKFLOW.md`
+* `docs/ROLE_MODEL.md`
+* `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
+* `docs/AUDIT_PROTOCOL.md`
+
 To understand applications
 
 Read:

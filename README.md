@@ -78,6 +78,10 @@ Start with:
 11. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
 12. `docs/PROOF_PUBLICATION_POLICY.md`
 13. `docs/AUTHORSHIP_AND_PRIVACY.md`
+14. `CODEX_WORKFLOW.md`
+15. `docs/ROLE_MODEL.md`
+16. `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
+17. `docs/AUDIT_PROTOCOL.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -96,6 +100,7 @@ Then explore:
 Legacy material may still exist under older paths during migration. Such material should be read through the status system, not as final theorem completion.
 Legacy technical material may still exist under older paths. Read it through `docs/LEGACY_ARCHIVE.md` and the current status-label system.
 This repository may publish proof artifacts at multiple maturity levels. A proof artifact being public does not mean the full MST–CRT–IET synthesis is proved.
+Context-reset audit, adversarial audit, and AI-assisted review are internal methods for status discipline. They do not constitute formal peer review.
 ---
 ## What this release does not claim
 This release does not claim:

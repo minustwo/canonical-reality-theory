@@ -36,6 +36,15 @@ This repository is maintained as an independent personal research project.
 The research process is human-directed and AI-assisted.
 No repository process, audit pass, release tag, DOI assignment, or public upload should be interpreted as institutional endorsement or formal peer review unless explicitly stated.
 
+## Execution and audit protocols
+Repository execution and audit roles are governed by:
+- `CODEX_WORKFLOW.md`
+- `docs/ROLE_MODEL.md`
+- `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
+- `docs/AUDIT_PROTOCOL.md`
+The repository uses AI-assisted adversarial review and context-reset audits as internal methods for status discipline.
+These methods do not constitute formal peer review.
+
 Issue model
 
 Research issues may track:
