@@ -90,7 +90,7 @@ Application material should live under:
 
 applications/
 
-unless it is explicitly part of MST, CRT, or IET formal development.
+unless it is explicitly formalized as MST, CRT, or IET development.
 
 ⸻
 

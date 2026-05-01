@@ -300,15 +300,35 @@ docs/STATUS_LABELS.md
 
 as the canonical status reference.
 
-Current priority order
+## IET naming resolution
+Canonical repository convention:
+```text
+IET = Inferential Equilibrium Theory
+```
+
+Legacy scaffold files may have used IET to mean institutional / interpretive / invariant escape material.
+
+Those legacy uses should now be interpreted as application-layer material unless explicitly formalized as Inferential Equilibrium Theory.
+
+Do not treat papers/iet/ legacy scaffold files as canonical definitions of IET.
+
+Canonical IET references are:
+
+* docs/IET_NAMING.md
+* iet/README.md
+* docs/ARCHITECTURE.md
+* docs/TERMINOLOGY.md
+* papers/foundations/IET_STATUS.md
+
+## Current priority order
 
 The current repo priority is:
 
 1. Rebuild public research surface. DONE on branch `public-research-rebuild-v1`.
 2. Add AI-agent context memo. DONE.
-3. Unify status vocabulary. CURRENT.
-4. Resolve IET naming conflict.
-5. Add status headers to proof artifacts.
+3. Unify status vocabulary. DONE.
+4. Resolve IET naming conflict. DONE by current terminology pass.
+5. Add status headers to proof artifacts. NEXT.
 6. Reclassify legacy technical archive / `THEORY_INDEX.md`.
 7. Add architecture deep-scan artifact.
 8. Only then design `MST_LANGUAGE_v0_1` / `MST_STRATIFIED_CORE_v0_1`.

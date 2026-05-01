@@ -7,8 +7,9 @@ Before making changes, read:
 3. `docs/ARCHITECTURE.md`
 4. `docs/STATUS.md`
 5. `docs/STATUS_LABELS.md`
-6. `docs/CLAIMS_LEDGER.md`
-7. `docs/OPEN_PROBLEMS.md`
+6. `docs/IET_NAMING.md`
+7. `docs/CLAIMS_LEDGER.md`
+8. `docs/OPEN_PROBLEMS.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -20,6 +21,7 @@ If working with legacy CRT technical material, also read:
 - Do not treat internal audit as peer review.
 - Do not treat Zenodo DOI as peer review.
 - Treat docs/STATUS_LABELS.md as the canonical status-label reference.
+- Treat IET as Inferential Equilibrium Theory unless explicitly discussing legacy scaffold language.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

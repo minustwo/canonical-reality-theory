@@ -20,7 +20,7 @@ MST Language	vNext	OPEN / WORKING	Typed multi-layer language not yet formalized 
 MST Stratified Core	vNext	OPEN / WORKING	Layer-1 / Layer-2 / CRT / IET integration not yet finalized
 CRT Bridge	Bridge hierarchy	CONDITIONAL / CLOSED by scope	Full bridge requires explicit bridge conditions
 CRT Escape	C_min / Break interface	SEALED interface	Source-layer escape only unless extended
-IET	v2.3	CONDITIONAL	Reduced sliding-window / process-specific adoption theory
+IET = Inferential Equilibrium Theory	v2.3	CONDITIONAL	Reduced sliding-window / process-specific adoption theory
 Synthesis	MST–CRT–IET stack	CONDITIONAL	Requires MST and IET assumptions
 Sig0 / FDT	Closure artifacts	AUDIT / CONDITIONAL	Sandbox-internal closure with external dependencies
 Applications	Institutional / market / governance / AI systems	WORKING / DOMAIN-SPECIFIC	Applications are not general proofs

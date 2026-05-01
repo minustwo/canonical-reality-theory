@@ -1,6 +1,6 @@
 IET
 
-IET refers to Inferential Equilibrium Theory.
+IET = Inferential Equilibrium Theory
 
 It is the dynamic adoption and stochastic-selection layer of the CRT research stack.
 
@@ -17,3 +17,7 @@ Public status
 IET v2.3 is treated as conditional and process-specific.
 
 It should not be read as a universal dynamic canonicality theorem.
+
+Institutional and governance interpretations belong to applications/ unless explicitly formalized as IET.
+
+See docs/IET_NAMING.md.

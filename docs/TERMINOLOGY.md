@@ -29,7 +29,10 @@ Public role:
 
 IET
 
-IET refers to Inferential Equilibrium Theory.
+## IET
+IET means Inferential Equilibrium Theory.
+
+It is the dynamic adoption and stochastic-selection layer.
 
 Public role:
 
@@ -37,6 +40,9 @@ Public role:
 * stochastic selection
 * process-specific stability
 * canonical-world selection under explicit assumptions
+* institutional, governance, market, DeFi, AI-system, and organizational interpretations belong to the applications layer unless explicitly formalized as Inferential Equilibrium Theory.
+
+See `docs/IET_NAMING.md`.
 
 Applications
 
