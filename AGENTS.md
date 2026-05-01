@@ -32,6 +32,7 @@ Before making changes, read:
 28. `artifacts/zenodo/README.md`
 29. `docs/FOUNDING_PRINCIPLES.md`
 30. `docs/EMERGENT_RESEARCH_PROCESS.md`
+31. `docs/PROJECT_PROVENANCE.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -73,6 +74,8 @@ If working with legacy CRT technical material, also read:
 - Do not import private source associated with a Zenodo record unless explicitly approved.
 - Treat founding-principles documents as methodology / governance artifacts, not theorem axioms.
 - Treat emergent-process documents as retrospective methodology interpretation, not theorem validation.
+- Treat project provenance as process history, not proof of correctness.
+- Do not reproduce private raw provenance records in public docs.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

@@ -63,6 +63,7 @@ Read:
 * `docs/REBUILD_AUDIT_v0_1.md`
 * `docs/FOUNDING_PRINCIPLES.md`
 * `docs/EMERGENT_RESEARCH_PROCESS.md`
+* `docs/PROJECT_PROVENANCE.md`
 
 ## Public archival artifacts
 For staged public research summaries, read:

@@ -40,6 +40,7 @@ It is a guide to repository structure, status systems, and reading paths.
 - [Development timeline](DEVELOPMENT_TIMELINE_v0_1.md)
 - [Founding principles](FOUNDING_PRINCIPLES.md)
 - [Emergent research process](EMERGENT_RESEARCH_PROCESS.md)
+- [Project provenance](PROJECT_PROVENANCE.md)
 ## AI-agent memory
 - [AI agent instructions](../AGENTS.md)
 - [AI agent context memo](AI_AGENT_CONTEXT.md)

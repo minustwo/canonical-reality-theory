@@ -116,6 +116,7 @@ See:
 - `artifacts/zenodo/README.md`
 - `docs/FOUNDING_PRINCIPLES.md`
 - `docs/EMERGENT_RESEARCH_PROCESS.md`
+- `docs/PROJECT_PROVENANCE.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -139,6 +140,7 @@ The methodology retrospective is a process artifact. It does not validate theore
 Methodology and timeline documents are process artifacts. They do not validate theorem correctness and do not substitute for peer review.
 The rebuild audit is an internal repository audit artifact. It does not validate theorem correctness and does not substitute for peer review.
 Founding-principles and emergent-process documents are methodology artifacts. They do not validate theorem correctness and do not substitute for peer review.
+Founding-principles, emergent-process, and provenance documents are methodology / provenance artifacts. They do not validate theorem correctness and do not substitute for peer review.
 ---
 ## What this release does not claim
 This release does not claim:
