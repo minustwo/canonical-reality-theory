@@ -150,6 +150,34 @@ honesty over unsupported strength
 
 When using the retrospective to design future workflows, do not turn process observations into theorem claims.
 
+Methodology case study and development timeline
+
+Controlled public process records:
+
+docs/METHODOLOGY_CASE_STUDY_v0_1.md
+docs/DEVELOPMENT_TIMELINE_v0_1.md
+
+These files summarize internal methodology and development chronology in a public-safe way.
+
+They should be interpreted as:
+
+methodology / audit-only process artifacts
+
+They should not be interpreted as:
+
+theorem validation
+peer review
+external acceptance
+productivity benchmark
+institutional endorsement
+claim-status upgrade
+
+Future AI agents must not reproduce raw internal timeline reports verbatim.
+
+Future AI agents must not add personal identifiers or private repository URLs.
+
+Future AI agents must treat reported development metrics as internal historical context unless separately verified and public-safe.
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -579,7 +607,7 @@ The current repo priority is:
 8. Add proof publication policy and taxonomy. DONE by current proof-policy pass.
 9. Add independent project and privacy boundary. DONE by current disclosure pass.
 10. Add execution, role, and adversarial audit protocols. DONE by current workflow-protocol pass.
-11. Add methodology retrospective. DONE by current methodology pass.
+11. Add methodology case study and development timeline. DONE by current methodology-timeline pass.
 12. Branch-level rebuild audit. NEXT.
 13. Design `MST_LANGUAGE_v0_1`.
 14. Then design `MST_STRATIFIED_CORE_v0_1`.

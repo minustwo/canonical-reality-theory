@@ -58,6 +58,8 @@ Read:
 * `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
 * `docs/AUDIT_PROTOCOL.md`
 * `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
+* `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
+* `docs/DEVELOPMENT_TIMELINE_v0_1.md`
 
 To understand applications
 

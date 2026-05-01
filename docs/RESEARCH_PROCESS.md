@@ -51,6 +51,13 @@ A controlled process retrospective is recorded in:
 This retrospective documents workflow lessons from AI-assisted theory development.
 It is not a theorem artifact and does not substitute for peer review.
 
+## Methodology case study and timeline
+Controlled public process records:
+- `docs/METHODOLOGY_CASE_STUDY_v0_1.md`
+- `docs/DEVELOPMENT_TIMELINE_v0_1.md`
+These files are methodology / audit-only artifacts.
+They do not validate theorem correctness and do not substitute for peer review.
+
 Issue model
 
 Research issues may track:
