@@ -1,49 +1,66 @@
-AI Usage
+# AI Usage
 
-Disclosure
+## Disclosure
 
-This repository may contain AI-assisted research material.
+This repository contains AI-assisted research artifacts.
 
-AI tools may be used for:
+Large language models and coding agents, including ChatGPT, Claude, Codex, and Perplexity, were used to help draft, refactor, audit, summarize, cross-check, and organize parts of the MST–CRT–IET research program.
 
-* Structuring documentation
-* Drafting public-facing repository files
-* Reviewing consistency
-* Identifying possible ambiguity
-* Generating audit checklists
-* Preparing release scaffolds
+All AI-generated or AI-assisted outputs should be read as research drafts or audit artifacts unless explicitly marked otherwise.
 
-AI tools must not be treated as peer reviewers.
+Human authorship, mathematical responsibility, and final release decisions remain with the repository maintainer.
 
-Human authority
+AI assistance is not a substitute for external peer review.
 
-Final authority belongs to the human maintainer.
+## AI roles
 
-AI output may not independently:
+AI systems were used for:
 
-* Approve theorem status
-* Promote claims
-* Decide public release eligibility
-* Import private material
-* Declare peer-review quality
-* Replace mathematical proof
+- drafting mathematical notes
+- adversarial review and issue discovery
+- proof-status bookkeeping
+- repository maintenance prompts
+- code and markdown editing through Codex
+- literature-positioning summaries
+- cross-document consistency sweeps
 
-Required AI disclosure posture
+## Systems used
 
-Any AI-assisted document should be treated as:
+### ChatGPT
 
-* Draft assistance
-* Structural support
-* Editorial aid
-* Non-authoritative review
+Used for conceptual discussion, proof planning, status synthesis, prompt generation, and repository architecture planning.
 
-Prohibited AI usage
+### Claude / Claude Code
 
-AI must not be used to silently:
+Used for adversarial audit, repository operations, code review, document review, and execution of controlled repository changes.
 
-* Upgrade conditional claims
-* Invent missing proofs
-* Fill theorem gaps as if established
-* Remove uncertainty labels
-* Convert private reasoning into public claims
-* Translate non-public material into public form without approval
+### Codex
+
+Used for repository edits, file creation, commit and push execution, and diff verification under human direction.
+
+### Perplexity
+
+Used for independent-style proof sketches, alternative formalization attempts, external-style audits, and cross-checking.
+
+## Human responsibility
+
+All public releases are human-directed.
+
+The repository maintainer is responsible for deciding what is accepted, committed, published, withdrawn, or marked as superseded.
+
+## Review status
+
+AI review is internal methodological review.
+
+It must not be interpreted as formal peer review.
+
+## Artifact disclosure
+
+Key proof or audit artifacts should include an AI-assistance note such as:
+
+```text
+AI assistance:
+  This artifact was drafted, edited, or audited with assistance from language models.
+  It has not been externally peer reviewed unless explicitly stated.
+  See docs/AI_USAGE.md for repository-wide disclosure.
+```

@@ -6,6 +6,14 @@ This repository is in public initialization status.
 
 It is not a peer-reviewed release. It is not a final monograph. It is not a claim that the MST–CRT–IET stack is complete.
 
+Peer-review and disclosure boundary
+
+Unless explicitly stated otherwise, repository artifacts have not undergone formal external peer review.
+
+Internal audit, AI-assisted review, adversarial checking, repository maintenance review, Zenodo archival upload, and DOI assignment do not constitute peer review.
+
+Artifacts should therefore be interpreted through their explicit maturity labels rather than inferred publication status.
+
 Research status labels
 
 All future documents should use explicit status labels.
