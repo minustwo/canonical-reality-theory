@@ -41,6 +41,12 @@ It is a guide to repository structure, status systems, and reading paths.
 ## AI-agent memory
 - [AI agent instructions](../AGENTS.md)
 - [AI agent context memo](AI_AGENT_CONTEXT.md)
+## Public artifacts
+- [Public artifacts](../artifacts/README.md)
+- [Zenodo records](../artifacts/zenodo/README.md)
+- [Zenodo 19884063](../artifacts/zenodo/19884063/README.md)
+- [Zenodo 19937666](../artifacts/zenodo/19937666/README.md)
+- [Public release model](PUBLIC_RELEASE_MODEL.md)
 ## Theory layer entry points
 - [MST](../mst/README.md)
 - [CRT](../crt/README.md)

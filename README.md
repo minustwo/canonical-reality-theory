@@ -101,6 +101,19 @@ Proof and archive entry points:
 - [Proof artifacts](proofs/README.md)
 - [Proof status](proofs/STATUS.md)
 - [Legacy archive guide](docs/LEGACY_ARCHIVE.md)
+## Public archival artifacts
+Current Zenodo records are registered under:
+- `artifacts/zenodo/19884063/`
+- `artifacts/zenodo/19937666/`
+These records are staged public research summaries.
+They freeze citable states of the research program at specific times.
+They do not constitute peer review, institutional endorsement, or final theorem completion.
+Read each record through its `STATUS.md` file before citing.
+
+See:
+- `docs/PUBLIC_RELEASE_MODEL.md`
+- `artifacts/README.md`
+- `artifacts/zenodo/README.md`
 For AI agents
 
 Before proposing repository or theory changes, read:

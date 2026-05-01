@@ -62,6 +62,15 @@ Read:
 * `docs/DEVELOPMENT_TIMELINE_v0_1.md`
 * `docs/REBUILD_AUDIT_v0_1.md`
 
+## Public archival artifacts
+For staged public research summaries, read:
+- `docs/PUBLIC_RELEASE_MODEL.md`
+- `artifacts/README.md`
+- `artifacts/zenodo/README.md`
+- `artifacts/zenodo/19884063/STATUS.md`
+- `artifacts/zenodo/19937666/STATUS.md`
+Zenodo records should be treated as public checkpoints and citation anchors, not peer-reviewed publications.
+
 To understand applications
 
 Read:

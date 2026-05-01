@@ -61,3 +61,12 @@ Do not cite:
 Update rule
 
 Any change to this ledger that modifies claim status must be treated as a research-status change, not metadata-only maintenance.
+
+## Registered public archival artifacts
+| Zenodo record | Role | Status | Boundary |
+|---|---|---|---|
+| `19884063` | CRT synthesis / Degrees of Freedom / structural-collapse package | ARCHIVAL / CONDITIONAL | Not unconditional full MST–CRT–IET synthesis |
+| `19937666` | MST determinization / closure / comparability / joint-admissibility package | ARCHIVAL / CONDITIONAL | Pre-stratified MST core; not full property `(4)` or AC-6 |
+See:
+- `artifacts/zenodo/19884063/STATUS.md`
+- `artifacts/zenodo/19937666/STATUS.md`

@@ -244,6 +244,39 @@ Do not add links that imply theorem-status promotion.
 
 Do not use legacy technical indexes as the public entry path.
 
+Public release model and Zenodo artifact registry
+
+The public release model is:
+
+docs/PUBLIC_RELEASE_MODEL.md
+
+Public artifacts are registered under:
+
+artifacts/
+artifacts/zenodo/
+
+Current registered Zenodo records:
+
+artifacts/zenodo/19884063/
+artifacts/zenodo/19937666/
+
+Interpretation rule:
+
+Zenodo records are staged public research summaries.
+They are public checkpoints and citation anchors.
+They are not peer review, institutional endorsement, or final theorem completion.
+
+Do not copy PDFs into the repository unless explicitly instructed.
+
+Do not import private source files associated with a Zenodo record unless explicitly approved.
+
+Do not treat a Zenodo record as a claim-status upgrade.
+
+Current record meanings:
+
+19884063 = CRT synthesis / Degrees of Freedom / structural-collapse package
+19937666 = MST determinization / closure / comparability / joint-admissibility package
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -677,8 +710,9 @@ The current repo priority is:
 12. Add methodology case study and development timeline. DONE and merged into `main`.
 13. Add branch-level rebuild audit. DONE and merged into `main`.
 14. Add repository navigation layer. DONE by current navigation pass.
-15. Design `MST_LANGUAGE_v0_1`. NEXT.
-16. Then design `MST_STRATIFIED_CORE_v0_1`.
+15. Add public release model and Zenodo artifact registry. DONE by current artifact-registry pass.
+16. Design `MST_LANGUAGE_v0_1`. NEXT.
+17. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

@@ -27,6 +27,9 @@ Before making changes, read:
 23. `docs/REBUILD_AUDIT_v0_1.md`
 24. `docs/REPOSITORY_MAP.md`
 25. `docs/README.md`
+26. `docs/PUBLIC_RELEASE_MODEL.md`
+27. `artifacts/README.md`
+28. `artifacts/zenodo/README.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -58,6 +61,9 @@ If working with legacy CRT technical material, also read:
 - Treat methodology and timeline reports as process artifacts, not theorem validation.
 - Treat rebuild audits as repository-architecture audits, not theorem validation.
 - Keep README and directory README navigation links synchronized with docs/REPOSITORY_MAP.md.
+- Treat Zenodo records as staged public research summaries, not peer-reviewed publications.
+- Do not copy PDFs into the repository unless explicitly instructed.
+- Do not import private source associated with a Zenodo record unless explicitly approved.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.
