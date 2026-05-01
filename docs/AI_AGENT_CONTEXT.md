@@ -324,6 +324,37 @@ Do not modify theorem or proof content during release registration.
 
 This rule applies to all future staged releases, including Zenodo records, GitHub releases, proof artifacts, methodology artifacts, application artifacts, and architecture artifacts.
 
+Founding principles and emergent process
+
+The public-safe founding-principles record is:
+
+docs/FOUNDING_PRINCIPLES.md
+
+The public-safe emergent-process interpretation is:
+
+docs/EMERGENT_RESEARCH_PROCESS.md
+
+These files record the process interpretation that CRT developed through:
+
+founding principles
++ disciplined AI-assisted execution
++ adversarial audit
++ correction / demotion discipline
++ human final authority
+
+Future AI agents must preserve the following boundaries:
+
+Founding principles are methodology / governance principles, not theorem axioms by themselves.
+Emergent process is a retrospective methodology interpretation, not proof of CRT correctness.
+GitHub history is provenance, not theorem validation.
+AI assistance is not autonomous authorship or peer review.
+
+Do not claim that AI independently discovered or validated CRT.
+
+Do not claim that the emergent-process interpretation proves any theorem.
+
+Do not publish raw internal reports as public methodology documents.
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -758,8 +789,9 @@ The current repo priority is:
 13. Add branch-level rebuild audit. DONE and merged into `main`.
 14. Add repository navigation layer. DONE by current navigation pass.
 15. Add public release model and Zenodo artifact registry. DONE by current artifact-registry pass.
-16. Design `MST_LANGUAGE_v0_1`. NEXT.
-17. Then design `MST_STRATIFIED_CORE_v0_1`.
+16. Add founding principles and emergent-process records. DONE by current methodology-foundation pass.
+17. Design `MST_LANGUAGE_v0_1`. NEXT.
+18. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

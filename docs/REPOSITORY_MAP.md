@@ -38,6 +38,8 @@ It is a guide to repository structure, status systems, and reading paths.
 - [Methodology retrospective](METHODOLOGY_RETROSPECTIVE_v0_1.md)
 - [Methodology case study](METHODOLOGY_CASE_STUDY_v0_1.md)
 - [Development timeline](DEVELOPMENT_TIMELINE_v0_1.md)
+- [Founding principles](FOUNDING_PRINCIPLES.md)
+- [Emergent research process](EMERGENT_RESEARCH_PROCESS.md)
 ## AI-agent memory
 - [AI agent instructions](../AGENTS.md)
 - [AI agent context memo](AI_AGENT_CONTEXT.md)

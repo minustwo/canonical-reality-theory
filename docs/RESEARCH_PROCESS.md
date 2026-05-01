@@ -58,6 +58,14 @@ Controlled public process records:
 These files are methodology / audit-only artifacts.
 They do not validate theorem correctness and do not substitute for peer review.
 
+## Founding principles and emergence
+The founding-principles and emergent-process records are:
+- `docs/FOUNDING_PRINCIPLES.md`
+- `docs/EMERGENT_RESEARCH_PROCESS.md`
+These files explain the process constraints under which the public research stack developed.
+They are methodology artifacts.
+They do not validate theorem correctness and do not substitute for peer review.
+
 Issue model
 
 Research issues may track:

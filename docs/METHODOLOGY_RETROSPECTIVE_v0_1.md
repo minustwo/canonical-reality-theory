@@ -296,12 +296,16 @@ Relationship to other process documents
 This retrospective should be read with:
 
 * CODEX_WORKFLOW.md
+* docs/FOUNDING_PRINCIPLES.md
+* docs/EMERGENT_RESEARCH_PROCESS.md
 * docs/ROLE_MODEL.md
 * docs/AUDIT_PROTOCOL.md
 * docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md
 * docs/RESEARCH_PROCESS.md
 * docs/STATUS_LABELS.md
 * docs/PROOF_PUBLICATION_POLICY.md
+
+The founding-principles and emergent-process documents are methodology artifacts. They do not validate theorem correctness or substitute for peer review.
 
 Final note
 

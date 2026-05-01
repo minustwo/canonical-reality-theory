@@ -114,6 +114,8 @@ See:
 - `docs/PUBLIC_RELEASE_MODEL.md`
 - `artifacts/README.md`
 - `artifacts/zenodo/README.md`
+- `docs/FOUNDING_PRINCIPLES.md`
+- `docs/EMERGENT_RESEARCH_PROCESS.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -136,6 +138,7 @@ Context-reset audit, adversarial audit, and AI-assisted review are internal meth
 The methodology retrospective is a process artifact. It does not validate theorem correctness and does not substitute for peer review.
 Methodology and timeline documents are process artifacts. They do not validate theorem correctness and do not substitute for peer review.
 The rebuild audit is an internal repository audit artifact. It does not validate theorem correctness and does not substitute for peer review.
+Founding-principles and emergent-process documents are methodology artifacts. They do not validate theorem correctness and do not substitute for peer review.
 ---
 ## What this release does not claim
 This release does not claim:

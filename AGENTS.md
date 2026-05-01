@@ -30,6 +30,8 @@ Before making changes, read:
 26. `docs/PUBLIC_RELEASE_MODEL.md`
 27. `artifacts/README.md`
 28. `artifacts/zenodo/README.md`
+29. `docs/FOUNDING_PRINCIPLES.md`
+30. `docs/EMERGENT_RESEARCH_PROCESS.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -69,6 +71,8 @@ If working with legacy CRT technical material, also read:
 - Register and link public artifacts before copying source or PDFs.
 - Do not copy PDFs into the repository unless explicitly instructed.
 - Do not import private source associated with a Zenodo record unless explicitly approved.
+- Treat founding-principles documents as methodology / governance artifacts, not theorem axioms.
+- Treat emergent-process documents as retrospective methodology interpretation, not theorem validation.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.
