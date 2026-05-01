@@ -22,9 +22,9 @@ A determinized outcome may take different forms.
 
 At the level of this paper, we distinguish:
 
-- uniqueness, where additional structure yields a singleton admissible family
-- selection, where one interpretation is chosen from a non-singleton family
-- reduction, where a larger admissible family is narrowed to a smaller family
+- uniqueness
+- selection
+- reduction
 
 These forms should not be treated as equivalent without additional assumptions.
 
@@ -40,9 +40,7 @@ Determinization may arise from different mechanisms, including:
 - adding information
 - restricting the interpretation space
 
-The appropriate mechanism may depend on whether plurality is structural or epistemic.
-
-This section does not claim that these mechanisms are exhaustive.
+These are not assumed to be exhaustive.
 
 ---
 
@@ -52,42 +50,29 @@ A structure theory may fail to determinize.
 
 Failure may occur when:
 
-- multiple admissible interpretations remain after refinement
-- no admissible comparison rule is available
-- added constraints eliminate admissibility rather than select among interpretations
-- selection depends on external criteria not contained in the theory
+- multiple admissible interpretations remain
+- no comparison rule is available
+- added constraints eliminate admissibility
+- selection depends on external criteria
 
-Failure of determinization is not necessarily a defect.
-
-It may indicate genuine plurality in the underlying structure.
+Failure is not necessarily a defect.
 
 ---
 
 ## 4.5 Problem boundary
 
-The determinization problem is not an optimization problem by default.
+The determinization problem is not an optimization problem.
 
-It does not ask which interpretation is best according to an external objective function.
+It does not ask which interpretation is best.
 
-It asks whether the structure of the theory itself, possibly after controlled augmentation, supports a unique or selected outcome.
-
-This boundary separates determinization from:
-
-- statistical model selection
-- preference aggregation
-- performance optimization
-- arbitrary tie-breaking
+It asks whether structure supports a unique or selected outcome.
 
 ---
 
 ## 4.6 Summary
 
-The determinization problem provides the central organizing question for MST.
-
-Given a family of admissible interpretations, MST asks whether plurality can be reduced under explicit structural conditions.
+The determinization problem organizes the analysis of MST.
 
 No general solution is assumed.
-
-Further sections may study mechanisms under which determinization may occur.
 
 ---
