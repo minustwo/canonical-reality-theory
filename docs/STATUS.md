@@ -10,6 +10,21 @@ It is not a software package.
 
 It is not externally peer-reviewed unless explicitly stated.
 
+## Canonical status labels
+The canonical status-label system for this repository is defined in:
+- `docs/STATUS_LABELS.md`
+All other status language in this repository should be interpreted through that file.
+The canonical labels are:
+- `ARCHIVAL`
+- `SEALED`
+- `CLOSED`
+- `CONDITIONAL`
+- `SKETCH`
+- `AUDIT-ONLY`
+- `OPEN`
+- `SUPERSEDED`
+- `WORKING`
+
 Peer-review boundary
 
 Unless explicitly stated otherwise, materials in this repository have not undergone formal external peer review.
@@ -27,19 +42,6 @@ The following do not constitute formal peer review:
 * SSRN preprint availability
 
 Only acceptance by a recognized peer-reviewed journal, conference, or equivalent external review process should be described as peer review.
-
-Canonical status labels
-
-Status	Meaning
-ARCHIVAL	Publicly archived or version-tagged research artifact
-SEALED	Interface, theorem statement, or artifact frozen within this research program
-CLOSED	Internally audited and version-locked within stated scope
-CONDITIONAL	Holds only under explicit assumptions
-SKETCH	Coherent outline, not a complete proof
-AUDIT-ONLY	Audit, counterexample, or dependency record; not a theorem
-OPEN	Open research problem
-SUPERSEDED	Historical artifact; should not be cited as current
-WORKING	Active draft or unstable research material
 
 Artifact status schema
 

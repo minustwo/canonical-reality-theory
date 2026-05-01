@@ -4,6 +4,8 @@ Purpose
 
 This ledger records the public claim-status landscape of the MST–CRT–IET research stack.
 
+Status labels in this ledger follow `docs/STATUS_LABELS.md`.
+
 It is not a proof file.
 
 It is not a theorem statement.

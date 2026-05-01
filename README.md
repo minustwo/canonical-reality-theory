@@ -55,9 +55,10 @@ Artifacts should be read with explicit maturity labels.
 Start with:
 1. `docs/ARCHITECTURE.md`
 2. `docs/STATUS.md`
-3. `docs/CLAIMS_LEDGER.md`
-4. `docs/OPEN_PROBLEMS.md`
-5. `docs/READING_GUIDE.md`
+3. `docs/STATUS_LABELS.md`
+4. `docs/CLAIMS_LEDGER.md`
+5. `docs/OPEN_PROBLEMS.md`
+6. `docs/READING_GUIDE.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
