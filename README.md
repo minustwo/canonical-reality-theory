@@ -20,6 +20,18 @@ Initial public architecture release.
 Not a final proof of the full MST–CRT–IET synthesis.
 Unless explicitly stated otherwise, materials in this repository have not undergone formal external peer review.
 AI assistance, internal audit, adversarial review, Zenodo archival upload, DOI assignment, GitHub publication, arXiv availability, or SSRN availability do not constitute formal peer review.
+## Status and disclosure
+Canonical Reality Theory (CRT) is an independent personal research project maintained under the GitHub account `minustwo`.
+This repository is an active AI-assisted research repository for the MST–CRT–IET architecture stack.
+Unless explicitly stated otherwise:
+- the materials are not externally peer reviewed;
+- the project is not institutionally endorsed;
+- the repository is not a software product;
+- the repository is not a finalized monograph;
+- AI systems were used in drafting, auditing, organizing, and maintaining parts of the project;
+- the human maintainer is responsible for final release decisions and public claim boundaries.
+Every artifact should be read together with its maturity label:
+`ARCHIVAL`, `SEALED`, `CLOSED`, `CONDITIONAL`, `SKETCH`, `AUDIT-ONLY`, `OPEN`, `SUPERSEDED`, or `WORKING`.
 ---
 ## What this repo contains
 - **MST** — structural canonicalization and admissibility layer
@@ -65,6 +77,7 @@ Start with:
 10. `docs/LEGACY_ARCHIVE.md`
 11. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
 12. `docs/PROOF_PUBLICATION_POLICY.md`
+13. `docs/AUTHORSHIP_AND_PRIVACY.md`
 For AI agents
 
 Before proposing repository or theory changes, read:

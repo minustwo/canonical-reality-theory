@@ -16,6 +16,7 @@ Before making changes, read:
 12. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
 13. `docs/PROOF_PUBLICATION_POLICY.md`
 14. `proofs/ARTIFACT_STATUS_TEMPLATE.md`
+15. `docs/AUTHORSHIP_AND_PRIVACY.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -34,6 +35,10 @@ If working with legacy CRT technical material, also read:
 - Treat THEORY_INDEX.md as a deep technical archive index, not the current public entry page.
 - Read docs/ARCHITECTURE_DEEP_SCAN_v0_1.md before proposing MST language or stratified-core changes.
 - Do not move proof artifacts between proof-status directories without updating status metadata and AI-agent memory.
+- Treat this repository as an independent personal research project.
+- Do not imply institutional endorsement.
+- Do not add personal identifiers beyond the GitHub handle `minustwo` unless explicitly instructed.
+- Distinguish GitHub repository handle from formal scholarly citation metadata.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

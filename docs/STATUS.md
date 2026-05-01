@@ -56,6 +56,9 @@ Scope:
 Dependencies:
 Known limitations:
 
+For authorship, institutional-status, and privacy boundaries, see:
+- `docs/AUTHORSHIP_AND_PRIVACY.md`
+
 Interpretation rule
 
 A public artifact is not automatically a final result.

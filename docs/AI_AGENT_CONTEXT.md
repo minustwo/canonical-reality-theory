@@ -40,6 +40,41 @@ The objects under version control include:
 * dependency maps
 * release notes
 
+Authorship, independence, and privacy boundary
+
+The repository is an independent personal research project.
+
+Canonical public handle:
+
+minustwo
+
+Future AI agents must preserve the maintainer’s privacy preference.
+
+Do not add personal identifiers beyond the GitHub handle minustwo unless explicitly instructed.
+
+Formal citation metadata may separately identify scholarly authorship in files such as:
+
+CITATION.cff
+Zenodo DOI records
+formal manuscripts
+
+General repository documentation should avoid unnecessary duplication of personal identity.
+
+No claim in this repository should be interpreted as representing any university, employer, publisher, conference, journal, AI provider, research institute, company, or other institution unless explicitly stated.
+
+AI assistance does not confer:
+
+authorship authority
+institutional endorsement
+peer-review status
+mathematical correctness
+
+Human maintainers remain responsible for public release decisions and public claim boundaries.
+
+Read:
+
+docs/AUTHORSHIP_AND_PRIVACY.md
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -467,8 +502,9 @@ The current repo priority is:
 6. Reclassify legacy technical archive / `THEORY_INDEX.md`. DONE by current archive-role pass.
 7. Add architecture deep-scan artifact. DONE by current scan pass.
 8. Add proof publication policy and taxonomy. DONE by current proof-policy pass.
-9. Design `MST_LANGUAGE_v0_1`. NEXT.
-10. Then design `MST_STRATIFIED_CORE_v0_1`.
+9. Add independent project and privacy boundary. DONE by current disclosure pass.
+10. Design `MST_LANGUAGE_v0_1`. NEXT.
+11. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

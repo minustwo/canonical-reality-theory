@@ -35,6 +35,11 @@ Review should preserve:
 * Layer boundaries
 * Public/private separation
 
+## Institutional status
+This is an independent personal research project.
+No claim in this repository should be interpreted as representing the position of any university, employer, publisher, conference, journal, AI provider, research institute, company, or other institution unless an artifact explicitly says so.
+Repository publication, Zenodo archival upload, DOI assignment, arXiv or SSRN availability, and AI-assisted internal audit are not substitutes for external peer review.
+
 Human decision rule
 
 The human maintainer decides:

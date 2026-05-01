@@ -31,6 +31,11 @@ erratum release	Corrects a published or archived claim
 audit release	Publishes audit artifacts without promoting theorem status
 archival release	Freezes a version for citation or public record
 
+## Independent project boundary
+This repository is maintained as an independent personal research project.
+The research process is human-directed and AI-assisted.
+No repository process, audit pass, release tag, DOI assignment, or public upload should be interpreted as institutional endorsement or formal peer review unless explicitly stated.
+
 Issue model
 
 Research issues may track:
