@@ -54,6 +54,15 @@ It records:
 * what it does not claim
 * which dependencies or limitations remain open
 
+## Permanent interpretation rule
+```text
+Public repo = release and interpretation layer.
+Private repos = R&D, memory, and raw work layer.
+Zenodo = staged public research summary / citation anchor.
+```
+
+Every public release must state what it is, what layer it belongs to, what status it has, how to cite it, what it does not claim, and what remains private or unresolved.
+
 Release artifact rule
 
 A public release artifact should include:

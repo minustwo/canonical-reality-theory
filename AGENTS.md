@@ -61,7 +61,12 @@ If working with legacy CRT technical material, also read:
 - Treat methodology and timeline reports as process artifacts, not theorem validation.
 - Treat rebuild audits as repository-architecture audits, not theorem validation.
 - Keep README and directory README navigation links synchronized with docs/REPOSITORY_MAP.md.
+- Treat the public repository as the release and interpretation layer, not the full R&D workspace.
+- Treat private repositories as the R&D, memory, and raw work layer.
 - Treat Zenodo records as staged public research summaries, not peer-reviewed publications.
+- Treat Zenodo records as staged public research summaries and citation anchors, not peer review or final theorem completion.
+- For every public release, preserve status labels, citation boundaries, non-claims, and private/public separation.
+- Register and link public artifacts before copying source or PDFs.
 - Do not copy PDFs into the repository unless explicitly instructed.
 - Do not import private source associated with a Zenodo record unless explicitly approved.
 - Do not collapse MST, CRT, and IET layers.

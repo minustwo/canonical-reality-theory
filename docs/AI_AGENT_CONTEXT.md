@@ -277,6 +277,53 @@ Current record meanings:
 19884063 = CRT synthesis / Degrees of Freedom / structural-collapse package
 19937666 = MST determinization / closure / comparability / joint-admissibility package
 
+## Public release interpretation rule
+All future public releases follow this model:
+```text
+private R&D workspace
+  -> human-approved release candidate
+  -> status-labeled public artifact
+  -> citation / non-claim boundary
+  -> public registry entry
+  -> optional source or proof mirror only if explicitly approved
+```
+
+Permanent interpretation rule:
+
+Public repo = release and interpretation layer.
+Private repos = R&D, memory, and raw work layer.
+Zenodo = staged public research summary / citation anchor.
+
+Future agents must not treat public release artifacts as:
+
+peer-reviewed publication
+institutional endorsement
+final theorem completion
+full private archive disclosure
+
+Every public release must state:
+
+what it is
+what layer it belongs to
+what status it has
+how to cite it
+what it does not claim
+what remains private or unresolved
+
+Default release behavior:
+
+register first
+link first
+copy later only if explicitly approved
+
+Do not import private source automatically.
+
+Do not copy PDFs automatically.
+
+Do not modify theorem or proof content during release registration.
+
+This rule applies to all future staged releases, including Zenodo records, GitHub releases, proof artifacts, methodology artifacts, application artifacts, and architecture artifacts.
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
