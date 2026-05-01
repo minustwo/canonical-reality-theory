@@ -58,6 +58,13 @@ Start with:
 3. `docs/CLAIMS_LEDGER.md`
 4. `docs/OPEN_PROBLEMS.md`
 5. `docs/READING_GUIDE.md`
+For AI agents
+
+Before proposing repository or theory changes, read:
+
+* AGENTS.md
+* docs/AI_AGENT_CONTEXT.md
+
 Then explore:
 - `mst/`
 - `crt/`
