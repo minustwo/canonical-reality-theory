@@ -28,12 +28,13 @@ Admissibility is determined by a rule `A`, which may depend on both `C` and addi
 We define the admissible interpretation family as:
 ```text
 P_T subset I
+```
 
 where T denotes the underlying structure theory.
 
 We do not assume that P_T is a singleton.
 
-2.4 Admissible interpretation families
+## 2.4 Admissible interpretation families
 
 The central object of study is the set:
 
@@ -48,7 +49,7 @@ This family may exhibit:
 
 Plurality is the primary case of interest in this work.
 
-2.5 Non-determinism
+## 2.5 Non-determinism
 
 We say that a structure theory T is:
 
@@ -59,7 +60,7 @@ Non-determinism does not imply inconsistency. All elements of P_T are assumed to
 
 The question is not whether interpretations are valid, but whether they are unique.
 
-2.6 Determinization
+## 2.6 Determinization
 
 We use the term determinization to refer to any process or condition under which a non-deterministic structure theory yields a reduced or selected outcome.
 
@@ -77,7 +78,7 @@ Determinization may depend on:
 
 We treat determinization as a property to be analyzed, not assumed.
 
-2.7 Scope and non-assumptions
+## 2.7 Scope and non-assumptions
 
 We emphasize the following:
 

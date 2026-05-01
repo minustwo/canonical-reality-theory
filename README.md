@@ -26,7 +26,7 @@ Every artifact should be read together with its maturity label, such as ARCHIVAL
 
 👉 Start here:
 
-papers/mst/paper.tex
+papers/mst/paper.md
 
 ---
 
@@ -46,7 +46,7 @@ DOI: 10.5281/zenodo.19884063
 
 ## Reading Path
 
-1. MST paper (papers/mst/paper.tex)
+1. MST paper (papers/mst/paper.md)
 2. Appendix (papers/mst/appendix.tex)
 3. Then explore CRT / IET
 

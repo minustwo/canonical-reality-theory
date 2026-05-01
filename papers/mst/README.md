@@ -1,8 +1,8 @@
 # MST Paper
 ## Entry
 Main file:
-paper.tex
-Appendix:
+paper.md
+Technical proof supplement:
 appendix.tex
 ---
 ## Structure
