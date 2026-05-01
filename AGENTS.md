@@ -6,8 +6,9 @@ Before making changes, read:
 2. `docs/AI_AGENT_CONTEXT.md`
 3. `docs/ARCHITECTURE.md`
 4. `docs/STATUS.md`
-5. `docs/CLAIMS_LEDGER.md`
-6. `docs/OPEN_PROBLEMS.md`
+5. `docs/STATUS_LABELS.md`
+6. `docs/CLAIMS_LEDGER.md`
+7. `docs/OPEN_PROBLEMS.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -18,6 +19,7 @@ If working with legacy CRT technical material, also read:
 - Do not upgrade conditional claims.
 - Do not treat internal audit as peer review.
 - Do not treat Zenodo DOI as peer review.
+- Treat docs/STATUS_LABELS.md as the canonical status-label reference.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

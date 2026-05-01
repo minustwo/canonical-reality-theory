@@ -237,18 +237,81 @@ ARCHIVAL = peer reviewed
 
 These equivalences are false.
 
+## Canonical status system
+The canonical repository status-label reference is:
+```text
+docs/STATUS_LABELS.md
+```
+
+Future AI agents must treat this file as the source of truth for status labels.
+
+The canonical labels are:
+
+ARCHIVAL
+SEALED
+CLOSED
+CONDITIONAL
+SKETCH
+AUDIT-ONLY
+OPEN
+SUPERSEDED
+WORKING
+
+Older files may use legacy or local labels such as:
+
+PROVED
+REVIEWED
+PUBLIC-SAFE
+PRIVATE-ONLY
+DEPRECATED
+DRAFT
+SKETCHED
+AUDIT-LOCAL
+ACCEPTED diagnostic
+Candidate theorem
+
+These must be interpreted through docs/STATUS_LABELS.md.
+
+Do not treat old labels as independent status systems.
+
+Do not infer peer review from any internal label.
+
+In particular:
+
+SEALED ≠ peer reviewed
+CLOSED ≠ peer reviewed
+ARCHIVAL ≠ peer reviewed
+PROVED ≠ globally complete
+AUDIT-ONLY ≠ theorem
+Zenodo DOI ≠ peer review
+AI-assisted audit ≠ peer review
+
+If there is a conflict between:
+
+docs/STATUS.md
+docs/CLAIM_LABELS.md
+STATUS_GLOSSARY.md
+THEORY_INDEX.md
+PUBLICATION_STATUS.md
+
+use:
+
+docs/STATUS_LABELS.md
+
+as the canonical status reference.
+
 Current priority order
 
 The current repo priority is:
 
-1. Rebuild public research surface.
-2. Add AI-agent context memo.
-3. Unify status vocabulary.
+1. Rebuild public research surface. DONE on branch `public-research-rebuild-v1`.
+2. Add AI-agent context memo. DONE.
+3. Unify status vocabulary. CURRENT.
 4. Resolve IET naming conflict.
 5. Add status headers to proof artifacts.
-6. Reclassify legacy technical archive.
+6. Reclassify legacy technical archive / `THEORY_INDEX.md`.
 7. Add architecture deep-scan artifact.
-8. Only then design MST language / stratified core.
+8. Only then design `MST_LANGUAGE_v0_1` / `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 

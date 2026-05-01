@@ -65,6 +65,7 @@ Before proposing repository or theory changes, read:
 
 * AGENTS.md
 * docs/AI_AGENT_CONTEXT.md
+* docs/STATUS_LABELS.md
 
 Then explore:
 - `mst/`
