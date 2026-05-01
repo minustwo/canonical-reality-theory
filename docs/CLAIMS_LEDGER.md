@@ -11,6 +11,11 @@ Proof-supplement status is recorded in:
 - `proofs/supplement/STATUS.md`
 These ledgers are metadata/status files and do not modify theorem statements or proof content.
 
+Proof publication and proof directory taxonomy are governed by:
+- `docs/PROOF_PUBLICATION_POLICY.md`
+- `proofs/STATUS.md`
+- `proofs/supplement/STATUS.md`
+
 It is not a proof file.
 
 It is not a theorem statement.

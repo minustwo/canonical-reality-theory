@@ -14,6 +14,8 @@ Before making changes, read:
 10. `proofs/supplement/STATUS.md`
 11. `docs/LEGACY_ARCHIVE.md`
 12. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
+13. `docs/PROOF_PUBLICATION_POLICY.md`
+14. `proofs/ARTIFACT_STATUS_TEMPLATE.md`
 If working with legacy CRT technical material, also read:
 - `THEORY_INDEX.md`
 - `PUBLICATION_STATUS.md`
@@ -31,6 +33,7 @@ If working with legacy CRT technical material, also read:
 - Read proof-status sidecar ledgers before interpreting public proof artifacts.
 - Treat THEORY_INDEX.md as a deep technical archive index, not the current public entry page.
 - Read docs/ARCHITECTURE_DEEP_SCAN_v0_1.md before proposing MST language or stratified-core changes.
+- Do not move proof artifacts between proof-status directories without updating status metadata and AI-agent memory.
 - Do not collapse MST, CRT, and IET layers.
 - Do not treat applications as proofs of the theory stack.
 - Do not import private material automatically.

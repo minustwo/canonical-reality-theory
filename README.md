@@ -64,6 +64,7 @@ Start with:
 9. `proofs/supplement/STATUS.md`
 10. `docs/LEGACY_ARCHIVE.md`
 11. `docs/ARCHITECTURE_DEEP_SCAN_v0_1.md`
+12. `docs/PROOF_PUBLICATION_POLICY.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -81,6 +82,7 @@ Then explore:
 - `releases/`
 Legacy material may still exist under older paths during migration. Such material should be read through the status system, not as final theorem completion.
 Legacy technical material may still exist under older paths. Read it through `docs/LEGACY_ARCHIVE.md` and the current status-label system.
+This repository may publish proof artifacts at multiple maturity levels. A proof artifact being public does not mean the full MST–CRT–IET synthesis is proved.
 ---
 ## What this release does not claim
 This release does not claim:

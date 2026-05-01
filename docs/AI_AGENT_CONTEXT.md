@@ -302,6 +302,51 @@ Do not treat the proof supplement as external peer review.
 
 Do not treat the proof supplement as unconditional full synthesis.
 
+Proof publication policy
+
+The proof publication policy is:
+
+docs/PROOF_PUBLICATION_POLICY.md
+
+The proof artifact status template is:
+
+proofs/ARTIFACT_STATUS_TEMPLATE.md
+
+The proof taxonomy is:
+
+proofs/closed/
+proofs/conditional/
+proofs/sketches/
+proofs/audits/
+proofs/superseded/
+proofs/supplement/
+
+Future AI agents must not treat public proof artifacts as global theorem completion.
+
+A proof artifact may be public while remaining:
+
+CLOSED
+CONDITIONAL
+SKETCH
+AUDIT-ONLY
+SUPERSEDED
+OPEN
+WORKING
+
+Do not move proof artifacts between taxonomy directories unless:
+
+1. status metadata is updated,
+2. citation boundary is updated,
+3. docs/AI_AGENT_CONTEXT.md is updated,
+4. the change is explicitly approved by the human maintainer.
+
+Key public-misreading boundaries:
+
+MST v2.16.4 does not imply full property (4) or AC-6.
+IET v2.3 is process-specific and conditional.
+FDT-related artifacts are audit / conditional unless external dependencies are discharged.
+The full MST–CRT–IET synthesis is not unconditional.
+
 Status labels
 
 Use the canonical label family:
@@ -421,8 +466,9 @@ The current repo priority is:
 5. Add proof artifact status ledgers. DONE by current sidecar-status pass.
 6. Reclassify legacy technical archive / `THEORY_INDEX.md`. DONE by current archive-role pass.
 7. Add architecture deep-scan artifact. DONE by current scan pass.
-8. Design `MST_LANGUAGE_v0_1`. NEXT.
-9. Then design `MST_STRATIFIED_CORE_v0_1`.
+8. Add proof publication policy and taxonomy. DONE by current proof-policy pass.
+9. Design `MST_LANGUAGE_v0_1`. NEXT.
+10. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 
