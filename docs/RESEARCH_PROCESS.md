@@ -45,6 +45,12 @@ Repository execution and audit roles are governed by:
 The repository uses AI-assisted adversarial review and context-reset audits as internal methods for status discipline.
 These methods do not constitute formal peer review.
 
+## Methodology retrospective
+A controlled process retrospective is recorded in:
+- `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
+This retrospective documents workflow lessons from AI-assisted theory development.
+It is not a theorem artifact and does not substitute for peer review.
+
 Issue model
 
 Research issues may track:

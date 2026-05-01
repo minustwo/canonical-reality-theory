@@ -82,6 +82,7 @@ Start with:
 15. `docs/ROLE_MODEL.md`
 16. `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
 17. `docs/AUDIT_PROTOCOL.md`
+18. `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
 For AI agents
 
 Before proposing repository or theory changes, read:
@@ -101,6 +102,7 @@ Legacy material may still exist under older paths during migration. Such materia
 Legacy technical material may still exist under older paths. Read it through `docs/LEGACY_ARCHIVE.md` and the current status-label system.
 This repository may publish proof artifacts at multiple maturity levels. A proof artifact being public does not mean the full MST–CRT–IET synthesis is proved.
 Context-reset audit, adversarial audit, and AI-assisted review are internal methods for status discipline. They do not constitute formal peer review.
+The methodology retrospective is a process artifact. It does not validate theorem correctness and does not substitute for peer review.
 ---
 ## What this release does not claim
 This release does not claim:

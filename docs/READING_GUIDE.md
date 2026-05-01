@@ -57,6 +57,7 @@ Read:
 * `docs/ROLE_MODEL.md`
 * `docs/ADVERSARIAL_THEORY_DEVELOPMENT_PROTOCOL.md`
 * `docs/AUDIT_PROTOCOL.md`
+* `docs/METHODOLOGY_RETROSPECTIVE_v0_1.md`
 
 To understand applications
 

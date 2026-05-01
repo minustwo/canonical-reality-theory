@@ -122,6 +122,34 @@ AGENTS.md / docs/AI_AGENT_CONTEXT.md update when relevant
 verification that no theorem/proof files were modified
 remote HEAD report after push
 
+Methodology retrospective
+
+The controlled methodology retrospective is:
+
+docs/METHODOLOGY_RETROSPECTIVE_v0_1.md
+
+This file records process lessons from AI-assisted CRT research development.
+
+It should be interpreted as:
+
+methodology / audit-only process artifact
+
+It should not be interpreted as:
+
+proof of theorem correctness
+peer review
+external validation
+productivity benchmark
+claim-status upgrade
+
+Future AI agents must preserve this boundary.
+
+The retrospective’s central process invariant is:
+
+honesty over unsupported strength
+
+When using the retrospective to design future workflows, do not turn process observations into theorem claims.
+
 Current public-repo model
 
 The public repository should be understood as a research operating system for the CRT stack.
@@ -551,9 +579,10 @@ The current repo priority is:
 8. Add proof publication policy and taxonomy. DONE by current proof-policy pass.
 9. Add independent project and privacy boundary. DONE by current disclosure pass.
 10. Add execution, role, and adversarial audit protocols. DONE by current workflow-protocol pass.
-11. Branch-level rebuild audit. NEXT.
-12. Design `MST_LANGUAGE_v0_1`.
-13. Then design `MST_STRATIFIED_CORE_v0_1`.
+11. Add methodology retrospective. DONE by current methodology pass.
+12. Branch-level rebuild audit. NEXT.
+13. Design `MST_LANGUAGE_v0_1`.
+14. Then design `MST_STRATIFIED_CORE_v0_1`.
 
 Current non-actions
 
